@@ -11,6 +11,16 @@ if (query) {
   search(query);
 }
 
+// Function to do something (f) N times
+const times = (n) => (f) => {
+  let iter = (i) => {
+    if (i === n) return;
+    f(i);
+    iter(i + 1);
+  };
+  return iter(0);
+};
+
 async function search(keyword) {
   var myHeaders = new Headers();
   myHeaders.append(
@@ -32,11 +42,18 @@ async function search(keyword) {
         const searchResults = doc.querySelector(
           "#huvudinnehall > div.l-field-wrap > div > div.l-unit.l-size2of3 > div > div:nth-child(2) > div"
         );
+
         // Parse amount of hits and query
         const [
           { innerHTML: hitAmount },
           { innerHTML: query },
         ] = searchResults.querySelectorAll(".main-search-meta strong");
+        const resultMeta = {
+          hitAmount,
+          query,
+          pages: Math.ceil(hitAmount / 20),
+        };
+
         // Grab resulting articles
         const articles = searchResults.querySelectorAll(".article-item");
         // Parse articles into Array of properties
@@ -77,12 +94,17 @@ async function search(keyword) {
             "text/html"
           );
 
+          list.appendChild(li.querySelector("li"));
+        });
+
+        // Render one page in the pagination for every page available in search
+        times(resultMeta.pages)((index) => {
           let page = Parser.parseFromString(
             `
-          <li>
-            <span>${index + 1}<span>
-          </li>
-        `,
+            <li>
+              <span>${index + 1}<span>
+            </li>
+          `,
             "text/html"
           );
           page = page.querySelector("li");
@@ -90,18 +112,16 @@ async function search(keyword) {
             (window.location.href =
               "/sok.html?q=" + query + "&p=" + (index + 1));
 
-          list.appendChild(li.querySelector("li"));
           pagination.appendChild(page);
         });
+
+        // Append elements to the render container
         RENDER_CONTAINER.appendChild(list);
         RENDER_CONTAINER.appendChild(pagination);
 
+        // Log info for debug purposes
         console.log({
-          resultMeta: {
-            hitAmount,
-            query,
-            pages: Math.ceil(hitAmount / 20),
-          },
+          resultMeta,
           results: resultArray,
         });
       }
