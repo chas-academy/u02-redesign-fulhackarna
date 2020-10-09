@@ -6,9 +6,14 @@
 input[type="search"] {
   padding: 10px;
   font-size: 1.3em;
+  margin-bottom: 10px;
 }
 
 .search-results {
+  .no-results {
+    font-size: 1.2em;
+  }
+
   ul {
     list-style: none;
     margin: 0;
