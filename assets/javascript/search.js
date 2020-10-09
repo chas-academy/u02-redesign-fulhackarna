@@ -43,6 +43,17 @@ async function search(keyword) {
           "#huvudinnehall > div.l-field-wrap > div > div.l-unit.l-size2of3 > div > div:nth-child(2) > div"
         );
 
+        if (
+          searchResults.querySelectorAll(".main-search-meta strong").length < 2
+        ) {
+          let noRes = document.createElement("span");
+          noRes.innerHTML = searchResults.querySelector(
+            ".main-search-meta"
+          ).innerHTML;
+          noRes.className = "no-results";
+          return RENDER_CONTAINER.appendChild(noRes);
+        }
+
         // Parse amount of hits and query
         const [
           { innerHTML: hitAmount },
@@ -69,7 +80,7 @@ async function search(keyword) {
         if (resultArray.length === 0) {
           let noRes = document.createElement("span");
           noRes.innerHTML = "Inga resultat.";
-          return document.body.appendChild(noRes);
+          return RENDER_CONTAINER.appendChild(noRes);
         }
 
         // Create UL elements for search results and pagination
