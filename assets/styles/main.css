@@ -49,6 +49,7 @@ input[type="search"] {
   margin: 0 auto;
   border-radius: 5px;
   overflow: hidden;
+  margin-top: 20px;
 }
 
 .pagination li {
