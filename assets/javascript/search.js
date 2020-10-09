@@ -8,6 +8,14 @@ const RENDER_CONTAINER = document.querySelector(".search-results");
 
 // Only perform the request if a searhc query was provided
 if (query) {
+  RENDER_CONTAINER.innerHTML = `
+    <div class="lds-default">
+      <div></div><div></div><div></div>
+      <div></div><div></div><div></div>
+      <div></div><div></div><div></div>
+      <div></div><div></div><div></div>
+    </div>
+  `;
   search(query);
 }
 
@@ -127,7 +135,10 @@ async function search(keyword) {
         });
 
         // Append elements to the render container
-        RENDER_CONTAINER.appendChild(list);
+        RENDER_CONTAINER.replaceChild(
+          list,
+          document.querySelector(".lds-default")
+        );
         RENDER_CONTAINER.appendChild(pagination);
 
         // Log info for debug purposes
