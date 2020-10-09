@@ -3,8 +3,10 @@ const urlParams = new URLSearchParams(window.location.search);
 const query = urlParams.get("q");
 const page = urlParams.get("p") || undefined;
 
+// The render container will recieve all elements that are rendered upon recieving the result from the search engine
 const RENDER_CONTAINER = document.querySelector(".search-results");
 
+// Only perform the request if a searhc query was provided
 if (query) {
   search(query);
 }
@@ -46,16 +48,19 @@ async function search(keyword) {
           };
         });
 
+        // If no results are returned, render a "No results" element
         if (resultArray.length === 0) {
           let noRes = document.createElement("span");
           noRes.innerHTML = "Inga resultat.";
           return document.body.appendChild(noRes);
         }
 
+        // Create UL elements for search results and pagination
         var list = document.createElement("ul");
         var pagination = document.createElement("ul");
         pagination.className = "pagination";
 
+        // Render LI elements for each search result.
         resultArray.forEach(({ heading, content, date }, index) => {
           let li = Parser.parseFromString(
             `
