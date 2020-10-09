@@ -3,6 +3,8 @@ const urlParams = new URLSearchParams(window.location.search);
 const query = urlParams.get("q");
 const page = urlParams.get("p") || undefined;
 
+const RENDER_CONTAINER = document.querySelector(".search-results");
+
 if (query) {
   search(query);
 }
@@ -51,7 +53,6 @@ async function search(keyword) {
         }
 
         var list = document.createElement("ul");
-        list.className = "search-results";
         var pagination = document.createElement("ul");
         pagination.className = "pagination";
 
@@ -87,8 +88,8 @@ async function search(keyword) {
           list.appendChild(li.querySelector("li"));
           pagination.appendChild(page);
         });
-        document.body.appendChild(list);
-        document.body.appendChild(pagination);
+        RENDER_CONTAINER.appendChild(list);
+        RENDER_CONTAINER.appendChild(pagination);
 
         console.log({
           resultMeta: {
