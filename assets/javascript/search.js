@@ -6,7 +6,7 @@ const page = urlParams.get("p") || undefined;
 // The render container will recieve all elements that are rendered upon recieving the result from the search engine
 const RENDER_CONTAINER = document.querySelector(".search-results");
 
-// Only perform the request if a searhc query was provided
+// Only perform the request if a search query was provided
 if (query) {
   RENDER_CONTAINER.innerHTML = `
     <div class="lds-default">
