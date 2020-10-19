@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="67" viewBox="0 0 90 67">
+  <defs>
+    <filter id="Logo" x="0" y="0" width="67" height="67" filterUnits="userSpaceOnUse">
+      <feOffset dx="-2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Yh" x="54" y="29" width="36" height="38" filterUnits="userSpaceOnUse">
+      <feOffset dx="-2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Logo-2" data-name="Logo" transform="translate(-24 -24)">
+    <g transform="matrix(1, 0, 0, 1, 24, 24)" filter="url(#Logo)">
+      <rect id="Logo-3" data-name="Logo" width="49" height="49" transform="translate(11 7)" fill="#fff695"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 24, 24)" filter="url(#Yh)">
+      <text id="Yh-2" data-name="Yh" transform="translate(65 52)" fill="#2f2d36" font-size="15" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">Yh</tspan></text>
+    </g>
+  </g>
+</svg>
