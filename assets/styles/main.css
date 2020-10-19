@@ -1,5 +1,5 @@
 * {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 input[type="search"] {
@@ -17,6 +17,10 @@ input[type="search"] {
   margin: 0;
   padding: 0;
   margin-top: 30px;
+}
+
+.search-results a {
+  text-decoration: none;
 }
 
 .search-results article {
@@ -38,8 +42,13 @@ input[type="search"] {
   text-decoration: underline;
 }
 
+.search-results article .article-text {
+  color: black;
+}
+
 .search-results article time {
   opacity: 0.5;
+  color: black;
 }
 
 .pagination {
@@ -61,6 +70,15 @@ input[type="search"] {
   background: lightgrey;
   padding: 10px;
   cursor: pointer;
+}
+
+.pagination li a {
+  color: inherit;
+}
+
+.pagination li.current-page {
+  background: #418dff;
+  color: white;
 }
 
 .pagination li:hover {
