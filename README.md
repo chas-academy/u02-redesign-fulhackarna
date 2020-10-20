@@ -4,7 +4,7 @@ This repository contains the codebase built for the `u02-redesign` assignment by
 
 ## Current stage
 
-We are currently working on: **`Design`**, **`UX Surveys`**
+We are currently working on: **`Design`**, **`Markup`**, **`SE Implementation`**
 
 ## Quick-start
 
