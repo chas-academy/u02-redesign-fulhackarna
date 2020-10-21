@@ -12,7 +12,6 @@
            for (index; index < length; index++) {
                let offsetValue = window.pageYOffset * element[index].dataset.speed * parallaxSwitch; // Calculate offset for element
                element[index].style.transform = `translateY(${offsetValue + "px"})`; // Transform element
-
            }
        }
 
