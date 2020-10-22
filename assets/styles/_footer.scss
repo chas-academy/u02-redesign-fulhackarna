@@ -1,0 +1,89 @@
+$background-color: #fff695;
+
+.footer {
+  background: $background-color;
+
+  &__item {
+    margin: 2rem 4rem;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+
+  &__link {
+    color: #656565;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+
+    &:visited {
+      color: #656565;
+    }
+  }
+
+  &__card {
+    height: 150px;
+    overflow: hidden;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    background: lighten($background-color, 15%);
+    border-radius: 20px;
+  }
+
+  &__card-info {
+    display: none;
+    animation-duration: 0.5s;
+    animation-name: fadeOutOpacity;
+  }
+
+  &__publisher {
+    grid-column: 12;
+    padding-right: 0.5rem;
+
+    h4 {
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 9px;
+      font-weight: bold;
+    }
+  }
+}
+
+.card-info {
+  &--active {
+    display: block;
+    animation-duration: 0.5s;
+    animation-name: fadeInOpacity;
+  }
+}
+
+.card {
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(#000, 0.1);
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutOpacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

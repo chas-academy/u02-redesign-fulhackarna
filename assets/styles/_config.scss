@@ -3,3 +3,17 @@
   padding: 0;
   margin: 0;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+$columns: 12;
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    grid-column-end: span #{$i};
+  }
+}
