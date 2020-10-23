@@ -1,42 +1,33 @@
 "use strict";
 
-const phoneInfo = document.getElementById("phone-info");
-const emailInfo = document.getElementById("email-info");
-const forumInfo = document.getElementById("forum-info");
-const pressInfo = document.getElementById("press-info");
+const linkNamesOne = ["phone", "email", "forum", "press"];
+const linkNamesTwo = ["share", "websites", "about"];
+const linkNamesThree = ["address", "youtube"];
+const infoElementsOne = getAllElementsByNames(linkNamesOne);
+const infoElementsTwo = getAllElementsByNames(linkNamesTwo);
+const infoElementsThree = getAllElementsByNames(linkNamesThree);
 
-document.getElementById("phone-link").onclick = e => {
-  e.preventDefault();
+addClickEventToElements(linkNamesOne, infoElementsOne);
+addClickEventToElements(linkNamesTwo, infoElementsTwo);
+addClickEventToElements(linkNamesThree, infoElementsThree);
 
-  emailInfo.classList.remove("card-info--active");
-  forumInfo.classList.remove("card-info--active");
-  pressInfo.classList.remove("card-info--active");
-  phoneInfo.classList.add("card-info--active");
-};
+function getAllElementsByNames(names) {
+  let elements = new Map();
+  names.forEach(name => {
+    let element = document.getElementById(`${name}-info`);
+    elements.set(name, element);
+  });
+  return elements;
+}
 
-document.getElementById("email-link").onclick = e => {
-  e.preventDefault();
-
-  emailInfo.classList.add("card-info--active");
-  forumInfo.classList.remove("card-info--active");
-  pressInfo.classList.remove("card-info--active");
-  phoneInfo.classList.remove("card-info--active");
-};
-
-document.getElementById("forum-link").onclick = e => {
-  e.preventDefault();
-
-  emailInfo.classList.remove("card-info--active");
-  forumInfo.classList.add("card-info--active");
-  pressInfo.classList.remove("card-info--active");
-  phoneInfo.classList.remove("card-info--active");
-};
-
-document.getElementById("press-link").onclick = e => {
-  e.preventDefault();
-
-  emailInfo.classList.remove("card-info--active");
-  forumInfo.classList.remove("card-info--active");
-  pressInfo.classList.add("card-info--active");
-  phoneInfo.classList.remove("card-info--active");
-};
+function addClickEventToElements(names, elements) {
+  names.forEach(name => {
+    document.getElementById(`${name}-link`).onclick = e => {
+      e.preventDefault();
+      elements.forEach(element => {
+        element.classList.remove("card-info--active");
+      });
+      elements.get(name).classList.add("card-info--active");
+    };
+  });
+}
