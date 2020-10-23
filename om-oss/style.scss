@@ -25,6 +25,8 @@ $smallText: 13px;
 }
 
 body {
+    @include flexbox(column, center, center);
+
     margin: 0;
     height: 100%;
     background-color: $backgroundColor;
@@ -192,6 +194,7 @@ footer {
 
         width: 600px;
         height: 510px;
+        margin-top: 20px;
         padding: 0;
     }
 
