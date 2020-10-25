@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Start - Myndigheten för yrkeshögskolan</title>
     <meta name="title" content="Start - Myndigheten för yrkeshögskolan" />
+    <script src="nav.js" defer></script>
     <meta
       name="description"
       content="Myndigheten för yrkeshögskolan bidrar till att försörja arbetslivet med rätt kompetens i rätt tid. Vårt huvuduppdrag är att ansvara för frågor som rör yrkeshögskolan i Sverige. Utöver detta ansvarar vi för konst- och kulturutbildningar, tolkutbildningar inom folkbildningen och kompletterande utbildningar. Vi är också ansvariga för att samordna en nationell struktur för validering av utbildning och yrkeskompetens, och är nationell samlingspunkt för EQF (European Qualifications Framework)."
@@ -22,57 +23,85 @@
       href="https://www.myh.se/assets/images/favicon.ico"
     />
     <link rel="stylesheet" href="assets/styles/main.css" />
+    <script src="https://kit.fontawesome.com/d7a96f613e.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <img src="assets/styles/navigation/Logo.svg" alt="logo">
-        <ul class="nav_options">
-          <li>
-            <a href = "#start">Start</a>
-          </li>
-          <li>
-            <a href = "#omOss">Om oss</a>
-          </li>
-          <li>
-            <a href = "#verksamhet">Verksamhet</a>
-          </li>
-          <li>
-            <a href = "#regelverk">Regelverk</a>
-          </li>
-          <li>
-            <a href = "#statistik">Statistik</a>
-          </li>
-          <li>
-            <a href = "#publikationer">Publikationer</a>
-          </li>
-          <li>
-            <a href = "#nyhetsrum">Nyhetsrum</a>
-          </li>
-          <li>
-            <a href = "#kontakt">Kontakt</a>
-          </li>
-          <li>
-            <a href = "#minaSidor">Mina sidor</a>
-          </li>
-          <li>
-            <img src="assets/styles/navigation/ic_insert_comment_24px.svg">
-          </li>
-          <li>
-            <img src="/assets/styles/navigation/ic_brightness_6_24px.svg">
-          </li>
-          <li>
-            <img src="assets/styles/navigation/ic_format_size_24px.svg">
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div class="container">
+      <header>
+          <nav class="normalNav" id="normalNav">
+              <img class="myhLogo" src="/navIMG/Logo.svg" alt="logo">
+              <button class="hamburger" id="hamburger">
+                  <i class="fas fa-bars"></i>
+              </button>
+              <ul class="nav_options" id="nav_options">
+                  <li class="link">
+                      <a href="#start">Start</a>
+                  </li>
+                  <li class="link">
+                      <a href="#omOss">Om oss</a>
+                  </li>
+                  <li class="link">
+                      <a href="#verksamhet">Verksamhet</a>
+                  </li>
+                  <li class="link">
+                      <a href="#regelverk">Regelverk</a>
+                  </li>
+                  <li class="link">
+                      <a href="#statistik">Statistik</a>
+                  </li>
+                  <li class="link">
+                      <a href="#publikationer">Publikationer</a>
+                  </li>
+                  <li class="link">
+                      <a href="#nyhetsrum">Nyhetsrum</a>
+                  </li>
+                  <li class="link">
+                      <a href="#kontakt">Kontakt</a>
+                  </li>
+                  <li class="link">
+                      <a href="#minaSidor"><span id="mina_sidor">Mina sidor</span></a>
+                  </li>
+                  <li class="nav_icon">
+                      <img src="/navIMG/ic_insert_comment_24px.svg">
+                  </li>
+                  <li class="nav_icon">
+                      <img src="/navIMG/ic_brightness_6_24px.svg">
+                  </li>
+                  <li class="nav_icon">
+                      <img src="/navIMG/ic_format_size_24px.svg">
+                  </li>
+                  <div class="responsiveIcons">
+                      <li class="responsiveIc">
+                          <img src="/navIMG/ic_insert_comment_24px.svg">
+                      </li>
+                      <li class="responsiveIc">
+                          <img src="/navIMG/ic_brightness_6_24px.svg">
+                      </li>
+                      <li class="responsiveIc">
+                          <img src="/navIMG/ic_format_size_24px.svg">
+                      </li>
+                  </div>
+              </ul>
+              
+      
+              <div class="search">
+                <form action="sok.html" method="GET">
+                  <input name="q" type="search" placeholder="Sökord" />
+                </form>
+                  <div class="searchIcon">
+                      <img src="/navIMG/ic_search_24px.svg">
+                  </div>
+              </div>
+          </nav>
+      </header>
     <main>
       Välkommen till u02-redesign-fulhackarna!
-      <form action="sok.html" method="GET">
-        <input name="q" type="search" placeholder="Sökord" />
-      </form>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, maxime praesentium modi illum quidem rem aliquid officiis a nisi veritatis, tempore qui id provident placeat! Vel libero inventore atque vero?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia provident harum quas hic beatae odio. Soluta odit explicabo eum, accusamus veritatis amet itaque id eos numquam cupiditate, unde sapiente.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex sint hic sequi, beatae ea, animi ipsum eum repellat facere mollitia, cumque molestiae perferendis! Sint, consequatur ducimus esse obcaecati enim suscipit?
+      
     </main>
     <footer></footer>
+    
   </body>
 </html>
