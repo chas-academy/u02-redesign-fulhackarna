@@ -1,8 +1,8 @@
-"use strict";
+'use strict';
 
-const linkNamesOne = ["phone", "email", "forum", "press"];
-const linkNamesTwo = ["share", "websites", "about"];
-const linkNamesThree = ["address", "youtube"];
+const linkNamesOne = ['phone', 'email', 'forum', 'press'];
+const linkNamesTwo = ['share', 'websites', 'about'];
+const linkNamesThree = ['address', 'youtube'];
 const infoElementsOne = getAllElementsByNames(linkNamesOne);
 const infoElementsTwo = getAllElementsByNames(linkNamesTwo);
 const infoElementsThree = getAllElementsByNames(linkNamesThree);
@@ -25,9 +25,9 @@ function addClickEventToElements(names, elements) {
     document.getElementById(`${name}-link`).onclick = e => {
       e.preventDefault();
       elements.forEach(element => {
-        element.classList.remove("card-info--active");
+        element.classList.remove('footer__card-info--active');
       });
-      elements.get(name).classList.add("card-info--active");
+      elements.get(name).classList.add('footer__card-info--active');
     };
   });
 }

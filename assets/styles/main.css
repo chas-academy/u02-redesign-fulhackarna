@@ -8,12 +8,50 @@
   background: #fff695;
 }
 .footer__grid {
+  margin: auto;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
+  column-gap: 1rem;
 }
 .footer__item {
-  margin: 2rem 4rem;
+  margin: 2rem 4rem 1rem 4rem;
+}
+.footer__item--col-1 {
+  grid-column: span 1;
+}
+.footer__item--col-2 {
+  grid-column: span 2;
+}
+.footer__item--col-3 {
+  grid-column: span 3;
+}
+.footer__item--col-4 {
+  grid-column: span 4;
+}
+.footer__item--col-5 {
+  grid-column: span 5;
+}
+.footer__item--col-6 {
+  grid-column: span 6;
+}
+.footer__item--col-7 {
+  grid-column: span 7;
+}
+.footer__item--col-8 {
+  grid-column: span 8;
+}
+.footer__item--col-9 {
+  grid-column: span 9;
+}
+.footer__item--col-10 {
+  grid-column: span 10;
+}
+.footer__item--col-11 {
+  grid-column: span 11;
+}
+.footer__item--col-12 {
+  grid-column: span 12;
 }
 .footer__links {
   display: flex;
@@ -23,18 +61,27 @@
 .footer__link {
   color: #656565;
   font-size: 20px;
-  font-weight: bolder;
+  font-weight: bold;
   text-decoration: none;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .footer__link:visited {
   color: #656565;
+}
+.footer__link:hover, .footer__link:focus, .footer__link:active {
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
 }
 .footer__card {
   height: 150px;
   overflow: hidden;
   padding: 1rem;
-  margin-top: 0.5rem;
-  background: #fffce2;
+  margin-top: 1.5rem;
+  background: rgba(255, 255, 255, 0.59);
   border-radius: 20px;
 }
 .footer__card-info {
@@ -42,8 +89,12 @@
   animation-duration: 0.5s;
   animation-name: fadeOutOpacity;
 }
+.footer__card-info--active {
+  display: block;
+  animation-duration: 0.5s;
+  animation-name: fadeInOpacity;
+}
 .footer__publisher {
-  grid-column: 12;
   padding-right: 0.5rem;
 }
 .footer__publisher h4 {
@@ -51,69 +102,7 @@
   font-weight: bold;
 }
 .footer__publisher p {
-  font-size: 9px;
-  font-weight: bold;
-}
-
-.card-info--active {
-  display: block;
-  animation-duration: 0.5s;
-  animation-name: fadeInOpacity;
-}
-
-.card {
-  padding: 1rem;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.footer__col-1 {
-  grid-column: span 1;
-}
-
-.footer__col-2 {
-  grid-column: span 2;
-}
-
-.footer__col-3 {
-  grid-column: span 3;
-}
-
-.footer__col-4 {
-  grid-column: span 4;
-}
-
-.footer__col-5 {
-  grid-column: span 5;
-}
-
-.footer__col-6 {
-  grid-column: span 6;
-}
-
-.footer__col-7 {
-  grid-column: span 7;
-}
-
-.footer__col-8 {
-  grid-column: span 8;
-}
-
-.footer__col-9 {
-  grid-column: span 9;
-}
-
-.footer__col-10 {
-  grid-column: span 10;
-}
-
-.footer__col-11 {
-  grid-column: span 11;
-}
-
-.footer__col-12 {
-  grid-column: span 12;
+  font-size: 12px;
 }
 
 @keyframes fadeInOpacity {

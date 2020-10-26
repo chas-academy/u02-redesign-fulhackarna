@@ -1,17 +1,26 @@
 $background-color: #fff695;
+$link-color: #656565;
 $columns: 12;
 
 .footer {
   background: $background-color;
 
   &__grid {
+    margin: auto;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 1rem;
+    column-gap: 1rem;
   }
 
   &__item {
-    margin: 2rem 4rem;
+    margin: 2rem 4rem 1rem 4rem;
+
+    @for $i from 1 through $columns {
+      &--col-#{$i} {
+        grid-column: span #{$i};
+      }
+    }
   }
 
   &__links {
@@ -21,13 +30,25 @@ $columns: 12;
   }
 
   &__link {
-    color: #656565;
+    color: $link-color;
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: bold;
     text-decoration: none;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(#000, 0.1);
 
     &:visited {
-      color: #656565;
+      color: $link-color;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #000;
+      text-decoration: underline;
+      cursor: pointer;
     }
   }
 
@@ -35,8 +56,8 @@ $columns: 12;
     height: 150px;
     overflow: hidden;
     padding: 1rem;
-    margin-top: 0.5rem;
-    background: lighten($background-color, 15%);
+    margin-top: 1.5rem;
+    background: rgba(#fff, 0.59);
     border-radius: 20px;
   }
 
@@ -44,10 +65,16 @@ $columns: 12;
     display: none;
     animation-duration: 0.5s;
     animation-name: fadeOutOpacity;
+
+    &--active {
+      display: block;
+      animation-duration: 0.5s;
+      animation-name: fadeInOpacity;
+    }
   }
 
   &__publisher {
-    grid-column: 12;
+    //grid-column: 12;
     padding-right: 0.5rem;
 
     h4 {
@@ -56,30 +83,8 @@ $columns: 12;
     }
 
     p {
-      font-size: 9px;
-      font-weight: bold;
+      font-size: 12px;
     }
-  }
-}
-
-.card-info {
-  &--active {
-    display: block;
-    animation-duration: 0.5s;
-    animation-name: fadeInOpacity;
-  }
-}
-
-.card {
-  padding: 1rem;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(#000, 0.1);
-}
-
-@for $i from 1 through $columns {
-  .footer__col-#{$i} {
-    grid-column: span #{$i};
   }
 }
 
