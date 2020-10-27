@@ -393,7 +393,7 @@ footer {
     display: block;
   }
   .main-panel .card.expanded {
-    height: 1050px;
+    height: 800px;
     overflow: hidden;
   }
   .main-panel .card.expanded .slide-btn {
@@ -419,6 +419,42 @@ footer {
   }
   .aside-menu {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main-panel .card.expanded {
+    height: 950px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .main-panel .card.expanded {
+    height: 1050px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .main-panel .card.expanded {
+    height: 1150px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main-panel .card.expanded {
+    height: 1250px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .main-panel .card.expanded {
+    height: 1350px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .main-panel .card.expanded {
+    height: 1450px;
   }
 }
 /*# sourceMappingURL=style.css.map */
