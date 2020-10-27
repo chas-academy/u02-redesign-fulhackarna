@@ -21,6 +21,10 @@ input[type="search"] {
     margin-top: 30px;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   article {
     border-top: 1px solid black;
     cursor: pointer;
@@ -39,8 +43,13 @@ input[type="search"] {
       }
     }
 
+    .article-text {
+      color: black;
+    }
+
     time {
       opacity: 0.5;
+      color: black;
     }
   }
 }
@@ -59,6 +68,15 @@ input[type="search"] {
     background: lightgrey;
     padding: 10px;
     cursor: pointer;
+
+    a {
+      color: inherit;
+    }
+
+    &.current-page {
+      background: rgb(65, 141, 255);
+      color: white;
+    }
 
     &:hover {
       background: rgb(184, 184, 184);
