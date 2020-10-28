@@ -1,43 +1,51 @@
 $background-color: #fff695;
 $link-color: #656565;
-$columns: 12;
+$link-background-color: #f1f5f7;
+$card-background-color: white;
 
 .footer {
   background: $background-color;
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
 
   &__grid {
     margin: auto;
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     column-gap: 1rem;
   }
 
   &__item {
-    margin: 2rem 4rem 1rem 4rem;
-
-    @for $i from 1 through $columns {
-      &--col-#{$i} {
-        grid-column: span #{$i};
-      }
-    }
+    margin-top: 2rem;
   }
 
   &__links {
     display: flex;
-    justify-content: space-between;
     list-style-type: none;
+
+    > .footer__link + .footer__link {
+      margin-left: 1rem;
+    }
   }
 
   &__link {
+    flex: 1 1 auto;
     color: $link-color;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    text-align: center;
     padding: 1rem;
-    background: #fff;
+    background: $card-background-color;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(#000, 0.1);
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     &:visited {
       color: $link-color;
@@ -47,6 +55,7 @@ $columns: 12;
     &:focus,
     &:active {
       color: #000;
+      background: $link-background-color;
       text-decoration: underline;
       cursor: pointer;
     }
@@ -57,7 +66,7 @@ $columns: 12;
     overflow: hidden;
     padding: 1rem;
     margin-top: 1.5rem;
-    background: rgba(#fff, 0.59);
+    background: rgba($card-background-color, 0.59);
     border-radius: 20px;
   }
 
@@ -71,11 +80,38 @@ $columns: 12;
       animation-duration: 0.5s;
       animation-name: fadeInOpacity;
     }
+
+    a {
+      color: darken($link-color, 25%);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:visited {
+      color: darken($link-color, 25%);
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+      color: #000;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    h4 {
+      font-size: 1.1rem;
+    }
   }
 
   &__publisher {
-    //grid-column: 12;
+    padding-top: 0.5rem;
     padding-right: 0.5rem;
+    float: right;
 
     h4 {
       font-size: 13px;
@@ -85,6 +121,24 @@ $columns: 12;
     p {
       font-size: 12px;
     }
+  }
+}
+
+.social-icons {
+  a {
+    color: $link-color;
+  }
+
+  a:hover,
+  a:focus {
+    color: black;
+  }
+
+  .social-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 3rem;
+    padding: 0.5rem 0.5rem;
   }
 }
 
