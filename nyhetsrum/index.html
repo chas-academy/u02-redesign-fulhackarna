@@ -26,9 +26,314 @@
 
     <main>
         <section class="main-panel">
-            <div class="card">
+
+            <div class="selector-card">
+                <div class="checkboxes" id="checkbox-width1">
+                    <input type="checkbox" id="checkbox1" name="check" onclick="onlyOne(this)" checked>
+                    <label for="checkbox1">
+                        <div>
+                            <p>Aktuellt</p>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="checkboxes" id="checkbox-width2">
+                    <input type="checkbox" id="checkbox2" name="check" onclick="onlyOne(this)">
+                    <label for="checkbox2">
+                        <div>
+                            <p>Press</p>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="checkboxes" id="checkbox-width3">
+                    <input type="checkbox" id="checkbox3" name="check" onclick="onlyOne(this)">
+                    <label for="checkbox3">
+                        <div>
+                            <p>Kalender</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="card" id="card">
                 <h2>Main panel</h2>
                 <!-- placeholder -->
+                <div class="card-container">
+                    <img src="images/GDHarOrdet2020.jpg" alt="pdf cover">
+                    <div class="info">
+                        <h3>GD har ordet - Många frågor blir det… Tack för input!</h3>
+                        <p><time>26 oktober 2020
+                            </time>I min förra text efterlyste jag er input om ansökningarna, tack för att ni har hört
+                            av er. Denna gång kommenterar jag även det jag skrev om förändringar inför nästa års
+                            ansökan.</p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/ContentSliderFlerijobbefterYH.png" alt="pdf cover">
+                    <div class="info">
+                        <h3>Kvalitetskriterier för validering - yrkeshögskoleutbildning, konst- och kulturutbildningar
+                            och tolkutbildning inom folkbildningen</h3>
+                        <p><time>Utgiven: 2020-06-09
+                            </time>Myndigheten har tagit fram kvalitetskriterier för arbetet med validering inom de
+                            utbildningsformer som... </p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/distansstod_nyhet.jpg" alt="pdf cover">
+                    <div class="info">
+                        <h3>Områdesanalys hälso- och sjukvård samt socialt arbete</h3>
+                        <p><time>Utgiven: 2020-05-19
+                            </time>Områdesanalysen är framtagen av Myndigheten för yrkeshögskolan som ett underlag för
+                            de handläggare som... </p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf" alt="pdf cover">
+                    <div class="info">
+                        <h3>Handbok för tillträde till yrkeshögskolan - 2020</h3>
+                        <p><time>Utgiven: 2020-07-10 </time>Denna handbok vänder sig i första hand till de som
+                            bedriver
+                            yrkeshögskoleutbildning och behöver stöd... </p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/Kvalitetskriterier_validering.pdf" alt="pdf cover">
+                    <div class="info">
+                        <h3>Kvalitetskriterier för validering - yrkeshögskoleutbildning, konst- och
+                            kulturutbildningar
+                            och tolkutbildning inom folkbildningen</h3>
+                        <p><time>Utgiven: 2020-06-09
+                            </time>Myndigheten har tagit fram kvalitetskriterier för arbetet med validering inom
+                            de
+                            utbildningsformer som... </p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/Analys_HalsoSjukvard2020.pdf" alt="pdf cover">
+                    <div class="info">
+                        <h3>Områdesanalys hälso- och sjukvård samt socialt arbete</h3>
+                        <p><time>Utgiven: 2020-05-19
+                            </time>Områdesanalysen är framtagen av Myndigheten för yrkeshögskolan som ett
+                            underlag för
+                            de handläggare som... </p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf" alt="pdf cover">
+                    <div class="info">
+                        <h3>Handbok för tillträde till yrkeshögskolan - 2020</h3>
+                        <p><time>Utgiven: 2020-07-10 </time>Denna handbok vänder sig i första hand till de som
+                            bedriver
+                            yrkeshögskoleutbildning och behöver stöd... </p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/Kvalitetskriterier_validering.pdf" alt="pdf cover">
+                    <div class="info">
+                        <h3>Kvalitetskriterier för validering - yrkeshögskoleutbildning, konst- och
+                            kulturutbildningar
+                            och tolkutbildning inom folkbildningen</h3>
+                        <p><time>Utgiven: 2020-06-09
+                            </time>Myndigheten har tagit fram kvalitetskriterier för arbetet med validering inom
+                            de
+                            utbildningsformer som... </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="card2">
+                <h2>Main panel</h2>
+                <!-- placeholder -->
+                <div class="card-container">
+                    <img src="images/Analys_HalsoSjukvard2020.pdf" alt="pdf cover">
+                    <div class="info">
+                        <h3>Storsatsning på data/IT när yrkeshögskolan växer</h3>
+                        <p><time>29 januari 2019
+                            </time>Idag presenterar Myndigheten för yrkeshögskolan de nya utbildningar som beviljats att
+                            starta från och med hösten 2019. Av de närmare 500 nya YH-utbildningarna som beviljats är
+                            var femte inom data/IT.</p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/ContentSliderFlerijobbefterYH.png" alt="pdf cover">
+                    <div class="info">
+                        <h3>Kvalitetskriterier för validering - yrkeshögskoleutbildning, konst- och kulturutbildningar
+                            och tolkutbildning inom folkbildningen</h3>
+                        <p><time>Utgiven: 2020-06-09
+                            </time>Myndigheten har tagit fram kvalitetskriterier för arbetet med validering inom de
+                            utbildningsformer som... </p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/distansstod_nyhet.jpg" alt="pdf cover">
+                    <div class="info">
+                        <h3>Områdesanalys hälso- och sjukvård samt socialt arbete</h3>
+                        <p><time>Utgiven: 2020-05-19
+                            </time>Områdesanalysen är framtagen av Myndigheten för yrkeshögskolan som ett underlag för
+                            de handläggare som... </p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf" alt="pdf cover">
+                    <div class="info">
+                        <h3>Handbok för tillträde till yrkeshögskolan - 2020</h3>
+                        <p><time>Utgiven: 2020-07-10 </time>Denna handbok vänder sig i första hand till de som
+                            bedriver
+                            yrkeshögskoleutbildning och behöver stöd... </p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/Kvalitetskriterier_validering.pdf" alt="pdf cover">
+                    <div class="info">
+                        <h3>Kvalitetskriterier för validering - yrkeshögskoleutbildning, konst- och
+                            kulturutbildningar
+                            och tolkutbildning inom folkbildningen</h3>
+                        <p><time>Utgiven: 2020-06-09
+                            </time>Myndigheten har tagit fram kvalitetskriterier för arbetet med validering inom
+                            de
+                            utbildningsformer som... </p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/Analys_HalsoSjukvard2020.pdf" alt="pdf cover">
+                    <div class="info">
+                        <h3>Områdesanalys hälso- och sjukvård samt socialt arbete</h3>
+                        <p><time>Utgiven: 2020-05-19
+                            </time>Områdesanalysen är framtagen av Myndigheten för yrkeshögskolan som ett
+                            underlag för
+                            de handläggare som... </p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf" alt="pdf cover">
+                    <div class="info">
+                        <h3>Handbok för tillträde till yrkeshögskolan - 2020</h3>
+                        <p><time>Utgiven: 2020-07-10 </time>Denna handbok vänder sig i första hand till de som
+                            bedriver
+                            yrkeshögskoleutbildning och behöver stöd... </p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/Kvalitetskriterier_validering.pdf" alt="pdf cover">
+                    <div class="info">
+                        <h3>Kvalitetskriterier för validering - yrkeshögskoleutbildning, konst- och
+                            kulturutbildningar
+                            och tolkutbildning inom folkbildningen</h3>
+                        <p><time>Utgiven: 2020-06-09
+                            </time>Myndigheten har tagit fram kvalitetskriterier för arbetet med validering inom
+                            de
+                            utbildningsformer som... </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="card3">
+                <h2>Main panel</h2>
+                <!-- placeholder -->
+                <div class="card-container">
+                    <img src="images/Analys_HalsoSjukvard2020.pdf" alt="pdf cover">
+                    <div class="info">
+                        <h3>Storsatsning på data/IT när yrkeshögskolan växer</h3>
+                        <p><time>29 januari 2019
+                            </time>Idag presenterar Myndigheten för yrkeshögskolan de nya utbildningar som beviljats
+                            att
+                            starta från och med hösten 2019. Av de närmare 500 nya YH-utbildningarna som beviljats är
+                            var femte inom data/IT.</p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/ContentSliderFlerijobbefterYH.png" alt="pdf cover">
+                    <div class="info">
+                        <h3>Kvalitetskriterier för validering - yrkeshögskoleutbildning, konst- och kulturutbildningar
+                            och tolkutbildning inom folkbildningen</h3>
+                        <p><time>Utgiven: 2020-06-09
+                            </time>Myndigheten har tagit fram kvalitetskriterier för arbetet med validering inom de
+                            utbildningsformer som... </p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/distansstod_nyhet.jpg" alt="pdf cover">
+                    <div class="info">
+                        <h3>Områdesanalys hälso- och sjukvård samt socialt arbete</h3>
+                        <p><time>Utgiven: 2020-05-19
+                            </time>Områdesanalysen är framtagen av Myndigheten för yrkeshögskolan som ett underlag för
+                            de handläggare som... </p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf" alt="pdf cover">
+                    <div class="info">
+                        <h3>Handbok för tillträde till yrkeshögskolan - 2020</h3>
+                        <p><time>Utgiven: 2020-07-10 </time>Denna handbok vänder sig i första hand till de som
+                            bedriver
+                            yrkeshögskoleutbildning och behöver stöd... </p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/Kvalitetskriterier_validering.pdf" alt="pdf cover">
+                    <div class="info">
+                        <h3>Kvalitetskriterier för validering - yrkeshögskoleutbildning, konst- och
+                            kulturutbildningar
+                            och tolkutbildning inom folkbildningen</h3>
+                        <p><time>Utgiven: 2020-06-09
+                            </time>Myndigheten har tagit fram kvalitetskriterier för arbetet med validering inom
+                            de
+                            utbildningsformer som... </p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/Analys_HalsoSjukvard2020.pdf" alt="pdf cover">
+                    <div class="info">
+                        <h3>Områdesanalys hälso- och sjukvård samt socialt arbete</h3>
+                        <p><time>Utgiven: 2020-05-19
+                            </time>Områdesanalysen är framtagen av Myndigheten för yrkeshögskolan som ett
+                            underlag för
+                            de handläggare som... </p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf" alt="pdf cover">
+                    <div class="info">
+                        <h3>Handbok för tillträde till yrkeshögskolan - 2020</h3>
+                        <p><time>Utgiven: 2020-07-10 </time>Denna handbok vänder sig i första hand till de som
+                            bedriver
+                            yrkeshögskoleutbildning och behöver stöd... </p>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="images/Kvalitetskriterier_validering.pdf" alt="pdf cover">
+                    <div class="info">
+                        <h3>Kvalitetskriterier för validering - yrkeshögskoleutbildning, konst- och
+                            kulturutbildningar
+                            och tolkutbildning inom folkbildningen</h3>
+                        <p><time>Utgiven: 2020-06-09
+                            </time>Myndigheten har tagit fram kvalitetskriterier för arbetet med validering inom
+                            de
+                            utbildningsformer som... </p>
+                    </div>
+                </div>
             </div>
             <button>Visa mer</button>
         </section>
@@ -110,6 +415,7 @@
     </footer>
 
     <script src="/assets/javascript/parallax.js"></script>
+    <script src="/assets/javascript/nyhetsrum-card.js"></script>
 </body>
 
 </html>

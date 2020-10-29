@@ -74,38 +74,128 @@ main {
     width: 100%;
     padding-left: 2.5%;
 
+    .selector-card {
+        width: 1050px;
+        height: 130px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        #checkbox1,
+        #checkbox2,
+        #checkbox3 {
+            display: none;
+        }
+
+        .checkboxes {
+            height: inherit;
+            transition: width 0.3s;
+            padding: 0 0 20px 30px;
+
+            div {
+                width: 100%;
+                height: 100px;
+                background-color: $white;
+                border-radius: 20px;
+                box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    color: $darkGray;
+                    text-decoration: none;
+                    font-family: 'Roboto',
+                        sans-serif;
+                    font-weight: 600;
+                    font-size: $largeText;
+                }
+            }
+        }
+    }
+
     .card {
         padding: 30px;
         width: 1050px;
-        height: 800px;
         background-color: $white;
         border-radius: 20px;
         box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
+        display: block;
 
         h2 {
             display: none;
         }
-    }
 
-    button {
-        margin: 40px 0 40px 0;
-        width: 300px;
-        height: 80px;
-        border-radius: 30px;
-        background-color: $white;
-        color: $darkGray;
-        font-family: 'Roboto',
-            sans-serif;
-        font-size: $normalText;
-        font-weight: 800;
-        letter-spacing: 0.7px;
-        cursor: pointer;
-        box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
-        border: none;
-        outline: none;
+        .card-container {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 50px 0;
 
+            .info {
+                width: 100%;
+            }
+
+            img {
+                position: absolute;
+                width: 100px;
+                object-fit: contain;
+            }
+
+            h3 {
+                color: $darkGray;
+                text-decoration: none;
+                font-family: 'Roboto',
+                    sans-serif;
+                font-weight: 600;
+                font-size: $largeText;
+                width: 70%;
+            }
+
+            p {
+                color: $gray;
+                text-decoration: none;
+                font-family: 'Roboto',
+                    sans-serif;
+                font-weight: 500;
+                font-size: $normalText;
+                width: 80%;
+                margin-top: 8px;
+            }
+
+            time {
+                color: $gray;
+                text-decoration: none;
+                font-family: 'Roboto',
+                    sans-serif;
+                font-weight: 600;
+                font-size: $normalText;
+            }
+        }
     }
 }
+
+button {
+    margin: 40px 0 40px 0;
+    width: 300px;
+    height: 80px;
+    border-radius: 30px;
+    background-color: $white;
+    color: $darkGray;
+    font-family: 'Roboto',
+        sans-serif;
+    font-size: $normalText;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+
+}
+
 
 .side-menus {
     @include flexbox(column, space-between, center);
@@ -306,6 +396,11 @@ footer {
             width: 80%;
             margin-left: 0;
         }
+
+        .selector-card {
+            width: 90%;
+            padding-right: 3%;
+        }
     }
 
     .side-menus {
@@ -343,9 +438,40 @@ footer {
     .main-panel {
         @include flexbox(column, none, center);
 
+        .selector-card {
+            width: 250%;
+            height: 280px;
+            flex-direction: column;
+            padding-right: 5%;
+
+            .checkboxes {
+
+                div {
+                    height: 70px;
+
+                    p {
+                        font-size: $normalText;
+                    }
+                }
+            }
+        }
+
         .card {
-            height: 700px;
             width: 90%;
+
+            .card-container {
+                padding: 30px 0;
+
+                .info {
+                    width: 70%;
+                    margin-right: 30%;
+
+                }
+
+                h3 {
+                    font-size: $normalText;
+                }
+            }
         }
     }
 
