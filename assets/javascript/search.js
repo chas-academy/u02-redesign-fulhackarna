@@ -5,6 +5,7 @@ const page = urlParams.get("p") || undefined;
 
 // The render container will recieve all elements that are rendered upon recieving the result from the search engine
 const RENDER_CONTAINER = document.querySelector(".search-results");
+const PAGINATION_CONTAINER = document.querySelector(".pagination-results");
 
 // Only perform the request if a searhc query was provided
 if (query) {
@@ -37,12 +38,14 @@ async function search(keyword) {
   );
 
   fetch(
-    `https://api.allorigins.win/get?url=${encodeURIComponent(
+      `https://api.allorigins.win/get?url=${encodeURIComponent(
       `https://www.myh.se/Sok/?q=${keyword}${page ? "&p=2" : ""}`
     )}`.trim()
-  )
+    )
     .then((response) => response.json())
-    .then(({ contents: html }) => {
+    .then(({
+      contents: html
+    }) => {
       if (html) {
         // Parse text response into HTML
         var doc = Parser.parseFromString(html, "text/html");
@@ -63,14 +66,17 @@ async function search(keyword) {
         }
 
         // Parse amount of hits and query
-        const [
-          { innerHTML: hitAmount },
-          { innerHTML: query },
+        const [{
+            innerHTML: hitAmount
+          },
+          {
+            innerHTML: query
+          },
         ] = searchResults.querySelectorAll(".main-search-meta strong");
         const resultMeta = {
           hitAmount,
           query,
-          pages: Math.ceil(hitAmount / 20),
+          pages: 10,
         };
 
         // Grab resulting articles
@@ -97,7 +103,11 @@ async function search(keyword) {
         pagination.className = "pagination";
 
         // Render LI elements for each search result.
-        resultArray.forEach(({ heading, content, date }, index) => {
+        resultArray.forEach(({
+          heading,
+          content,
+          date
+        }, index) => {
           let li = Parser.parseFromString(
             `
           <li class="article-item">
@@ -139,7 +149,7 @@ async function search(keyword) {
           list,
           document.querySelector(".lds-default")
         );
-        RENDER_CONTAINER.appendChild(pagination);
+        PAGINATION_CONTAINER.appendChild(pagination);
 
         // Log info for debug purposes
         console.log({

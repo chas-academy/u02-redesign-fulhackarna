@@ -2,7 +2,7 @@
            const element = document.querySelectorAll('.parallax'); // Grab element with a classname of "parallax"
 
            pageWidth = document.documentElement.clientWidth; // Get client page width
-           if (pageWidth >= 1500) { // Parallax min width
+           if (pageWidth >= 1484) { // Parallax min width
                parallaxSwitch = 1;
            } else {
                parallaxSwitch = 0 // Don't execute parallax if screen is smaller than minimum
