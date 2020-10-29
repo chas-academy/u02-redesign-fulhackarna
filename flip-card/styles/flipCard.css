@@ -1,0 +1,179 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  height: 400px;
+  width: 370px;
+  margin: 20px;
+}
+
+.front,
+.back {
+  background-size: cover;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  background-position: center;
+  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  text-align: center;
+  height: 400px;
+  width: 370px;
+  border-radius: 20px;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.back {
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 370px;
+}
+
+/*Text 3D*/
+.inner {
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+          transform: translateY(-50%) translateZ(60px) scale(0.94);
+  top: 50%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 1px solid transparent;
+  -webkit-perspective: inherit;
+          perspective: inherit;
+  z-index: 2;
+}
+
+.bedrivaUtbildning {
+  background: -webkit-gradient(linear, left top, left bottom, from(#94a7e814), to(#256af314));
+  background: linear-gradient(180deg, #94a7e814 0%, #256af314 100%);
+}
+
+.digSomStuderar {
+  background: linear-gradient(159.5deg, #e8949414 13.6%, #e6161614 92.17%);
+}
+
+.foretagOrganisationer {
+  background: linear-gradient(159.5deg, #fffdcc14 13.6%, #f1d64e14 92.17%);
+}
+
+#image {
+  -webkit-transform: translateZ(30px) scale(0.97);
+          transform: translateZ(30px) scale(0.97);
+  z-index: 2;
+  border-radius: 13% 13% 0 0;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+/*kort rotationen*/
+.container .back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container .front {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container:hover .back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container:hover .front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+/*framtext*/
+.front .inner h2 {
+  font-size: 18px;
+  margin-bottom: 2rem;
+  position: relative;
+  font-family: "Roboto";
+  font-weight: bolder;
+  width: 196px;
+  height: 48px;
+  top: 50px;
+  text-align: left;
+  line-height: 24px;
+}
+
+/*under rubrik*/
+.front .inner p {
+  color: #656565;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: medium;
+  width: 283;
+  height: 80;
+  text-align: left;
+  top: 30px;
+  position: relative;
+  line-height: 20px;
+}
+
+/*Länkar */
+.back .inner ul {
+  list-style: none;
+}
+
+.back .inner ul li a {
+  text-decoration: none;
+  line-height: 60px;
+  font-size: 20px;
+  color: #656565;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+.back .inner ul li a:after {
+  content: "";
+  position: absolute;
+  left: 12.5%;
+  display: inline-block;
+  height: 1em;
+  width: 75%;
+  border-bottom: 2px solid;
+  margin-top: 30px;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s, -webkit-transform 0.25s;
+  transition: opacity 0.25s, -webkit-transform 0.25s;
+  transition: opacity 0.25s, transform 0.25s;
+  transition: opacity 0.25s, transform 0.25s, -webkit-transform 0.25s;
+  -webkit-transform: scale(0, 1) translateY(50%);
+          transform: scale(0, 1) translateY(50%);
+}
+
+.back .inner ul li a:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+/*# sourceMappingURL=flipCard.css.map */
