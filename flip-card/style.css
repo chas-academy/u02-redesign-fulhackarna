@@ -7,8 +7,9 @@
 .container {
   transform-style: preserve-3d;
   perspective: 1000px;
-  height: 374px;
-  width: 342px;
+  height: 400px;
+  width: 370px;
+  margin: 20px;
 }
 
 .front,
@@ -18,8 +19,8 @@
   background-position: center;
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   text-align: center;
-  height: 374px;
-  width: 342px;
+  height: 400px;
+  width: 370px;
   border-radius: 20px;
   color: black;
   font-size: 1.5rem;
@@ -30,8 +31,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 374px;
-  width: 341px;
+  height: 400px;
+  width: 370px;
 }
 
 /*Text 3D*/
@@ -48,9 +49,14 @@
   z-index: 2;
 }
 
+.bedrivaUtbildning {
+  background: linear-gradient(159.5deg, #fffdcc 13.6%, #f1d64e 92.17%);
+  opacity: 0.2;
+}
+
 #image {
   transform: translateZ(30px) scale(0.97);
-  background-color: rgb(226, 238, 255);
+  /* background-color: rgb(226, 238, 255); */
   z-index: 1;
   border-radius: 13% 13% 0 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
