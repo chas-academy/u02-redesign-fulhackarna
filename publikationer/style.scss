@@ -78,7 +78,6 @@ main {
     .card {
         padding: 30px;
         width: 1050px;
-        height: 1700px;
         background-color: $white;
         border-radius: 20px;
         box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
@@ -99,18 +98,18 @@ main {
             }
 
             h3 {
-                margin-left: 120px;
+                padding-left: 120px;
                 color: $darkGray;
                 text-decoration: none;
                 font-family: 'Roboto',
                     sans-serif;
                 font-weight: 600;
                 font-size: $largeText;
-                width: 90%;
+                width: 100%;
             }
 
             p {
-                margin-left: 120px;
+                padding-left: 120px;
                 color: $gray;
                 text-decoration: none;
                 font-family: 'Roboto',
@@ -123,6 +122,7 @@ main {
 
             .pdf-title {
                 padding-top: 30px;
+                cursor: pointer;
 
                 svg {
                     margin-right: 10px;
@@ -305,9 +305,12 @@ footer {
         padding: 0;
 
         .card {
-            height: 1900px;
             width: 80%;
             margin-left: 0;
+
+            .card-container {
+                width: 100%;
+            }
         }
 
         .page-selector {
@@ -374,7 +377,6 @@ footer {
                 }
             }
         }
-
     }
 }
 
@@ -400,7 +402,6 @@ footer {
         @include flexbox(column, none, center);
 
         .card {
-            height: 1830px;
             width: 90%;
         }
 
@@ -463,28 +464,16 @@ footer {
 }
 
 @media screen and (max-width: 750px) {
-
     .main-panel {
         .card {
-            height: 1900px;
-        }
-    }
-}
+            .card-container {
 
-@media screen and (max-width: 650px) {
+                padding: 10px;
 
-    .main-panel {
-        .card {
-            height: 2200px;
-        }
-    }
-}
-
-@media screen and (max-width: 420px) {
-
-    .main-panel {
-        .card {
-            height: 2500px;
+                h3 {
+                    font-size: $normalText;
+                }
+            }
         }
     }
 }
