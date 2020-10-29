@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sök - Myndigheten för yrkeshögskolan</title>
+  <meta name="title" content="Sök - Myndigheten för yrkeshögskolan" />
+  <meta name="description"
+    content="Myndigheten för yrkeshögskolan bidrar till att försörja arbetslivet med rätt kompetens i rätt tid. Vårt huvuduppdrag är att ansvara för frågor som rör yrkeshögskolan i Sverige. Utöver detta ansvarar vi för konst- och kulturutbildningar, tolkutbildningar inom folkbildningen och kompletterande utbildningar. Vi är också ansvariga för att samordna en nationell struktur för validering av utbildning och yrkeskompetens, och är nationell samlingspunkt för EQF (European Qualifications Framework)." />
+  <meta name="keywords" content="Myndigheten för yrkeshögskolan, utbildningar, yrkeshögskolan, sök" />
+  <meta name="robots" content="index, follow" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="language" content="Swedish" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.myh.se/assets/images/favicon.ico" />
+
+
+  <link rel="stylesheet" href="/assets/styles/main.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body>
+  <header></header>
+
+  <h1>Sök på myh.se</h1>
+  <div class="text-block">
+    <h2>Skriv in din sökning
+    </h2>
+  </div>
+
+  <form action="sok.html" method="GET">
+    <input name="q" type="search" placeholder="Sökord" />
+  </form>
+
+  <main>
+    <section class="main-panel">
+      <div class="card">
+        <h3>Sökresultat</h3>
+
+        <div class="search-results"></div>
+      </div>
+
+      <div class="page-selector">
+        <div class="pagination-results"></div>
+      </div>
+    </section>
+
+    <section class="side-menus parallax" data-speed="0.5">
+      <h2>Side panel</h2>
+
+      <input class="filter-checkbox" type="checkbox" id="check" />
+
+      <label for="check" class="filter-btn">
+        <aside class="aside-menu">
+          <p>Filter</p>
+        </aside>
+
+      </label>
+
+      <aside class="aside-drop-menu">
+        <div>
+          <p>Visa träffar av publikationer</p>
+          <ul>
+            <li>Alla publikationstyper</li>
+            <li>Rapporter</li>
+            <li>Återrapportering av regeringsuppdrag</li>
+            <li>Informationsmaterial</li>
+            <li>Årsredovisingar</li>
+          </ul>
+        </div>
+        <div>
+          <p>Visa träffar från verksamhetsområde</p>
+          <ul>
+            <li>Alla områden</li>
+            <li>Yrkeshögskolan</li>
+            <li>Konst- och kulturutbildningar</li>
+            <li>Tolkutbildningar</li>
+            <li>Utbildningar med endast tillsyn</li>
+            <li>validering</li>
+            <li>SeQF</li>
+          </ul>
+        </div>
+        <div>
+          <p>Visa träffar från år</p>
+          <ul>
+            <li>Alla år</li>
+            <li>2020</li>
+            <li>2019</li>
+            <li>2018</li>
+            <li>2017</li>
+            <li>2016</li>
+            <li>2015</li>
+            <li>2014</li>
+            <li>2013</li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+  </main>
+
+  <footer>
+  </footer>
+
+  <script src="/assets/javascript/parallax.js"></script>
+  <script src="/assets/javascript/search.js"></script>
+</body>
+
+</html>
