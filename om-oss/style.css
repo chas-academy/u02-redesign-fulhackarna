@@ -45,6 +45,7 @@ body h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 600;
+  letter-spacing: 0.7px;
 }
 
 main {
@@ -58,17 +59,36 @@ main {
       justify-content: space-around;
 }
 
-.card {
-  width: 1250px;
-  height: 1200px;
-  margin-left: 5%;
+.main-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  width: 100%;
+  padding-left: 2.5%;
+}
+
+.main-panel .card {
+  padding: 30px;
+  width: 1050px;
+  height: 800px;
+  margin-bottom: 30px;
   background-color: white;
   border-radius: 20px;
   -webkit-box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
           box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
 }
 
-.card h2 {
+.main-panel .card h2 {
   display: none;
 }
 
@@ -86,8 +106,8 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 400px;
-  height: 630px;
+  width: 450px;
+  height: 620px;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -186,12 +206,6 @@ footer {
   background-color: lightyellow;
 }
 
-@media screen and (max-width: 1800px) {
-  .card {
-    width: 60%;
-  }
-}
-
 @media screen and (max-width: 1500px) {
   body h1 {
     width: 100%;
@@ -216,7 +230,23 @@ footer {
             align-items: center;
     width: 100vw;
   }
-  .card {
+  .main-panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .main-panel .card {
     width: 80%;
     margin-left: 0;
   }
@@ -234,29 +264,17 @@ footer {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 600px;
-    height: 510px;
-    margin-top: 20px;
-    padding: 0;
+    width: 690px;
+    height: 480px;
+    padding: 10px 30px 0 30px;
   }
   .aside-menu {
-    margin-bottom: 250px;
+    margin-bottom: 120px;
   }
 }
 
 @media screen and (max-width: 750px) {
-  body h2 {
-    width: 80%;
-  }
-  .card {
-    height: 700px;
-    width: 90%;
-  }
-  .side-menus {
-    width: 500px;
-    height: 630px;
-    margin-right: 0;
-    padding-top: 0;
+  .main-panel {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -264,19 +282,36 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .main-panel .card {
+    height: 700px;
+    width: 90%;
+  }
+  .side-menus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  .link-menu {
-    margin-top: 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 500px;
+    height: 630px;
   }
   .aside-menu {
-    margin-bottom: 0;
-    margin-top: 40px;
+    margin-bottom: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
