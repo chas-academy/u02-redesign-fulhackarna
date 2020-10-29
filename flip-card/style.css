@@ -50,14 +50,20 @@
 }
 
 .bedrivaUtbildning {
-  background: linear-gradient(159.5deg, #fffdcc 13.6%, #f1d64e 92.17%);
-  opacity: 0.2;
+  background: linear-gradient(180deg, #94a7e814 0%, #256af314 100%);
 }
 
+.digSomStuderar {
+  background: linear-gradient(159.5deg, #e8949414 13.6%, #e6161614 92.17%);
+}
+
+.foretagOrganisationer {
+  background: linear-gradient(159.5deg, #fffdcc14 13.6%, #f1d64e14 92.17%);
+}
 #image {
   transform: translateZ(30px) scale(0.97);
-  /* background-color: rgb(226, 238, 255); */
-  z-index: 1;
+
+  z-index: 2;
   border-radius: 13% 13% 0 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
 }
