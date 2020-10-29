@@ -38,14 +38,12 @@ async function search(keyword) {
   );
 
   fetch(
-      `https://api.allorigins.win/get?url=${encodeURIComponent(
+    `https://api.allorigins.win/get?url=${encodeURIComponent(
       `https://www.myh.se/Sok/?q=${keyword}${page ? "&p=2" : ""}`
     )}`.trim()
-    )
+  )
     .then((response) => response.json())
-    .then(({
-      contents: html
-    }) => {
+    .then(({ contents: html }) => {
       if (html) {
         // Parse text response into HTML
         var doc = Parser.parseFromString(html, "text/html");
@@ -66,12 +64,9 @@ async function search(keyword) {
         }
 
         // Parse amount of hits and query
-        const [{
-            innerHTML: hitAmount
-          },
-          {
-            innerHTML: query
-          },
+        const [
+          { innerHTML: hitAmount },
+          { innerHTML: query },
         ] = searchResults.querySelectorAll(".main-search-meta strong");
         const resultMeta = {
           hitAmount,
@@ -103,11 +98,7 @@ async function search(keyword) {
         pagination.className = "pagination";
 
         // Render LI elements for each search result.
-        resultArray.forEach(({
-          heading,
-          content,
-          date
-        }, index) => {
+        resultArray.forEach(({ heading, content, date }, index) => {
           let li = Parser.parseFromString(
             `
           <li class="article-item">
@@ -138,8 +129,7 @@ async function search(keyword) {
           );
           page = page.querySelector("li");
           page.onclick = (e) =>
-            (window.location.href =
-              "/sok.html?q=" + query + "&p=" + (index + 1));
+            (window.location.href = "?q=" + query + "&p=" + (index + 1));
 
           pagination.appendChild(page);
         });
