@@ -3,6 +3,12 @@ $link-color: #656565;
 $link-background-color: #f1f5f7;
 $card-background-color: white;
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 #footer-grid {
   display: none;
 }
@@ -18,9 +24,9 @@ $card-background-color: white;
   display: grid;
   gap: 1rem;
   grid-template:
-    "top top"
-    "center center"
-    "bottom-left bottom-right";
+    'top top'
+    'center center'
+    'bottom-left bottom-right';
 }
 
 .top {
@@ -151,7 +157,7 @@ $card-background-color: white;
     background: $background-color;
 
     &::after {
-      content: "";
+      content: '';
       display: block;
       clear: both;
     }
