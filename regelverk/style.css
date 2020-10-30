@@ -24,15 +24,15 @@ body {
           align-items: center;
   margin: 0;
   height: 100%;
-  background-color: #F1F5F7;
+  background-color: #f1f5f7;
 }
 
 body h1 {
   width: 1700px;
   padding-top: 100px;
   padding-left: 200px;
-  color: #2F2D36;
-  font-family: 'Roboto', sans-serif;
+  color: #2f2d36;
+  font-family: "Roboto", sans-serif;
   font-size: 40px;
   font-weight: bold;
 }
@@ -42,10 +42,10 @@ body h2 {
   padding-left: 200px;
   color: #656565;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  letter-spacing: 0.7px;
+  letter-spacing: 0.6px;
 }
 
 main {
@@ -78,16 +78,94 @@ main {
 }
 
 .main-panel .card {
-  padding: 30px;
   width: 1050px;
   height: 800px;
   background-color: white;
   border-radius: 20px;
   -webkit-box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
           box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
 .main-panel .card h2 {
+  display: none;
+}
+
+.main-panel .card .images {
+  position: absolute;
+  overflow: visible;
+  background-color: #fffac2;
+  position: absolute;
+  overflow: visible;
+  width: 100%;
+  height: 150px;
+}
+
+.main-panel .card .card-text {
+  width: 80%;
+  position: absolute;
+  top: 170px;
+  left: 25px;
+  bottom: 40px;
+  overflow-y: hidden;
+}
+
+.main-panel .card .card-text .text1 {
+  margin-bottom: 30px;
+  overflow: visible;
+  text-align: left;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #2f2d36;
+}
+
+.main-panel .card .card-text .text2 {
+  margin-bottom: 10px;
+  overflow: visible;
+  text-align: left;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #2f2d36;
+}
+
+.main-panel .card .card-text .text3 {
+  margin-bottom: 10px;
+  overflow: visible;
+  text-align: left;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #2f2d36;
+}
+
+.main-panel .card .card-text .text4 {
+  margin-bottom: 40px;
+  overflow: visible;
+  text-align: left;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #2f2d36;
+}
+
+.main-panel .slide-btn {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 15px);
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
   display: none;
 }
 
@@ -98,15 +176,13 @@ main {
   border-radius: 30px;
   background-color: white;
   color: #eb483d;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 800;
   letter-spacing: 0.7px;
   cursor: pointer;
   -webkit-box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
           box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
-  border: none;
-  outline: none;
 }
 
 .side-menus {
@@ -150,7 +226,7 @@ main {
   width: 300px;
   height: 270px;
   border-radius: 20px;
-  background-color: #2F2D36;
+  background-color: #2f2d36;
   -webkit-box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
           box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
 }
@@ -164,7 +240,7 @@ main {
 .link-menu a {
   color: white;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .aside-menu {
@@ -213,7 +289,7 @@ main {
 .aside-menu-list a {
   color: #656565;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 15px;
 }
@@ -311,6 +387,20 @@ footer {
     height: 700px;
     width: 90%;
   }
+  .main-panel .card .slide-btn {
+    display: block;
+  }
+  .main-panel .slide-btn {
+    display: block;
+  }
+  .main-panel .card.expanded {
+    height: 800px;
+    overflow: hidden;
+  }
+  .main-panel .card.expanded .slide-btn {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
   .side-menus {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -330,6 +420,42 @@ footer {
   }
   .aside-menu {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main-panel .card.expanded {
+    height: 950px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .main-panel .card.expanded {
+    height: 1050px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .main-panel .card.expanded {
+    height: 1150px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main-panel .card.expanded {
+    height: 1250px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .main-panel .card.expanded {
+    height: 1350px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .main-panel .card.expanded {
+    height: 1450px;
   }
 }
 /*# sourceMappingURL=style.css.map */
