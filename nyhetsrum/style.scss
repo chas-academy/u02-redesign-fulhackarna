@@ -1,3 +1,7 @@
+@import 'footer';
+@import 'header';
+
+
 $white: white;
 $darkGray: #2F2D36;
 $gray: #656565;
@@ -553,12 +557,6 @@ button {
         font-weight: 800;
         font-size: 15px;
     }
-}
-
-footer {
-    width: 100%;
-    height: 300px;
-    background-color: lightyellow;
 }
 
 @media screen and (max-width: 1500px) {

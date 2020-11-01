@@ -1,0 +1,472 @@
+@import'footer';
+@import'header';
+
+$white: white;
+$darkGray: #2F2D36;
+$gray: #656565;
+$backgroundColor: #F1F5F7;
+
+$hugeText: 40px;
+$largeText: 20px;
+$normalText: 15px;
+$smallText: 13px;
+
+@mixin flexbox($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  border-color: transparent;
+  letter-spacing: 0.5px;
+  font-family: 'Roboto',
+    sans-serif;
+}
+
+body {
+  @include flexbox(column, center, center);
+
+  margin: 0;
+  height: 100%;
+  background-color: $backgroundColor;
+
+  h1 {
+    // Titel
+    width: 1700px;
+    padding-top: 100px;
+    padding-left: 200px;
+    color: $darkGray;
+    font-family: 'Roboto',
+      sans-serif;
+    font-size: $hugeText;
+    font-weight: bold;
+  }
+
+  .text-block {
+    width: 1700px;
+    padding-left: 200px;
+
+    h2 {
+      // Sub title
+      width: 400px;
+      margin-right: 1000px;
+      color: $gray;
+      text-decoration: none;
+      font-family: 'Roboto',
+        sans-serif;
+      font-size: $largeText;
+      font-weight: 600;
+    }
+  }
+}
+
+form {
+  margin-top: 50px;
+  margin-right: 400px;
+  padding: 40px;
+
+  input[type="search"] {
+    width: 1000px;
+    height: 70px;
+    font-size: 1.3em;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
+    outline: none;
+  }
+}
+
+
+main {
+  height: 100%;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+
+}
+
+.main-panel {
+  @include flexbox(column, flex-start, space-between);
+  width: 100%;
+  padding-left: 2.5%;
+
+
+  .card {
+    padding: 30px;
+    width: 1050px;
+    background-color: $white;
+    border-radius: 20px;
+    box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
+
+    h3 {
+      color: $darkGray;
+      font-size: $largeText;
+    }
+  }
+
+  .search-results {
+    .no-results {
+      font-size: 1.2em;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-top: 30px;
+    }
+
+    article {
+      border-top: 1px solid lightgray;
+      cursor: pointer;
+      margin: 15px 0;
+
+      h2 {
+        margin: 5px 0px;
+        color: rgb(99, 135, 243);
+        font-family: 'Roboto',
+          sans-serif;
+        font-size: $largeText;
+        font-weight: bold;
+
+
+        a {
+          color: inherit;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      time {
+        opacity: 0.5;
+      }
+    }
+
+    p {
+      color: $darkGray;
+      margin-bottom: 5px;
+
+    }
+
+    time {
+      font-size: $normalText;
+    }
+  }
+
+  .pagination-results {
+    padding-bottom: 30px;
+
+    .pagination {
+      width: 500px;
+      height: 80px;
+      border-radius: 40px;
+      background-color: $white;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0 auto;
+      overflow: hidden;
+      margin-top: 20px;
+      box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
+
+      li {
+
+        border-radius: 20px;
+        padding: 30px 15px 30px 15px;
+        cursor: pointer;
+
+        color: $darkGray;
+        text-decoration: none;
+        font-family: 'Roboto',
+          sans-serif;
+        font-size: $normalText;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+
+
+.side-menus {
+  @include flexbox(column, flex-start, center);
+  width: 450px;
+  height: 850px;
+
+  padding-left: 5%;
+  padding-right: 7%;
+
+  h2 {
+    display: none;
+  }
+}
+
+#check {
+  display: none;
+}
+
+.aside-menu {
+  width: 300px;
+  height: 100px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  background-color: $white;
+  border-radius: 30px;
+  box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+
+
+  @include flexbox(row, center, center);
+
+
+  p {
+    text-decoration: none;
+    font-family: 'Roboto',
+      sans-serif;
+    font-size: $largeText;
+    font-weight: 600;
+    color: $darkGray;
+  }
+}
+
+.aside-drop-menu {
+  width: 330px;
+  height: 0px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  background-color: $white;
+  border-radius: 20px;
+  box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
+
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 0.3s;
+
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+  div {
+    overflow: hidden;
+  }
+
+  p {
+    padding: 0 0 0 17px;
+    text-decoration: none;
+    font-family: 'Roboto',
+      sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: $darkGray;
+
+  }
+
+  ul {
+    padding: 0 0 0 17px;
+    text-decoration: none;
+    font-family: 'Roboto',
+      sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: $gray;
+
+    li {
+      padding-top: 5px;
+    }
+
+  }
+}
+
+.filter-checkbox:checked~aside {
+  height: 690px;
+  transition: height 0.3s;
+  visibility: visible;
+  opacity: 1;
+
+
+}
+
+
+@media screen and (max-width: 1500px) {
+
+
+  body {
+    h1 {
+      width: 100%;
+      padding-left: 10%;
+    }
+
+    .text-block {
+      width: 100%;
+      padding-left: 10%;
+    }
+  }
+
+  form {
+    width: 100%;
+    margin-right: 0;
+    padding: 40px 0 40px 10%;
+
+    input[type="search"] {
+      width: 90%;
+    }
+  }
+
+  main {
+    @include flexbox(column-reverse, space-around, center);
+    width: 100vw;
+  }
+
+  .main-panel {
+    @include flexbox(column, center, center);
+    padding: 0;
+
+    .card {
+      width: 80%;
+      margin-left: 0;
+    }
+
+    .page-selector {
+      margin: 30px 0 30px 0;
+    }
+  }
+
+  .side-menus {
+    width: 100%;
+    height: 100%;
+  }
+
+  .aside-drop-menu {
+    width: 930px;
+    margin-bottom: 0;
+    flex-direction: row;
+
+    div {
+      width: 33%;
+    }
+
+    p {
+      padding: 25px 0 20px 75px;
+      text-decoration: none;
+      font-family: 'Roboto',
+        sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: $darkGray;
+
+    }
+
+    ul {
+      padding: 0 0 0 90px;
+      text-decoration: none;
+      font-family: 'Roboto',
+        sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      color: $gray;
+
+      li {
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .filter-checkbox:checked~aside {
+    height: 350px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+
+  body {
+    h1 {
+      width: 100%;
+      padding-left: 10%;
+    }
+
+    .text-block {
+      width: 100%;
+      padding-left: 10%;
+
+      h2 {
+        width: 300px;
+      }
+    }
+  }
+
+  .main-panel {
+    @include flexbox(column, none, center);
+
+    .card {
+      width: 90%;
+    }
+  }
+
+  .aside-drop-menu {
+    width: 330px;
+    height: 0px;
+    margin-left: 30px;
+    background-color: $white;
+    border-radius: 20px;
+    box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+
+    flex-direction: column;
+
+    div {
+      width: 100%;
+    }
+
+    p {
+      padding: 0 0 0 17px;
+      text-decoration: none;
+      font-family: 'Roboto',
+        sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: $darkGray;
+    }
+
+    ul {
+      padding: 0 0 0 17px;
+      text-decoration: none;
+      font-family: 'Roboto',
+        sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      color: $gray;
+
+      li {
+        padding-top: 5px;
+      }
+    }
+  }
+
+  .filter-checkbox:checked~aside {
+    height: 690px;
+    transition: height 0.3s;
+    visibility: visible;
+    opacity: 1;
+    margin-bottom: 30px;
+  }
+}

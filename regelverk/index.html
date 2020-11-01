@@ -13,107 +13,337 @@
 </head>
 
 <body>
-    <header>
-    </header>
+    < <header>
+        <nav class="normalNav" id="normalNav">
+            <img class="myhLogo" src="/navIMG/Logo.svg" alt="logo">
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav_options" id="nav_options">
+                <li class="link">
+                    <a href="#start">Start</a>
+                </li>
+                <li class="link">
+                    <a href="#omOss">Om oss</a>
+                </li>
+                <li class="link">
+                    <a href="#verksamhet">Verksamhet</a>
+                </li>
+                <li class="link">
+                    <a href="#regelverk">Regelverk</a>
+                </li>
+                <li class="link">
+                    <a href="#statistik">Statistik</a>
+                </li>
+                <li class="link">
+                    <a href="#publikationer">Publikationer</a>
+                </li>
+                <li class="link">
+                    <a href="#nyhetsrum">Nyhetsrum</a>
+                </li>
+                <li class="link">
+                    <a href="#kontakt">Kontakt</a>
+                </li>
+                <li class="link">
+                    <a href="#minaSidor"><span id="mina_sidor">Mina sidor</span></a>
+                </li>
+                <li class="nav_icon">
+                    <img src="/navIMG/ic_insert_comment_24px.svg">
+                </li>
+                <li class="nav_icon">
+                    <img src="/navIMG/ic_brightness_6_24px.svg">
+                </li>
+                <li class="nav_icon">
+                    <img src="/navIMG/ic_format_size_24px.svg">
+                </li>
+                <div class="responsiveIcons">
+                    <li class="responsiveIc">
+                        <img src="/navIMG/ic_insert_comment_24px.svg">
+                    </li>
+                    <li class="responsiveIc">
+                        <img src="/navIMG/ic_brightness_6_24px.svg">
+                    </li>
+                    <li class="responsiveIc">
+                        <img src="/navIMG/ic_format_size_24px.svg">
+                    </li>
+                </div>
+            </ul>
 
-    <h1>Regelverk</h1>
-    <h2>lagar, regler, tillsyn.</h2>
-    <main>
 
-        <section class="main-panel">
-            <div class="card" onclick="this.classList.toggle('expanded')">
-                <h2>Main panel</h2>
-                <!-- placeholder -->
-                <div class="images"></div>
-                <div class="card-text">
-                    <div class="text1">
-                        <h3>
-                            Myndigheten för yrkeshögskolans huvuduppdrag är att ansvara för
-                            frågor som rör yrkeshögskolan i Sverige och verka för att
-                            utbildningarna tillgodoser arbetslivets behov av kompetens.
-                        </h3>
+            <div class="search">
+                <form action="sok.html" method="GET">
+                    <input name="q" type="search" placeholder="Sökord" />
+                </form>
+                <div class="searchIcon">
+                    <img src="/navIMG/ic_search_24px.svg">
+                </div>
+            </div>
+        </nav>
+        </header>
+
+        <h1>Regelverk</h1>
+        <h2>lagar, regler, tillsyn.</h2>
+        <main>
+
+            <section class="main-panel">
+                <div class="card" onclick="this.classList.toggle('expanded')">
+                    <h2>Main panel</h2>
+                    <!-- placeholder -->
+                    <div class="images"></div>
+                    <div class="card-text">
+                        <div class="text1">
+                            <h3>
+                                Myndigheten för yrkeshögskolans huvuduppdrag är att ansvara för
+                                frågor som rör yrkeshögskolan i Sverige och verka för att
+                                utbildningarna tillgodoser arbetslivets behov av kompetens.
+                            </h3>
+                        </div>
+                        <div class="text2">
+                            <p>
+                                Vi analyserar arbetsmarknadens behov av utbildningar inom
+                                yrkeshögskolan, beslutar vilka utbildningar som ska ingå i
+                                yrkeshögskolan och beviljar statliga medel till
+                                utbildningsanordnarna. Vi främjar även validering i
+                                utbildningarna.
+                            </p>
+                        </div>
+                        <div class="text3">
+                            <p>
+                                Vi ansvarar också för frågor som rör vissa utbildningar som
+                                ligger utanför yrkeshögskolan - eftergymnasiala konst- och
+                                kulturutbildningar som bedrivs av fristående skolor samt
+                                tolkutbildningar inom folkbildningen Vi ansvarar också för
+                                frågor som rör vissa utbildningar som ligger utanför
+                                yrkeshögskolan - eftergymnasiala konst- och kulturutbildningar
+                                som bedrivs av fristående skolor samt tolkutbildningar inom
+                                folkbildningen
+                            </p>
+                        </div>
+                        <div class="text4">
+                            <p>
+                                Myndigheten utövar tillsyn och hanterar klagomål på de
+                                utbildningar som ligger inom vårt ansvarsområde. Vi granskar
+                                även utbildningarnas kvalitet, framställer statistik och följer
+                                upp utbildningars resultat. Vi är också nationell
+                                samordningspunkt för EQF (European Qualifications Framework) som
+                                ska göra det lättare att jämföra utbildnings- och
+                                yrkeskvalifikationer inom EU.
+                            </p>
+                        </div>
                     </div>
-                    <div class="text2">
-                        <p>
-                            Vi analyserar arbetsmarknadens behov av utbildningar inom
-                            yrkeshögskolan, beslutar vilka utbildningar som ska ingå i
-                            yrkeshögskolan och beviljar statliga medel till
-                            utbildningsanordnarna. Vi främjar även validering i
-                            utbildningarna.
-                        </p>
-                    </div>
-                    <div class="text3">
-                        <p>
-                            Vi ansvarar också för frågor som rör vissa utbildningar som
-                            ligger utanför yrkeshögskolan - eftergymnasiala konst- och
-                            kulturutbildningar som bedrivs av fristående skolor samt
-                            tolkutbildningar inom folkbildningen Vi ansvarar också för
-                            frågor som rör vissa utbildningar som ligger utanför
-                            yrkeshögskolan - eftergymnasiala konst- och kulturutbildningar
-                            som bedrivs av fristående skolor samt tolkutbildningar inom
-                            folkbildningen
-                        </p>
-                    </div>
-                    <div class="text4">
-                        <p>
-                            Myndigheten utövar tillsyn och hanterar klagomål på de
-                            utbildningar som ligger inom vårt ansvarsområde. Vi granskar
-                            även utbildningarnas kvalitet, framställer statistik och följer
-                            upp utbildningars resultat. Vi är också nationell
-                            samordningspunkt för EQF (European Qualifications Framework) som
-                            ska göra det lättare att jämföra utbildnings- och
-                            yrkeskvalifikationer inom EU.
-                        </p>
+                    <svg class="slide-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30">
+                        <path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5" />
+                    </svg>
+                </div>
+                <button>Anmäl brister i en utbildning</button>
+            </section>
+
+            <section class="side-menus parallax" data-speed="0.5">
+                <h2>Side panel</h2>
+                <nav class="link-menu">
+                    <ul>
+                        <li><a href="#">Lagar och förording</a></li>
+                        <li><a href="#">Gällande föreskrifter</a></li>
+                        <li><a href="#">Allmänna råd</a></li>
+                        <li><a href="#">Tillsyn</a></li>
+                        <li><a href="#">Kvalitetsgranksning</a></li>
+
+                    </ul>
+                </nav>
+                <aside class="aside-menu">
+                    <ul class="aside-menu-icons">
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                                    <path id="ic_report_24px"
+                                        d="M15.73,3H8.27L3,8.27v7.46L8.27,21h7.46L21,15.73V8.27ZM12,17.3A1.3,1.3,0,1,1,13.3,16,1.3,1.3,0,0,1,12,17.3ZM13,13H11V7h2v6Z"
+                                        transform="translate(-3 -3)" fill="#656565" />
+                                </svg></a>
+                        </li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18.003" height="18.002">
+                                    <path id="ic_create_24px"
+                                        d="M3,17.25V21H6.75L17.81,9.94,14.06,6.19ZM20.71,7.04a1,1,0,0,0,0-1.41L18.37,3.29a1,1,0,0,0-1.41,0L15.13,5.12l3.75,3.75,1.83-1.83Z"
+                                        transform="translate(-3 -2.998)" fill="#656565" />
+                                </svg></a>
+                        </li>
+                    </ul>
+
+                    <ul class="aside-menu-list">
+                        <li><a href="#">Anmäl brister i en
+                                utbildning</a></li>
+                        <li><a href="#">Hitta utbildningar</a></li>
+                    </ul>
+                </aside>
+            </section>
+        </main>
+
+
+        <footer class="footer">
+            <div id="footer-grid-s" class="grid-s">
+                <div class="grid-s__top">
+                    <div class="footer-s__links">
+                        <a href="#" class="footer-s__link"><i class="fas fa-phone-alt"></i></a>
+                        <a href="#" class="footer-s__link">E-post</a>
+                        <a href="#" class="footer-s__link">Kundforum</a>
                     </div>
                 </div>
-                <svg class="slide-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 35" width="30">
-                    <path d="M5 30L50 5l45 25" fill="none" stroke="#000" stroke-width="5" />
-                </svg>
+                <div class="grid-s__center">
+                    <div class="footer-s__card">
+                        <span class="icon-2x"><i class="fas fa-map-marker-alt"></i></span>
+                        <div class="card-text">
+                            <p>
+                                Myndigheten för yrkeshögskolan
+                                <br />
+                                Box 145
+                                <br />
+                                721 05 Västerås
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-s__bottom-left">
+                    <div>
+                        <h4>Ansvarig utgivare</h4>
+                        <p>Thomas Persson, generaldirektör</p>
+                    </div>
+                </div>
+                <div class="grid-s__bottom-right">
+                    <div class="footer-s__links">
+                        <a href="#" class="footer-s__link"><span class="icon-2x"><i class="fas fa-globe"></i></span></a>
+                        <a href="#" class="footer-s__link"><span class="icon-2x"><i
+                                    class="fab fa-youtube"></i></span></a>
+                    </div>
+                </div>
             </div>
-            <button>Anmäl brister i en utbildning</button>
-        </section>
 
-        <section class="side-menus parallax" data-speed="0.5">
-            <h2>Side panel</h2>
-            <nav class="link-menu">
-                <ul>
-                    <li><a href="#">Lagar och förording</a></li>
-                    <li><a href="#">Gällande föreskrifter</a></li>
-                    <li><a href="#">Allmänna råd</a></li>
-                    <li><a href="#">Tillsyn</a></li>
-                    <li><a href="#">Kvalitetsgranksning</a></li>
+            <div id="footer-grid">
+                <div class="footer__grid" id="grid">
+                    <div class="footer__item">
+                        <div class="footer__links">
+                            <a href="#" id="phone-link" class="footer__link">Telefon</a>
+                            <a href="#" id="email-link" class="footer__link">E-post</a>
+                            <a href="#" id="forum-link" class="footer__link">Kundforum</a>
+                            <a href="#" id="press-link" class="footer__link">Press</a>
+                        </div>
+                        <div class="footer__card">
+                            <div id="phone-info" class="footer__card-info footer__card-info--active">
+                                <h4>Telefon</h4>
+                                <p>Ring vår växel 010-209 01 00</p>
+                                <p>Växeln är öppen vardagar 9.00 - 11.30, 13.00 - 15.00</p>
+                            </div>
+                            <div id="email-info" class="footer__card-info">
+                                <h4>E-post</h4>
+                                <p>
+                                    Allmänna frågor/synpunkter:
+                                    <a href="mailto:info@myh.se">info@myh.se</a>
+                                </p>
+                                <p>
+                                    Registrator:
+                                    <a href="mailto:registrator@myh.se">registrator@myh.se</a>
+                                </p>
+                            </div>
+                            <div id="forum-info" class="footer__card-info">
+                                <h4>Digitalt kundforum</h4>
+                                <p>
+                                    Har du en fråga? Besök vårt kundforum,
+                                    <a href="https://forum.myh.se">forum.myh.se</a>
+                                </p>
+                            </div>
+                            <div id="press-info" class="footer__card-info">
+                                <h4>Press</h4>
+                                <p>
+                                    Presskontakter och pressmeddelande finns i vårt
+                                    <a
+                                        href="https://www.mynewsdesk.com/se/myndigheten-foer-yrkeshoegskolan">nyhetsrum</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__links">
+                            <a href="#" id="share-link" class="footer__link">Dela</a>
+                            <a href="#" id="websites-link" class="footer__link">Webbplatser</a>
+                            <a href="#" id="about-link" class="footer__link">Om webbplatsen</a>
+                        </div>
+                        <div class="footer__card">
+                            <div id="share-info" class="footer__card-info footer__card-info--active">
+                                <h4>Dela</h4>
+                                <div class="social-icons">
+                                    <a href="#"><span class="social-icon"><i class="fab fa-twitter"></i></span></a>
+                                    <a href="#"><span class="social-icon"><i class="fab fa-facebook-f"></i></span></a>
+                                </div>
+                            </div>
+                            <div id="websites-info" class="footer__card-info">
+                                <h4>Webbplatser</h4>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.konstkulturutbildning.se">
+                                            www.konstkulturutbildning.se
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.blitolk.nu">www.blitolk.nu</a></li>
+                                    <li><a href="https://www.seqf.se">www.seqf.se</a></li>
+                                </ul>
+                            </div>
+                            <div id="about-info" class="footer__card-info">
+                                <h4>Om webbplatsen</h4>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen">Använda
+                                            webbplatsen</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen">Om
+                                            webbkakor (cookies)</a>
+                                    </li>
+                                    <li><a href="https://www.myh.se/Webbkarta">Webbkarta</a></li>
+                                    <li>
+                                        <a
+                                            href="https://www.myh.se/Om-webbplatsen/Tillganglighetsredogorelse-">Tillgänglighetsredogörelse</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__links">
+                            <a href="#" id="address-link" class="footer__link">Myndigheten för yrkeshögskolan</a>
+                            <a href="#" id="youtube-link" class="footer__link">Youtube</a>
+                        </div>
+                        <div class="footer__card">
+                            <div id="address-info" class="footer__card-info footer__card-info--active">
+                                <h4>Adress</h4>
+                                <p>
+                                    Myndigheten för yrkeshögskolan
+                                    <br />
+                                    Box 145
+                                    <br />
+                                    721 05 Västerås
+                                </p>
+                            </div>
+                            <div id="youtube-info" class="footer__card-info">
+                                <h4>Youtube</h4>
+                                <a href="https://www.youtube.com/channel/UC8iPn0eKy-5vQ6Mx_-ep-KA">
+                                    MYH Youtube-kanal
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                </ul>
-            </nav>
-            <aside class="aside-menu">
-                <ul class="aside-menu-icons">
-                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
-                                <path id="ic_report_24px"
-                                    d="M15.73,3H8.27L3,8.27v7.46L8.27,21h7.46L21,15.73V8.27ZM12,17.3A1.3,1.3,0,1,1,13.3,16,1.3,1.3,0,0,1,12,17.3ZM13,13H11V7h2v6Z"
-                                    transform="translate(-3 -3)" fill="#656565" />
-                            </svg></a>
-                    </li>
-                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18.003" height="18.002">
-                                <path id="ic_create_24px"
-                                    d="M3,17.25V21H6.75L17.81,9.94,14.06,6.19ZM20.71,7.04a1,1,0,0,0,0-1.41L18.37,3.29a1,1,0,0,0-1.41,0L15.13,5.12l3.75,3.75,1.83-1.83Z"
-                                    transform="translate(-3 -2.998)" fill="#656565" />
-                            </svg></a>
-                    </li>
-                </ul>
+                <div class="footer__publisher">
+                    <h4>Ansvarig utgivare</h4>
+                    <p>Thomas Persson, generaldirektör MYH</p>
+                </div>
+            </div>
+        </footer>
 
-                <ul class="aside-menu-list">
-                    <li><a href="#">Anmäl brister i en
-                            utbildning</a></li>
-                    <li><a href="#">Hitta utbildningar</a></li>
-                </ul>
-            </aside>
-        </section>
-    </main>
+        <script src="/assets/javascript/nav.js"></script>
+        <script src="/assets/javascript/footer.js"></script>
+        <script src="https://kit.fontawesome.com/9e640bf9f4.js" crossorigin="anonymous"></script>
 
-    <footer>
-    </footer>
-
-    <script src="/assets/javascript/parallax.js"></script>
+        <script src="/assets/javascript/parallax.js"></script>
 </body>
 
 </html>
