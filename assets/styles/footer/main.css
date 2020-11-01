@@ -54,6 +54,7 @@
 
 .footer-s__card {
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 100px;
   overflow: hidden;
@@ -123,15 +124,14 @@
   }
   .footer__links {
     display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
     list-style-type: none;
-  }
-  .footer__links > .footer__link + .footer__link {
-    margin-left: 1rem;
   }
   .footer__link {
     flex: 1 1 auto;
     color: #656565;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
@@ -232,6 +232,11 @@
     to {
       opacity: 0;
     }
+  }
+}
+@media screen and (min-width: 1150px) {
+  .footer__link {
+    font-size: 20px;
   }
 }
 * {
