@@ -1,0 +1,33 @@
+Att göra till nästa möte (nu på fredag 9 oktober kl. 9.00) 
+1. Fundera ut förslag på förbättringar
+2. Konstatera våra egna reflektioner kring vad som behöver fixas och ideer på hur vi kan göra det
+----------------------------------
+
+1. Sökfunktion överst i mitten eller mer framträdande som den viktigaste funktionen. 
+Se:
+www.csn.se 
+CSN har en mycket framträdande sökfunktion både på stora datorskärmar och små mobila skärmar, verkligen anpassad för att snabbt hitta information.
+2. Tydliga menyalternativ + funktioner bör implementeras i menyn längst upp och vara tydliga även på mobila enheter utan att försvinna i en "mobilmeny". 
+Se:
+www.brottsoffermyndigheten.se
+Brottsoffermyndigheten döljer inte de viktiga menyalternativen och funktionerna i den responsiva mobilversionen för små skärmar. De har även länkar till viktig information lättillgänglig längst upp på storskärmversionen.
+Se:
+https://inspsf.se/
+Inspektionen för socialförsäkringen placerar viktiga menyalternativ fast längs ner på skärmen i mobilversionen. Med hela två alternativ för att kunna söka på sidan, om det är ett medvetet val eller inte vet jag inte. Men ingen lär missa att man kan söka för att hitta på webbplatsen.
+2. "Funktionen" Lättläst vad är dess syfte, känns väldigt torr och tråkig, möjlitvis kortfattad men inte mer lättläst eller något annat, känns som väldigt oigenomtänkt.
+Jämför:
+https://www.myh.se/Lattlast/Vad-ar-Myndigheten-for-yrkeshogskolan/
+med
+https://www.ehalsomyndigheten.se/om-oss/lattlast/
+3. "Funktionen" in english är bara med väldigt lite sammanfattande text och översätter inte hela webbplatsen vilket jag trodde och kanske engelsktalande har förhoppning om. - Skulle inte en google translate eller motsvarande vara bättre för de andra sidorna som bara finns på svenska.
+4. "Funktionen" anpassa känns bara vilseledeande, trodde att den skulle förstora/förminska texten när man klickade där vilket dess symbol antyder, istället kommer man till en väldigt kort text om att använda webbplatsen.
+5. Hela den över "Funktionsmenyn" borde ersättas av en faktiskt meny för ökad tillgänglighet på riktigt.
+6. Footern är väldigt trist och stökig utan snygga radbrytningar, telefonnummer är inte heller klickbart om man vill ringa direkt. Likaså hanvisar de till deras kundforum om man har någon fråga, men saknar en tydlig länk till kundforumet som inte är självklart att hitta på sidan (upptäckte länken efter ett tag):
+7. Tillgänglighetsredogörelsen är mycket underlig, tycker de borde ha ett kontaktformulär för att rapportera brister och om man inte kan använda webbplatsen. De är dock medvetna om sina brister med en ny planerad lansering 2020/21. Senaste bedömningen (självskattning/intern testning) gjordes den 8 september 2020.
+8. Över lag så känns webbplatsen mycket torr och tråkig, även om de är en myndighet så borde de ha en mer modern och inspirerande webbplats.
+9. Tillgänglighetsanpassningen är väldigt dålig jämför med: Diskrimineringsombudsmannen som är intill exemplarisk (dock utan Aria) se: https://www.do.se/
+10. De tre alternativen beroende på vem sidbesökaren är borde finns högre upp eller övers på förstasidan samt alla undersidor. Samt även innefatta studerande utöver: Ansök om att bedriva utbildning/För dig som bedriver utbildning/För företag och organoísationer. 
+Någon liknande funktion som "www.ekobrottsmyndigheten.se" har för att anpassa innehåll efter varje unik webbplatsbesökare kanske skulle vara på sin plats.
+- REFLEKTION -
+Baserat på dessa tre alternativ känns det som att MYH inte alls vill vända sig mot studerande vilket var fallet i min första målgruppsanalys. Istället har de systersidan www.yrkeshogskolan.se som vänder sig direkt mot studerande med förteckning över utbildningar, som för övrigt är responsiv.
+
