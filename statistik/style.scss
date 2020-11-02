@@ -7,7 +7,6 @@ $gray: #656565;
 $backgroundColor: #F1F5F7;
 $cardtopcolor: rgba(255, 250, 194, 1);
 
-
 $hugeText: 40px;
 $largeText: 20px;
 $normalText: 15px;
@@ -70,7 +69,6 @@ main {
         box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
         overflow: hidden;
 
-
         h2 {
             display: none;
         }
@@ -85,7 +83,6 @@ main {
 
             display: flex;
             justify-content: flex-end;
-
 
             #image1 {
                 width: 260px;
@@ -139,7 +136,6 @@ main {
                 align-items: center;
                 padding-bottom: 50px;
                 padding-left: 30px;
-                ;
 
                 li {
                     background-color: $darkGray;
@@ -265,7 +261,6 @@ button {
 
 
 @media screen and (max-width: 1500px) {
-
 
     body {
         h1 {

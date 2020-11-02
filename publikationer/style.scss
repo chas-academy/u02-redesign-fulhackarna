@@ -70,7 +70,6 @@ main {
     padding-bottom: 100px;
     display: flex;
     justify-content: space-around;
-
 }
 
 .main-panel {
@@ -154,7 +153,6 @@ main {
         overflow: hidden;
         @include flexbox(row, center, center);
 
-
         ul {
             width: 90%;
             @include flexbox(row, space-between, center);
@@ -202,9 +200,7 @@ main {
     box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 
-
     @include flexbox(row, center, center);
-
 
     p {
         text-decoration: none;
@@ -224,18 +220,12 @@ main {
     background-color: $white;
     border-radius: 20px;
     box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
-
     overflow: hidden;
     visibility: hidden;
     opacity: 0;
-
     transition: height 0.3s;
 
-
-
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+    @include flexbox(column, space-around, flex-start);
 
     div {
         overflow: hidden;

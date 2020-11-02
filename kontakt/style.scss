@@ -174,7 +174,6 @@ main {
 .side-menus {
     @include flexbox(column, space-between, center);
 
-
     width: 450px;
     height: 360px;
     padding-left: 5%;
@@ -234,7 +233,6 @@ main {
         font-family: 'Roboto',
             sans-serif;
         font-size: $normalText;
-
     }
 
     ul {
@@ -380,10 +378,7 @@ main {
                 width: 300px;
             }
         }
-
-
     }
-
 
     .main-panel {
         @include flexbox(column, none, center);
@@ -396,8 +391,6 @@ main {
                 font-size: $largeText;
             }
         }
-
-
     }
 
     .side-menus {
