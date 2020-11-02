@@ -7,7 +7,7 @@ const page = urlParams.get("p") || undefined;
 const RENDER_CONTAINER = document.querySelector(".search-results");
 const PAGINATION_CONTAINER = document.querySelector(".pagination-results");
 
-// Only perform the request if a searhc query was provided
+// Only perform the request if a search query was provided
 if (query) {
   RENDER_CONTAINER.innerHTML = `
     <div class="lds-default">
