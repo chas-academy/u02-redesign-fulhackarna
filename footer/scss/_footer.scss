@@ -2,6 +2,7 @@ $background-color: #fff695;
 $link-color: #656565;
 $link-background-color: #f1f5f7;
 $card-background-color: white;
+$font: 'Roboto', sans-serif;
 
 * {
   box-sizing: border-box;
@@ -16,6 +17,8 @@ $card-background-color: white;
 .footer {
   background: $background-color;
   padding: 1rem 0;
+  width: 100%;
+  font-family: $font;
 }
 
 .grid-s {
@@ -238,6 +241,8 @@ $card-background-color: white;
   }
 
   .social-icons {
+    overflow: hidden;
+
     a {
       color: $link-color;
     }

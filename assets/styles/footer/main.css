@@ -11,6 +11,8 @@
 .footer {
   background: #fff695;
   padding: 1rem 0;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
 .grid-s {
@@ -203,6 +205,9 @@
     font-size: 12px;
   }
 
+  .social-icons {
+    overflow: hidden;
+  }
   .social-icons a {
     color: #656565;
   }
