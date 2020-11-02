@@ -1,10 +1,10 @@
-@import 'footer';
-@import'header';
+@import "../assets/styles/footer";
+@import "../assets/styles/header";
 
 $white: white;
-$darkGray: #2F2D36;
+$darkGray: #2f2d36;
 $gray: #656565;
-$backgroundColor: #F1F5F7;
+$backgroundColor: #f1f5f7;
 $cardtopcolor: rgba(255, 250, 194, 1);
 
 $hugeText: 40px;
@@ -13,466 +13,460 @@ $normalText: 15px;
 $smallText: 13px;
 
 @mixin flexbox($direction, $justify, $align) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    border-color: transparent;
-    letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  border-color: transparent;
+  letter-spacing: 0.5px;
 }
 
 body {
-    @include flexbox(column, center, center);
+  @include flexbox(column, center, center);
 
-    margin: 0;
-    height: 100%;
-    background-color: $backgroundColor;
+  margin: 0;
+  height: 100%;
+  background-color: $backgroundColor;
 
-    h1 {
-        // Titel
-        width: 1700px;
-        padding-top: 100px;
-        padding-left: 200px;
-        color: $darkGray;
-        font-family: 'Roboto',
-            sans-serif;
-        font-size: $hugeText;
-        font-weight: bold;
-    }
+  h1 {
+    // Titel
+    width: 1700px;
+    padding-top: 100px;
+    padding-left: 200px;
+    color: $darkGray;
+    font-family: "Roboto", sans-serif;
+    font-size: $hugeText;
+    font-weight: bold;
+  }
 
-    h2 {
-        // Sub title
-        width: 1700px;
-        padding-left: 200px;
-        color: $gray;
-        text-decoration: none;
-        font-family: 'Roboto',
-            sans-serif;
-        font-size: $largeText;
-        font-weight: 600;
-        letter-spacing: 0.7px;
-    }
+  h2 {
+    // Sub title
+    width: 1700px;
+    padding-left: 200px;
+    color: $gray;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: $largeText;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+  }
 }
 
 main {
-    height: 100%;
-    margin-top: 60px;
-    padding-bottom: 100px;
-    display: flex;
-    justify-content: space-around;
+  height: 100%;
+  margin-top: 60px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .card {
-    width: 1120px;
-    height: 1020px;
-    margin-left: 5%;
-    background-color: $white;
-    border-radius: 20px;
-    box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
-    position: relative;
-    overflow-y: hidden;
+  width: 1120px;
+  height: 1020px;
+  margin-left: 5%;
+  background-color: $white;
+  border-radius: 20px;
+  box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow-y: hidden;
 
-    h2 {
-        display: none;
+  h2 {
+    display: none;
+  }
+
+  .images {
+    position: absolute;
+    overflow: visible;
+    background-color: $cardtopcolor;
+    position: absolute;
+    overflow: visible;
+    width: 100%;
+    height: 150px;
+
+    #image1 {
+      position: absolute;
+      width: 308.194px;
+      height: 150px;
+      top: 0px;
+      overflow: visible;
+      right: 25px;
     }
 
-    .images {
-        position: absolute;
-        overflow: visible;
-        background-color: $cardtopcolor;
-        position: absolute;
-        overflow: visible;
-        width: 100%;
-        height: 150px;
-
-        #image1 {
-            position: absolute;
-            width: 308.194px;
-            height: 150px;
-            top: 0px;
-            overflow: visible;
-            right: 25px;
-        }
-
-        #image2 {
-            position: absolute;
-            width: 308.194px;
-            height: 150px;
-            top: 0px;
-            overflow: visible;
-            right: 25px;
-        }
-
-        #image3 {
-            position: absolute;
-            width: 308.194px;
-            height: 150px;
-            top: 0px;
-            overflow: visible;
-            right: 25px;
-        }
+    #image2 {
+      position: absolute;
+      width: 308.194px;
+      height: 150px;
+      top: 0px;
+      overflow: visible;
+      right: 25px;
     }
+
+    #image3 {
+      position: absolute;
+      width: 308.194px;
+      height: 150px;
+      top: 0px;
+      overflow: visible;
+      right: 25px;
+    }
+  }
 }
 
 .card-text {
-    width: 80%;
-    position: absolute;
-    top: 170px;
-    left: 25px;
-    bottom: 40px;
-    overflow-y: hidden;
+  width: 80%;
+  position: absolute;
+  top: 170px;
+  left: 25px;
+  bottom: 40px;
+  overflow-y: hidden;
 
-    .text1 h3 {
-        margin-bottom: 30px;
-        overflow: visible;
-        text-align: left;
-        font-family: "Roboto";
-        font-weight: bold;
-        font-size: $largeText;
-        color: rgba(47, 45, 54, 1);
+  .text1 h3 {
+    margin-bottom: 30px;
+    overflow: visible;
+    text-align: left;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: $largeText;
+    color: rgba(47, 45, 54, 1);
+  }
+
+  .text2 {
+    margin-bottom: 10px;
+    overflow: visible;
+    text-align: left;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: $normalText;
+    color: rgba(47, 45, 54, 1);
+  }
+
+  .text3 {
+    margin-bottom: 10px;
+    overflow: visible;
+    text-align: left;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: $normalText;
+    color: rgba(47, 45, 54, 1);
+  }
+
+  .text4 {
+    margin-bottom: 40px;
+    overflow: visible;
+    text-align: left;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: $normalText;
+    color: rgba(47, 45, 54, 1);
+  }
+
+  .text5 {
+    margin-bottom: 20px;
+    overflow: visible;
+    text-align: left;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: $normalText;
+    color: rgba(47, 45, 54, 1);
+
+    h3 {
+      margin-bottom: 10px;
+    }
+  }
+
+  .text6 {
+    margin-bottom: 20px;
+    overflow: visible;
+    text-align: left;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: $normalText;
+    color: rgba(47, 45, 54, 1);
+
+    h4 {
+      margin-bottom: 10px;
     }
 
-    .text2 {
-        margin-bottom: 10px;
-        overflow: visible;
-        text-align: left;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: normal;
-        font-size: $normalText;
-        color: rgba(47, 45, 54, 1);
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
+  .text7 {
+    margin-bottom: 20px;
+    overflow: visible;
+    text-align: left;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: $normalText;
+    color: rgba(47, 45, 54, 1);
+
+    h4 {
+      margin-bottom: 10px;
     }
 
-    .text3 {
-        margin-bottom: 10px;
-        overflow: visible;
-        text-align: left;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: normal;
-        font-size: $normalText;
-        color: rgba(47, 45, 54, 1);
+    p {
+      margin-bottom: 10px;
     }
-
-    .text4 {
-        margin-bottom: 40px;
-        overflow: visible;
-        text-align: left;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: normal;
-        font-size: $normalText;
-        color: rgba(47, 45, 54, 1);
-    }
-
-    .text5 {
-        margin-bottom: 20px;
-        overflow: visible;
-        text-align: left;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: normal;
-        font-size: $normalText;
-        color: rgba(47, 45, 54, 1);
-
-        h3 {
-            margin-bottom: 10px;
-        }
-    }
-
-    .text6 {
-        margin-bottom: 20px;
-        overflow: visible;
-        text-align: left;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: normal;
-        font-size: $normalText;
-        color: rgba(47, 45, 54, 1);
-
-        h4 {
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin-bottom: 10px;
-        }
-    }
-
-    .text7 {
-        margin-bottom: 20px;
-        overflow: visible;
-        text-align: left;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: normal;
-        font-size: $normalText;
-        color: rgba(47, 45, 54, 1);
-
-        h4 {
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin-bottom: 10px;
-        }
-    }
+  }
 }
 
 .slide-btn {
-    position: absolute;
-    bottom: 20px;
-    left: calc(50% - 15px);
-    transform-origin: 50%;
-    transform: rotate(180deg);
-    transition: transform 1000ms;
-    display: none;
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 15px);
+  transform-origin: 50%;
+  transform: rotate(180deg);
+  transition: transform 1000ms;
+  display: none;
 }
 
 .side-menus {
-    @include flexbox(column, space-between, center);
+  @include flexbox(column, space-between, center);
 
-    width: 450px;
-    height: 620px;
-    padding-left: 5%;
-    padding-right: 5%;
+  width: 450px;
+  height: 620px;
+  padding-left: 5%;
+  padding-right: 5%;
 
-    h2 {
-        display: none;
-    }
+  h2 {
+    display: none;
+  }
 }
 
 .link-menu {
-    @include flexbox(column, center, center);
+  @include flexbox(column, center, center);
 
-    width: 300px;
-    height: 400px;
-    border-radius: 20px;
-    background-color: $darkGray;
-    box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+  background-color: $darkGray;
+  box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
 
-    ul {
-        list-style: none;
-        line-height: 40px;
-    }
+  ul {
+    list-style: none;
+    line-height: 40px;
+  }
 
-    a {
-        color: $white;
-        text-decoration: none;
-        font-family: 'Roboto',
-            sans-serif;
-    }
+  a {
+    color: $white;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+  }
 }
 
 .aside-menu {
-    @include flexbox(row, space-around, center);
+  @include flexbox(row, space-around, center);
 
-    width: 280px;
-    height: 150px;
-    margin-bottom: 30px;
-    border-radius: 20px;
-    background-color: $white;
-    box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
+  width: 280px;
+  height: 150px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  background-color: $white;
+  box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
 }
 
 .aside-menu-icons {
-    list-style: none;
-    margin-left: 30px;
+  list-style: none;
+  margin-left: 30px;
 
-    li {
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
+  li {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 .aside-menu-list {
-    width: 50%;
-    margin-right: 30px;
-    list-style: none;
+  width: 50%;
+  margin-right: 30px;
+  list-style: none;
 
-    li {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+  li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
-    a {
-        color: $gray;
-        text-decoration: none;
-        font-family: 'Roboto',
-            sans-serif;
-        font-weight: 600;
-        font-size: 15px;
-    }
+  a {
+    color: $gray;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 1500px) {
-
-    body {
-        h1 {
-            width: 100%;
-            padding-left: 10%;
-        }
-
-        h2 {
-            width: 100%;
-            padding-left: 10%;
-        }
+  body {
+    h1 {
+      width: 100%;
+      padding-left: 10%;
     }
 
-    main {
-        @include flexbox(column, space-around, center);
-        width: 100vw;
+    h2 {
+      width: 100%;
+      padding-left: 10%;
     }
+  }
 
-    .card {
-        width: 80%;
-        margin-left: 0;
-    }
+  main {
+    @include flexbox(column, space-around, center);
+    width: 100vw;
+  }
 
-    .side-menus {
-        @include flexbox(row, space-between, flex-start);
-        width: 690px;
-        height: 480px;
+  .card {
+    width: 80%;
+    margin-left: 0;
+  }
 
-        padding: 10px 30px 0 30px;
-    }
+  .side-menus {
+    @include flexbox(row, space-between, flex-start);
+    width: 690px;
+    height: 480px;
 
-    .aside-menu {
-        margin-bottom: 120px;
-    }
+    padding: 10px 30px 0 30px;
+  }
+
+  .aside-menu {
+    margin-bottom: 120px;
+  }
 }
 
 @media screen and (max-width: 1010px) {
-    .card {
-        height: 700px;
-        width: 90%;
+  .card {
+    height: 700px;
+    width: 90%;
 
-        .slide-btn {
-            display: block;
-        }
+    .slide-btn {
+      display: block;
+    }
+  }
+
+  .card.expanded {
+    height: 1050px;
+    overflow: hidden;
+
+    .slide-btn {
+      transform: rotate(0deg);
     }
 
-    .card.expanded {
-        height: 1050px;
-        overflow: hidden;
-
-        .slide-btn {
-            transform: rotate(0deg);
-        }
-
-        .Path_4_bm {
-            display: none;
-        }
+    .Path_4_bm {
+      display: none;
     }
+  }
 }
 
 @media screen and (max-width: 840px) {
-    .card.expanded {
-        height: 1100px;
-    }
+  .card.expanded {
+    height: 1100px;
+  }
 }
 
 @media screen and (max-width: 750px) {
+  .card {
+    height: 700px;
+    width: 90%;
 
-    .card {
-        height: 700px;
-        width: 90%;
-
-        .slide-btn {
-            display: block;
-        }
+    .slide-btn {
+      display: block;
     }
+  }
 
-    .card.expanded {
-        height: 1170px;
-        overflow: hidden;
+  .card.expanded {
+    height: 1170px;
+    overflow: hidden;
 
-        .slide-btn {
-            transform: rotate(0deg);
-        }
+    .slide-btn {
+      transform: rotate(0deg);
     }
+  }
 
-    .side-menus {
-        @include flexbox(column, space-between, center);
+  .side-menus {
+    @include flexbox(column, space-between, center);
 
-        width: 500px;
-        height: 630px;
-    }
+    width: 500px;
+    height: 630px;
+  }
 
-    .aside-menu {
-        margin-bottom: 30px;
-    }
+  .aside-menu {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .card.expanded {
-        height: 1250px;
-    }
+  .card.expanded {
+    height: 1250px;
+  }
 }
 
 @media screen and (max-width: 650px) {
-    .card.expanded {
-        height: 1300px;
-    }
+  .card.expanded {
+    height: 1300px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .card.expanded {
-        height: 1350px;
-    }
+  .card.expanded {
+    height: 1350px;
+  }
 }
 
 @media screen and (max-width: 550px) {
-    .card.expanded {
-        height: 1450px;
-    }
+  .card.expanded {
+    height: 1450px;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .card.expanded {
-        height: 1570px;
-    }
+  .card.expanded {
+    height: 1570px;
+  }
 }
 
 @media screen and (max-width: 450px) {
-    .card.expanded {
-        height: 1700px;
-    }
+  .card.expanded {
+    height: 1700px;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .card.expanded {
-        height: 1850px;
-    }
+  .card.expanded {
+    height: 1850px;
+  }
 }
 
 @media screen and (max-width: 360px) {
-    .card.expanded {
-        height: 2000px;
-    }
+  .card.expanded {
+    height: 2000px;
+  }
 }
 
 @media screen and (max-width: 335px) {
-    .card.expanded {
-        height: 2100px;
-    }
+  .card.expanded {
+    height: 2100px;
+  }
 }
 
 @media screen and (max-width: 310px) {
-    .card.expanded {
-        height: 2300px;
-    }
+  .card.expanded {
+    height: 2300px;
+  }
 }
 
 @media screen and (max-width: 290px) {
-    .card.expanded {
-        height: 2400px;
-    }
+  .card.expanded {
+    height: 2400px;
+  }
 }
