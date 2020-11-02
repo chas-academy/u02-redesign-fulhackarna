@@ -1,10 +1,10 @@
-@import "../assets/styles/footer";
-@import "../assets/styles/header";
+@import '../assets/styles/footer';
+@import '../assets/styles/header';
 
 $white: white;
-$darkGray: #2F2D36;
+$darkGray: #2f2d36;
 $gray: #656565;
-$backgroundColor: #F1F5F7;
+$backgroundColor: #f1f5f7;
 
 $hugeText: 40px;
 $largeText: 20px;
@@ -12,455 +12,432 @@ $normalText: 15px;
 $smallText: 13px;
 
 @mixin flexbox($direction, $justify, $align) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    border-color: transparent;
-    letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  border-color: transparent;
+  letter-spacing: 0.5px;
 }
 
 body {
-    @include flexbox(column, center, center);
+  @include flexbox(column, center, center);
 
-    margin: 0;
-    height: 100%;
-    background-color: $backgroundColor;
+  margin: 0;
+  height: 100%;
+  background-color: $backgroundColor;
 
-    h1 {
-        // Titel
-        width: 1700px;
-        padding-top: 100px;
-        padding-left: 200px;
-        color: $darkGray;
-        font-family: 'Roboto',
-            sans-serif;
-        font-size: $hugeText;
-        font-weight: bold;
+  h1 {
+    // Titel
+    width: 1700px;
+    padding-top: 100px;
+    padding-left: 200px;
+    color: $darkGray;
+    font-family: 'Roboto', sans-serif;
+    font-size: $hugeText;
+    font-weight: bold;
+  }
+
+  .text-block {
+    width: 1700px;
+    padding-left: 200px;
+
+    h2 {
+      // Sub title
+      width: 400px;
+      margin-right: 1000px;
+      color: $gray;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      font-size: $largeText;
+      font-weight: 600;
     }
-
-    .text-block {
-        width: 1700px;
-        padding-left: 200px;
-
-        h2 {
-            // Sub title
-            width: 400px;
-            margin-right: 1000px;
-            color: $gray;
-            text-decoration: none;
-            font-family: 'Roboto',
-                sans-serif;
-            font-size: $largeText;
-            font-weight: 600;
-        }
-    }
+  }
 }
 
 main {
-    height: 100%;
-    margin-top: 60px;
-    padding-bottom: 100px;
-    display: flex;
-    justify-content: space-around;
+  height: 100%;
+  margin-top: 60px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .main-panel {
-    @include flexbox(column, center, space-between);
-    width: 100%;
-    padding-left: 2.5%;
+  @include flexbox(column, center, space-between);
+  width: 100%;
+  padding-left: 2.5%;
 
-    .card {
-        padding: 30px;
-        width: 1050px;
-        background-color: $white;
-        border-radius: 20px;
-        box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
-        overflow: hidden;
+  .card {
+    padding: 30px;
+    width: 1050px;
+    background-color: $white;
+    border-radius: 20px;
+    box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
 
-        h2 {
-            display: none;
-        }
-
-        .card-container {
-            display: flex;
-            padding: 30px;
-
-            img {
-                position: absolute;
-                width: 100px;
-                object-fit: contain;
-            }
-
-            h3 {
-                padding-left: 120px;
-                color: $darkGray;
-                text-decoration: none;
-                font-family: 'Roboto',
-                    sans-serif;
-                font-weight: 600;
-                font-size: $largeText;
-                width: 100%;
-            }
-
-            p {
-                padding-left: 120px;
-                color: $gray;
-                text-decoration: none;
-                font-family: 'Roboto',
-                    sans-serif;
-                font-weight: 500;
-                font-size: $normalText;
-                width: 80%;
-                margin-top: 8px;
-            }
-
-            .pdf-title {
-                padding-top: 30px;
-                cursor: pointer;
-
-                svg {
-                    margin-right: 10px;
-                }
-            }
-
-            time {
-                color: $gray;
-                text-decoration: none;
-                font-family: 'Roboto',
-                    sans-serif;
-                font-weight: 600;
-                font-size: $normalText;
-            }
-        }
+    h2 {
+      display: none;
     }
 
+    .card-container {
+      display: flex;
+      padding: 30px;
 
-    .page-selector {
-        margin: 30px 0 30px 275px;
-        width: 500px;
-        height: 80px;
-        background-color: $white;
-        border-radius: 40px;
-        box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
-        overflow: hidden;
-        @include flexbox(row, center, center);
+      img {
+        position: absolute;
+        width: 100px;
+        object-fit: contain;
+      }
 
-        ul {
-            width: 90%;
-            @include flexbox(row, space-between, center);
+      h3 {
+        padding-left: 120px;
+        color: $darkGray;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: $largeText;
+        width: 100%;
+      }
 
-            li {
-                text-decoration: none;
-                font-family: 'Roboto',
-                    sans-serif;
-                font-size: $normalText;
-                font-weight: 600;
+      p {
+        padding-left: 120px;
+        color: $gray;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: $normalText;
+        width: 80%;
+        margin-top: 8px;
+      }
 
-                a {
-                    color: $gray;
-                    text-decoration: none;
-                }
-            }
+      .pdf-title {
+        padding-top: 30px;
+        cursor: pointer;
+
+        svg {
+          margin-right: 10px;
         }
+      }
+
+      time {
+        color: $gray;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: $normalText;
+      }
     }
+  }
+
+  .page-selector {
+    margin: 30px 0 30px 275px;
+    width: 500px;
+    height: 80px;
+    background-color: $white;
+    border-radius: 40px;
+    box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    @include flexbox(row, center, center);
+
+    ul {
+      width: 90%;
+      @include flexbox(row, space-between, center);
+
+      li {
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: $normalText;
+        font-weight: 600;
+
+        a {
+          color: $gray;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
 
 .side-menus {
-    @include flexbox(column, flex-start, center);
-    width: 450px;
-    height: 850px;
+  @include flexbox(column, flex-start, center);
+  width: 450px;
+  height: 850px;
 
-    padding-left: 5%;
-    padding-right: 7%;
+  padding-left: 5%;
+  padding-right: 7%;
 
-    h2 {
-        display: none;
-    }
+  h2 {
+    display: none;
+  }
 }
 
 #check {
-    display: none;
+  display: none;
 }
 
 .aside-menu {
-    width: 300px;
-    height: 100px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    background-color: $white;
-    border-radius: 30px;
-    box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
+  width: 300px;
+  height: 100px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  background-color: $white;
+  border-radius: 30px;
+  box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 
-    @include flexbox(row, center, center);
+  @include flexbox(row, center, center);
 
-    p {
-        text-decoration: none;
-        font-family: 'Roboto',
-            sans-serif;
-        font-size: $largeText;
-        font-weight: 600;
-        color: $darkGray;
-    }
+  p {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: $largeText;
+    font-weight: 600;
+    color: $darkGray;
+  }
 }
 
 .aside-drop-menu {
-    width: 330px;
-    height: 0px;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    background-color: $white;
-    border-radius: 20px;
-    box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    visibility: hidden;
-    opacity: 0;
-    transition: height 0.3s;
+  width: 330px;
+  height: 0px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  background-color: $white;
+  border-radius: 20px;
+  box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: height 0.3s;
 
-    @include flexbox(column, space-around, flex-start);
+  @include flexbox(column, space-around, flex-start);
+
+  div {
+    overflow: hidden;
+  }
+
+  p {
+    padding: 0 0 0 17px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: $darkGray;
+  }
+
+  ul {
+    padding: 0 0 0 17px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: $gray;
+
+    li {
+      padding-top: 5px;
+    }
+  }
+}
+
+.filter-checkbox:checked ~ aside {
+  height: 690px;
+  transition: height 0.3s;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1500px) {
+  body {
+    h1 {
+      width: 100%;
+      padding-left: 10%;
+    }
+
+    .text-block {
+      width: 100%;
+      padding-left: 10%;
+    }
+  }
+
+  main {
+    @include flexbox(column-reverse, space-around, center);
+    width: 100vw;
+  }
+
+  .main-panel {
+    @include flexbox(column, center, center);
+    padding: 0;
+
+    .card {
+      width: 80%;
+      margin-left: 0;
+
+      .card-container {
+        width: 100%;
+      }
+    }
+
+    .page-selector {
+      margin: 30px 0 30px 0;
+    }
+  }
+
+  .side-menus {
+    width: 100%;
+    height: 100%;
+  }
+
+  .aside-drop-menu {
+    width: 930px;
+    margin-bottom: 0;
+    flex-direction: row;
 
     div {
-        overflow: hidden;
+      width: 33%;
     }
 
     p {
-        padding: 0 0 0 17px;
-        text-decoration: none;
-        font-family: 'Roboto',
-            sans-serif;
-        font-size: 15px;
-        font-weight: 600;
-        color: $darkGray;
-
+      padding: 25px 0 20px 75px;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: $darkGray;
     }
 
     ul {
-        padding: 0 0 0 17px;
-        text-decoration: none;
-        font-family: 'Roboto',
-            sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        color: $gray;
+      padding: 0 0 0 90px;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      color: $gray;
 
-        li {
-            padding-top: 5px;
-        }
-
+      li {
+        padding-top: 10px;
+      }
     }
+  }
+
+  .filter-checkbox:checked ~ aside {
+    height: 350px;
+    margin-bottom: 30px;
+  }
 }
 
-.filter-checkbox:checked~aside {
+@media screen and (max-width: 1350px) {
+  .main-panel {
+    @include flexbox(column, none, center);
+
+    .card {
+      .card-container {
+        margin-bottom: 50px;
+
+        .pdf-title {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  body {
+    h1 {
+      width: 100%;
+      padding-left: 10%;
+    }
+
+    .text-block {
+      width: 100%;
+      padding-left: 10%;
+
+      h2 {
+        width: 300px;
+      }
+    }
+  }
+
+  .main-panel {
+    @include flexbox(column, none, center);
+
+    .card {
+      width: 90%;
+    }
+
+    .page-selector {
+      width: 350px;
+    }
+  }
+
+  .aside-drop-menu {
+    width: 330px;
+    height: 0px;
+    margin-left: 30px;
+    background-color: $white;
+    border-radius: 20px;
+    box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
+    transition: height 0.3s;
+
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+
+    flex-direction: column;
+
+    div {
+      width: 100%;
+    }
+
+    p {
+      padding: 0 0 0 17px;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: $darkGray;
+    }
+
+    ul {
+      padding: 0 0 0 17px;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      color: $gray;
+
+      li {
+        padding-top: 5px;
+      }
+    }
+  }
+
+  .filter-checkbox:checked ~ aside {
     height: 690px;
     transition: height 0.3s;
     visibility: visible;
     opacity: 1;
-
-
-}
-
-@media screen and (max-width: 1500px) {
-
-
-    body {
-        h1 {
-            width: 100%;
-            padding-left: 10%;
-        }
-
-        .text-block {
-            width: 100%;
-            padding-left: 10%;
-        }
-    }
-
-    main {
-        @include flexbox(column-reverse, space-around, center);
-        width: 100vw;
-    }
-
-    .main-panel {
-        @include flexbox(column, center, center);
-        padding: 0;
-
-        .card {
-            width: 80%;
-            margin-left: 0;
-
-            .card-container {
-                width: 100%;
-            }
-        }
-
-        .page-selector {
-            margin: 30px 0 30px 0;
-        }
-    }
-
-    .side-menus {
-        width: 100%;
-        height: 100%;
-    }
-
-    .aside-drop-menu {
-        width: 930px;
-        margin-bottom: 0;
-        flex-direction: row;
-
-        div {
-            width: 33%;
-        }
-
-        p {
-            padding: 25px 0 20px 75px;
-            text-decoration: none;
-            font-family: 'Roboto',
-                sans-serif;
-            font-size: 15px;
-            font-weight: 600;
-            color: $darkGray;
-
-        }
-
-        ul {
-            padding: 0 0 0 90px;
-            text-decoration: none;
-            font-family: 'Roboto',
-                sans-serif;
-            font-size: 16px;
-            font-weight: 500;
-            color: $gray;
-
-            li {
-                padding-top: 10px;
-            }
-        }
-    }
-
-    .filter-checkbox:checked~aside {
-        height: 350px;
-        margin-bottom: 30px;
-    }
-}
-
-@media screen and (max-width: 1350px) {
-    .main-panel {
-        @include flexbox(column, none, center);
-
-        .card {
-            .card-container {
-                margin-bottom: 50px;
-
-                .pdf-title {
-                    display: none;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1050px) {
-
-    body {
-        h1 {
-            width: 100%;
-            padding-left: 10%;
-        }
-
-        .text-block {
-            width: 100%;
-            padding-left: 10%;
-
-            h2 {
-                width: 300px;
-            }
-        }
-    }
-
-    .main-panel {
-        @include flexbox(column, none, center);
-
-        .card {
-            width: 90%;
-        }
-
-        .page-selector {
-            width: 350px;
-        }
-    }
-
-    .aside-drop-menu {
-        width: 330px;
-        height: 0px;
-        margin-left: 30px;
-        background-color: $white;
-        border-radius: 20px;
-        box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
-        transition: height 0.3s;
-
-        overflow: hidden;
-        visibility: hidden;
-        opacity: 0;
-
-        flex-direction: column;
-
-        div {
-            width: 100%;
-        }
-
-        p {
-            padding: 0 0 0 17px;
-            text-decoration: none;
-            font-family: 'Roboto',
-                sans-serif;
-            font-size: 15px;
-            font-weight: 600;
-            color: $darkGray;
-        }
-
-        ul {
-            padding: 0 0 0 17px;
-            text-decoration: none;
-            font-family: 'Roboto',
-                sans-serif;
-            font-size: 16px;
-            font-weight: 500;
-            color: $gray;
-
-            li {
-                padding-top: 5px;
-            }
-        }
-    }
-
-    .filter-checkbox:checked~aside {
-        height: 690px;
-        transition: height 0.3s;
-        visibility: visible;
-        opacity: 1;
-        margin-bottom: 30px;
-    }
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 750px) {
-    .main-panel {
-        .card {
-            .card-container {
+  .main-panel {
+    .card {
+      .card-container {
+        padding: 10px;
 
-                padding: 10px;
-
-                h3 {
-                    font-size: $normalText;
-                }
-            }
+        h3 {
+          font-size: $normalText;
         }
+      }
     }
+  }
 }
