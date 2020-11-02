@@ -65,7 +65,7 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-.footer-s__card .card-text {
+.footer-s__card-text {
   margin-left: 1rem;
 }
 .footer-s__links {
@@ -95,8 +95,7 @@
   text-decoration: underline;
   cursor: pointer;
 }
-
-.icon-2x {
+.footer-s__icon-2x {
   font-size: 2rem;
 }
 
@@ -204,18 +203,17 @@
   .footer__publisher p {
     font-size: 12px;
   }
-
-  .social-icons {
+  .footer__social-icons {
     overflow: hidden;
   }
-  .social-icons a {
+  .footer__social-icons a {
     color: #656565;
   }
-  .social-icons a:hover,
-.social-icons a:focus {
+  .footer__social-icons a:hover,
+.footer__social-icons a:focus {
     color: black;
   }
-  .social-icons .social-icon {
+  .footer__social-icon {
     width: 50px;
     height: 50px;
     font-size: 3rem;
