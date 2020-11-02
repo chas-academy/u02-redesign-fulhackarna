@@ -5,6 +5,7 @@ const page = urlParams.get("p") || undefined;
 
 // The render container will recieve all elements that are rendered upon recieving the result from the search engine
 const RENDER_CONTAINER = document.querySelector(".search-results");
+const PAGINATION_CONTAINER = document.querySelector(".pagination-results");
 
 // Only perform the request if a search query was provided
 if (query) {
@@ -70,7 +71,7 @@ async function search(keyword) {
         const resultMeta = {
           hitAmount,
           query,
-          pages: Math.ceil(hitAmount / 20),
+          pages: 10,
         };
 
         // Grab resulting articles
@@ -128,8 +129,7 @@ async function search(keyword) {
           );
           page = page.querySelector("li");
           page.onclick = (e) =>
-            (window.location.href =
-              "/sok.html?q=" + query + "&p=" + (index + 1));
+            (window.location.href = "?q=" + query + "&p=" + (index + 1));
 
           pagination.appendChild(page);
         });
@@ -139,7 +139,7 @@ async function search(keyword) {
           list,
           document.querySelector(".lds-default")
         );
-        RENDER_CONTAINER.appendChild(pagination);
+        PAGINATION_CONTAINER.appendChild(pagination);
 
         // Log info for debug purposes
         console.log({
