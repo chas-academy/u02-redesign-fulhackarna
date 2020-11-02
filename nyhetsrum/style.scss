@@ -330,6 +330,7 @@ main {
             display: flex;
             flex-direction: row-reverse;
             padding: 50px 0;
+            cursor: pointer;
 
             .info {
                 width: 100%;
@@ -339,6 +340,11 @@ main {
                 position: absolute;
                 width: 100px;
                 object-fit: contain;
+            }
+
+            h4 {
+                font-size: $hugeText;
+                width: 200px;
             }
 
             h3 {
