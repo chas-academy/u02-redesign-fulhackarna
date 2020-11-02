@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    height: 200px;
+    width: 200px;
+    margin: 0px;
+  }
+  
+  .front,
+  .back {
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    background-position: center;
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    text-align: center;
+    height: 200px;
+    width: 200x;
+    border-radius: 20px;
+    color: black;
+    font-size: 1.5rem;
+  }
+  
+  .back {
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+  }
+  
+  /*Text 3D*/
+  .inner {
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    perspective: inherit;
+    z-index: 2;
+  }
+  
+  .bedrivaUtbildning {
+    background: linear-gradient(180deg, #94a7e814 0%, #256af314 100%);
+  }
+  
+  .digSomStuderar {
+    background: linear-gradient(159.5deg, #e8949414 13.6%, #e6161614 92.17%);
+  }
+  
+  .foretagOrganisationer {
+    background: linear-gradient(159.5deg, #fffdcc14 13.6%, #f1d64e14 92.17%);
+  }
+  #image {
+    transform: translateZ(30px) scale(0.97);
+  
+    z-index: 2;
+    border-radius: 13% 13% 0 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  }
+  
+  /*kort rotationen*/
+  .container .back {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+  }
+  
+  .container .front {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+  }
+  
+  .container:hover .back {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+  }
+  
+  .container:hover .front {
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+  }
+  
+  /*framtext*/
+  .front .inner h2 {
+    font-size: 18px;
+    margin-bottom: 2rem;
+    position: relative;
+    font-family: "Roboto";
+    font-weight: bolder;
+    width: 196px;
+    height: 48px;
+    top: 50px;
+    text-align: left;
+    line-height: 24px;
+  }
+  
+  /*under rubrik*/
+  .front .inner p {
+    color: #656565;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: medium;
+    width: 283;
+    height: 80;
+    text-align: left;
+    top: 30px;
+    position: relative;
+    line-height: 20px;
+  }
+  
+  /*Länkar */
+  
+  .back .inner ul {
+    list-style: none;
+  }
+  
+  .back .inner ul li a {
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+    color: #656565;
+    font-family: "Roboto";
+    font-weight: bold;
+  }
+  
+  .back .inner ul li a:after {
+    content: "";
+    position: absolute;
+    left: 12.5%;
+    display: inline-block;
+    height: 1em;
+    width: 75%;
+    border-bottom: 2px solid;
+    margin-top: 30px;
+    opacity: 0;
+    transition: opacity 0.25s, transform 0.25s;
+    transform: scale(0, 1) translateY(50%);
+  }
+  
+  .back .inner ul li a:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
