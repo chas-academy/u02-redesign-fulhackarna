@@ -1,682 +1,902 @@
 <!DOCTYPE html>
 <html lang="sv">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Nyhetsrum</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap"
-        rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="normalNav" id="normalNav">
-            <img class="myhLogo" src="/navIMG/Logo.svg" alt="logo">
-            <button class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav_options" id="nav_options">
-                <li class="link">
-                    <a href="/start/index.html">Start</a>
-                </li>
-                <li class="link">
-                    <a href="/om-oss/index.html">Om oss</a>
-                </li>
-                <li class="link">
-                    <a href="/verksamhet/index.html">Verksamhet</a>
-                </li>
-                <li class="link">
-                    <a href="/regelverk/index.html">Regelverk</a>
-                </li>
-                <li class="link">
-                    <a href="/statistik/index.html">Statistik</a>
-                </li>
-                <li class="link">
-                    <a href="/publikationer/index.html">Publikationer</a>
-                </li>
-                <li class="link">
-                    <a href="/nyhetsrum/index.html">Nyhetsrum</a>
-                </li>
-                <li class="link">
-                    <a href="/kontakt/index.html">Kontakt</a>
-                </li>
-                <li class="link">
-                    <a href="#minaSidor"><span id="mina_sidor">Mina sidor</span></a>
-                </li>
-                <li class="nav_icon">
-                    <img src="/navIMG/ic_insert_comment_24px.svg">
-                </li>
-                <li class="nav_icon">
-                    <img src="/navIMG/ic_brightness_6_24px.svg">
-                </li>
-                <li class="nav_icon">
-                    <img src="/navIMG/ic_format_size_24px.svg">
-                </li>
-                <div class="responsiveIcons">
-                    <li class="responsiveIc">
-                        <img src="/navIMG/ic_insert_comment_24px.svg">
-                    </li>
-                    <li class="responsiveIc">
-                        <img src="/navIMG/ic_brightness_6_24px.svg">
-                    </li>
-                    <li class="responsiveIc">
-                        <img src="/navIMG/ic_format_size_24px.svg">
-                    </li>
-                </div>
-            </ul>
+      <nav class="normalNav" id="normalNav">
+        <img class="myhLogo" src="/navIMG/Logo.svg" alt="logo" />
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav_options" id="nav_options">
+          <li class="link">
+            <a href="/start/index.html">Start</a>
+          </li>
+          <li class="link">
+            <a href="/om-oss/index.html">Om oss</a>
+          </li>
+          <li class="link">
+            <a href="/verksamhet/index.html">Verksamhet</a>
+          </li>
+          <li class="link">
+            <a href="/regelverk/index.html">Regelverk</a>
+          </li>
+          <li class="link">
+            <a href="/statistik/index.html">Statistik</a>
+          </li>
+          <li class="link">
+            <a href="/publikationer/index.html">Publikationer</a>
+          </li>
+          <li class="link">
+            <a href="/nyhetsrum/index.html">Nyhetsrum</a>
+          </li>
+          <li class="link">
+            <a href="/kontakt/index.html">Kontakt</a>
+          </li>
+          <li class="link">
+            <a href="#minaSidor"><span id="mina_sidor">Mina sidor</span></a>
+          </li>
+          <li class="nav_icon">
+            <img src="/navIMG/ic_insert_comment_24px.svg" />
+          </li>
+          <li class="nav_icon">
+            <img src="/navIMG/ic_brightness_6_24px.svg" />
+          </li>
+          <li class="nav_icon">
+            <img src="/navIMG/ic_format_size_24px.svg" />
+          </li>
+          <div class="responsiveIcons">
+            <li class="responsiveIc">
+              <img src="/navIMG/ic_insert_comment_24px.svg" />
+            </li>
+            <li class="responsiveIc">
+              <img src="/navIMG/ic_brightness_6_24px.svg" />
+            </li>
+            <li class="responsiveIc">
+              <img src="/navIMG/ic_format_size_24px.svg" />
+            </li>
+          </div>
+        </ul>
 
-
-            <div class="search">
-                <form action="sok.html" method="GET">
-                    <input name="q" type="search" placeholder="Sökord" />
-                </form>
-                <div class="searchIcon">
-                    <img src="/navIMG/ic_search_24px.svg">
-                </div>
-            </div>
-        </nav>
+        <div class="search">
+          <form action="sok.html" method="GET">
+            <input name="q" type="search" placeholder="Sökord" />
+          </form>
+          <div class="searchIcon">
+            <img src="/navIMG/ic_search_24px.svg" />
+          </div>
+        </div>
+      </nav>
     </header>
-
-
 
     <h1>Nyhetsrum</h1>
     <div class="text-block">
-        <h2>Välkommen till vårt nyhetsrum. Här hittar du
-            nyheter och pressmeddelanden, bilder,
-            filmer, kalendarium och annan aktuell
-            information.</h2>
+      <h2>
+        Välkommen till vårt nyhetsrum. Här hittar du nyheter och
+        pressmeddelanden, bilder, filmer, kalendarium och annan aktuell
+        information.
+      </h2>
     </div>
 
     <div class="slideshow-container">
-        <div class="carousel-clip">
-            <div class="dots-carousel">
-                <a href="#">
-                    <span class="controls" id="pause">&#x23f8;</span>
-                </a>
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-            </div>
-            <div class="carousel-wrapper">
-
-                <div class="mySlides fade">
-                    <a
-                        href="/Nyhetsrum/Nyheter/2020/Fragor-och-svar-for-dig-som-utbildningsanordnare-med-anledning-av-Coronaviruset/">
-                        <img src="/assets/slider-images/GDHarOrdet_budget.jpg" alt="Nyheter" style="width:100%">
-                    </a>
-                    <span class="carousel-item-caption h-subheadline">
-                        <a href="/Nyhetsrum/Nyheter/2020/GD-har-ordet---Budgetpropositionen-och-ansokningar-till-YH/">GD
-                            har ordet - Budgetpropositionen och ansökningar till YH</a>
-                    </span>
-                </div>
-
-                <div class="mySlides fade">
-                    <a
-                        href="/Verksamhetsomraden/Yrkeshogskolan/For-utbildningsanordnare/Distansstod--for-anordnare-som-staller-om-till-distansundervisning/">
-                        <img src="/assets/slider-images/distans.jpg" alt="Verksamhet" style="width:101%">
-                    </a>
-                    <span class="carousel-item-caption h-subheadline">
-                        <a
-                            href="/Verksamhetsomraden/Yrkeshogskolan/For-utbildningsanordnare/Distansstod--for-anordnare-som-staller-om-till-distansundervisning/">Distansstöd
-                            - webbinarium, webbcaféer och podd</a>
-                    </span>
-                </div>
-
-                <div class="mySlides fade">
-                    <a
-                        href="/Nyhetsrum/Nyheter/2020/Information-till-YH-anordnare-som-fatt-fler-platser-i-form-av-en-ytterligare-omgang/">
-                        <img src="/assets/slider-images/Scandinav_BK4O.jpg" alt="Nyhetsrum" style="width:100%">
-                    </a>
-                    <span class="carousel-item-caption h-subheadline">
-                        <a
-                            href="/Nyhetsrum/Nyheter/2020/Information-till-YH-anordnare-som-fatt-fler-platser-i-form-av-en-ytterligare-omgang/">Information
-                            till YH-anordnare som fått fler platser i form av en ytterligare omgång</a>
-                    </span>
-                </div>
-
-                <div class="mySlides fade">
-                    <a
-                        href="/Nyhetsrum/Nyheter/2020/Fragor-och-svar-for-dig-som-utbildningsanordnare-med-anledning-av-Coronaviruset/">
-                        <img src="/assets/slider-images/bord.jpg" alt="Frågor" style="width:101%">
-                    </a>
-                    <span class="carousel-item-caption h-subheadline">
-                        <a
-                            href="/Nyhetsrum/Nyheter/2020/Fragor-och-svar-for-dig-som-utbildningsanordnare-med-anledning-av-Coronaviruset/">Frågor
-                            och svar för utbildningsanordnare med anledning av coronaviruset</a>
-                    </span>
-                </div>
-            </div>
-            <a class="prev" onclick="plusSlides(-1)" style="text-decoration: none;">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)" style="text-decoration: none;">&#10095;</a>
+      <div class="carousel-clip">
+        <div class="dots-carousel">
+          <a href="#">
+            <span class="controls" id="pause">&#x23f8;</span>
+          </a>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
         </div>
+        <div class="carousel-wrapper">
+          <div class="mySlides fade">
+            <a
+              href="/Nyhetsrum/Nyheter/2020/Fragor-och-svar-for-dig-som-utbildningsanordnare-med-anledning-av-Coronaviruset/"
+            >
+              <img
+                src="/assets/slider-images/GDHarOrdet_budget.jpg"
+                alt="Nyheter"
+                style="width: 100%"
+              />
+            </a>
+            <span class="carousel-item-caption h-subheadline">
+              <a
+                href="/Nyhetsrum/Nyheter/2020/GD-har-ordet---Budgetpropositionen-och-ansokningar-till-YH/"
+                >GD har ordet - Budgetpropositionen och ansökningar till YH</a
+              >
+            </span>
+          </div>
+
+          <div class="mySlides fade">
+            <a
+              href="/Verksamhetsomraden/Yrkeshogskolan/For-utbildningsanordnare/Distansstod--for-anordnare-som-staller-om-till-distansundervisning/"
+            >
+              <img
+                src="/assets/slider-images/distans.jpg"
+                alt="Verksamhet"
+                style="width: 101%"
+              />
+            </a>
+            <span class="carousel-item-caption h-subheadline">
+              <a
+                href="/Verksamhetsomraden/Yrkeshogskolan/For-utbildningsanordnare/Distansstod--for-anordnare-som-staller-om-till-distansundervisning/"
+                >Distansstöd - webbinarium, webbcaféer och podd</a
+              >
+            </span>
+          </div>
+
+          <div class="mySlides fade">
+            <a
+              href="/Nyhetsrum/Nyheter/2020/Information-till-YH-anordnare-som-fatt-fler-platser-i-form-av-en-ytterligare-omgang/"
+            >
+              <img
+                src="/assets/slider-images/Scandinav_BK4O.jpg"
+                alt="Nyhetsrum"
+                style="width: 100%"
+              />
+            </a>
+            <span class="carousel-item-caption h-subheadline">
+              <a
+                href="/Nyhetsrum/Nyheter/2020/Information-till-YH-anordnare-som-fatt-fler-platser-i-form-av-en-ytterligare-omgang/"
+                >Information till YH-anordnare som fått fler platser i form av
+                en ytterligare omgång</a
+              >
+            </span>
+          </div>
+
+          <div class="mySlides fade">
+            <a
+              href="/Nyhetsrum/Nyheter/2020/Fragor-och-svar-for-dig-som-utbildningsanordnare-med-anledning-av-Coronaviruset/"
+            >
+              <img
+                src="/assets/slider-images/bord.jpg"
+                alt="Frågor"
+                style="width: 101%"
+              />
+            </a>
+            <span class="carousel-item-caption h-subheadline">
+              <a
+                href="/Nyhetsrum/Nyheter/2020/Fragor-och-svar-for-dig-som-utbildningsanordnare-med-anledning-av-Coronaviruset/"
+                >Frågor och svar för utbildningsanordnare med anledning av
+                coronaviruset</a
+              >
+            </span>
+          </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)" style="text-decoration: none"
+          >&#10094;</a
+        >
+        <a class="next" onclick="plusSlides(1)" style="text-decoration: none"
+          >&#10095;</a
+        >
+      </div>
     </div>
 
     <main>
-        <section class="main-panel">
+      <section class="main-panel">
+        <div class="selector-card">
+          <div class="checkboxes" id="checkbox-width1">
+            <input
+              type="checkbox"
+              id="checkbox1"
+              name="check"
+              onclick="onlyOne(this)"
+              checked
+            />
+            <label for="checkbox1">
+              <div>
+                <p>Aktuellt</p>
+              </div>
+            </label>
+          </div>
 
-            <div class="selector-card">
-                <div class="checkboxes" id="checkbox-width1">
-                    <input type="checkbox" id="checkbox1" name="check" onclick="onlyOne(this)" checked>
-                    <label for="checkbox1">
-                        <div>
-                            <p>Aktuellt</p>
-                        </div>
-                    </label>
-                </div>
+          <div class="checkboxes" id="checkbox-width2">
+            <input
+              type="checkbox"
+              id="checkbox2"
+              name="check"
+              onclick="onlyOne(this)"
+            />
+            <label for="checkbox2">
+              <div>
+                <p>Press</p>
+              </div>
+            </label>
+          </div>
 
-                <div class="checkboxes" id="checkbox-width2">
-                    <input type="checkbox" id="checkbox2" name="check" onclick="onlyOne(this)">
-                    <label for="checkbox2">
-                        <div>
-                            <p>Press</p>
-                        </div>
-                    </label>
-                </div>
+          <div class="checkboxes" id="checkbox-width3">
+            <input
+              type="checkbox"
+              id="checkbox3"
+              name="check"
+              onclick="onlyOne(this)"
+            />
+            <label for="checkbox3">
+              <div>
+                <p>Kalender</p>
+              </div>
+            </label>
+          </div>
+        </div>
 
-                <div class="checkboxes" id="checkbox-width3">
-                    <input type="checkbox" id="checkbox3" name="check" onclick="onlyOne(this)">
-                    <label for="checkbox3">
-                        <div>
-                            <p>Kalender</p>
-                        </div>
-                    </label>
-                </div>
+        <div class="card" id="card">
+          <h2>Main panel</h2>
+          <div class="card-container">
+            <img src="images/GDHarOrdet2020.jpg" alt="pdf cover" />
+            <div class="info">
+              <h3>GD har ordet - Många frågor blir det… Tack för input!</h3>
+              <p>
+                <time>26 oktober 2020 </time>I min förra text efterlyste jag er
+                input om ansökningarna, tack för att ni har hört av er. Denna
+                gång kommenterar jag även det jag skrev om förändringar inför
+                nästa års ansökan.
+              </p>
             </div>
+          </div>
 
-            <div class="card" id="card">
-                <h2>Main panel</h2>
-                <div class="card-container">
-                    <img src="images/GDHarOrdet2020.jpg" alt="pdf cover">
-                    <div class="info">
-                        <h3>GD har ordet - Många frågor blir det… Tack för input!</h3>
-                        <p><time>26 oktober 2020
-                            </time>I min förra text efterlyste jag er input om ansökningarna, tack för att ni har hört
-                            av er. Denna gång kommenterar jag även det jag skrev om förändringar inför nästa års
-                            ansökan.</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <img src="images/ContentSliderFlerijobbefterYH.png" alt="pdf cover">
-                    <div class="info">
-                        <h3>Resultatet av ansökningsomgången för kurser i kontakttolkning</h3>
-                        <p><time>23 oktober 2020
-                            </time>Varje år ansöker folkhögskolor och studieförbund om medel från Myndigheten för
-                            yrkeshögskolan för att starta kurser för kontakttolkar. I årets ansökningsomgång har 89
-                            kurser beviljats statsbidrag för start under 2021.</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <img src="images/distansstod_nyhet.jpg" alt="pdf cover">
-                    <div class="info">
-                        <h3>Deltidsutvärdering av projektet Distansstöd</h3>
-                        <p><time>23 oktober 2020
-                            </time>Under hösten genomförs flera aktiviteter inom ramen för projektet ”Distansstöd". Den
-                            här enkäten vill utvärdera om ni som utbildningsanordnare upplever att projektet ger er stöd
-                            i frågor som rör distansundervisning. Svaren kommer även att användas för fortsatta
-                            aktiviteter inom projektet under 2020.</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <img src="images/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf" alt="pdf cover">
-                    <div class="info">
-                        <h3>Tre nya utbildningar till kontakttolk inom yrkeshögskolan</h3>
-                        <p><time>22 oktober 2020
-                            </time>I början av nästa år startar tre nya utbildningar till
-                            kontakttolk inom yrkeshögskolan. Därmed fortsätter den försöksverksamhet med
-                            kontakttolkutbildningar som startade 2019 och som ska redovisas till regeringen 2024.</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <img src="images/Kvalitetskriterier_validering.pdf" alt="pdf cover">
-                    <div class="info">
-                        <h3>Nu kan du administrera korta yrkeshögskoleutbildningar i Mina sidor</h3>
-                        <p><time>16 oktober 2020
-
-                            </time>Från och med den 16 oktober är det möjligt att sköta större delen av administrationen
-                            av utbildningen och de studerande i Mina sidor.</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <img src="images/Analys_HalsoSjukvard2020.pdf" alt="pdf cover">
-                    <div class="info">
-                        <h3>Yrkeshögskola – det populäraste alternativet för tjänstemän vid omställning</h3>
-                        <p><time>16 oktober 2020
-
-                            </time>
-                            När förutsättningarna på arbetsmarknaden förändras i pandemins spår blir omställning allt
-                            viktigare. Omställningsaktören TRR är en av de aktörer som stöttar tjänstemän i privat
-                            sektor när de förlorat jobbet. I förra veckan släppte de nya siffror som visar att
-                            yrkeshögskolan är den populäraste utbildningsformen för tjänstemän som ska ställa om.</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <img src="images/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf" alt="pdf cover">
-                    <div class="info">
-                        <h3>Ansök om statsbidrag för utbildning till teckenspråks- och dövblindtolk samt skrivtolk</h3>
-                        <p><time>15 oktober 2020
-                            </time>Nu kan folkhögskolor ansöka om statsbidrag för teckenspråks- och
-                            dövblindtolkutbildningen samt
-                            skrivtolkutbildningen. Ansökan är öppen till och med den 19 november 2020.</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <img src="images/Kvalitetskriterier_validering.pdf" alt="pdf cover">
-                    <div class="info">
-                        <h3>Ny rapport synliggör social snedrekrytering</h3>
-                        <p><time>14 oktober 2020
-                            </time>Andelen antagna med högutbildade föräldrar på konst- och kulturutbildningar är högre
-                            än hos befolkningen som helhet vilket tyder på snedrekrytering.</p>
-                    </div>
-                </div>
+          <div class="card-container">
+            <img
+              src="images/ContentSliderFlerijobbefterYH.png"
+              alt="pdf cover"
+            />
+            <div class="info">
+              <h3>
+                Resultatet av ansökningsomgången för kurser i kontakttolkning
+              </h3>
+              <p>
+                <time>23 oktober 2020 </time>Varje år ansöker folkhögskolor och
+                studieförbund om medel från Myndigheten för yrkeshögskolan för
+                att starta kurser för kontakttolkar. I årets ansökningsomgång
+                har 89 kurser beviljats statsbidrag för start under 2021.
+              </p>
             </div>
+          </div>
 
-            <div class="card" id="card2">
-                <h2>Main panel</h2>
-                <div class="card-container">
-                    <img src="images/Analys_HalsoSjukvard2020.pdf" alt="pdf cover">
-                    <div class="info">
-                        <h3>Storsatsning på data/IT när yrkeshögskolan växer</h3>
-                        <p><time>29 januari 2019
-                            </time>Idag presenterar Myndigheten för yrkeshögskolan de nya utbildningar som beviljats att
-                            starta från och med hösten 2019. Av de närmare 500 nya YH-utbildningarna som beviljats är
-                            var femte inom data/IT.</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <img src="images/distansstod_nyhet.jpg" alt="pdf cover">
-                    <div class="info">
-                        <h3>Lokförare – populäraste YH-utbildningen</h3>
-                        <p><time>20 augusti 2018
-
-                            </time>Söktrycket till yrkeshögskolan (YH) har de senaste åren ökat stadigt. Utbildningen
-                            med allra flest antal behöriga sökande per plats är lokförarutbildningen.</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <img src="images/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf" alt="pdf cover">
-                    <div class="info">
-                        <h3>Platser kvar på många YH-utbildningar</h3>
-                        <p><time>15 augusti 2018 </time>I höst startar historiskt många yrkeshögskoleutbildningar.
-                            Antagningen till de flesta har redan stängt, men på vissa utbildningar finns det fortfarande
-                            platser kvar. Soleltekniker, redovisningskonsult och stödpedagog är några av de utbildningar
-                            som fortfarande tar emot ansökningar.</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <img src="images/ContentSliderFlerijobbefterYH.png" alt="pdf cover">
-                    <div class="info">
-                        <h3>Kvalitetskriterier för validering - yrkeshögskoleutbildning, konst- och kulturutbildningar
-                            och tolkutbildning inom folkbildningen</h3>
-                        <p><time>Utgiven: 2020-06-09
-                            </time>Myndigheten har tagit fram kvalitetskriterier för arbetet med validering inom de
-                            utbildningsformer som... </p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <img src="images/Kvalitetskriterier_validering.pdf" alt="pdf cover">
-                    <div class="info">
-                        <h3>Nu ska även yrkeshögskolan utbilda tolkar</h3>
-                        <p><time>20 juni 2018
-
-                            </time>Arabiska, dari, tigrinja och somaliska. Den som behärskar både svenska och någon av
-                            de språken kommer till hösten att kunna söka någon av de allra första YH-utbildningarna till
-                            kontakttolk som startar i januari 2019</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <img src="images/Analys_HalsoSjukvard2020.pdf" alt="pdf cover">
-                    <div class="info">
-                        <h3>Söktrycket till yrkeshögskolan ökar</h3>
-                        <p><time>11 juni 2018
-                            </time>Under 2017 var det 3% fler som sökte till yrkeshögskolan än föregående år. Mer än var
-                            femte person som sökte valde en utbildning inom hälso- och sjukvård.</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <img src="images/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf" alt="pdf cover">
-                    <div class="info">
-                        <h3>Platser kvar på höstens YH-utbildningar</h3>
-                        <p><time>4 juni 2018
-                            </time>Efter sommaren startar historiskt många
-                            yrkeshögskoleutbildningar. Antagningen till de flesta har redan stängt, men till en del
-                            utbildningar finns det fortfarande platser kvar. Elkraftsingenjör, redovisningsekonom,
-                            CNC-tekniker och trädgårdsmästare är några av de utbildningar som fortfarande tar emot
-                            ansökningar.</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <img src="images/Kvalitetskriterier_validering.pdf" alt="pdf cover">
-                    <div class="info">
-                        <h3>Allt högre utbildningsnivå bland YH-studerande</h3>
-                        <p><time>28 maj 2018
-                            </time>Utbildningsnivån bland de som påbörjar yrkeshögskolestudier har höjts enligt ny
-                            statistik från Myndigheten för yrkeshögskolan. Var tredje studerande som påbörjar en
-                            YH-utbildning har tidigare erfarenheter av eftergymnasiala studier. När det kommer till
-                            utrikes födda är utbildningsnivån ännu högre.</p>
-                    </div>
-                </div>
+          <div class="card-container">
+            <img src="images/distansstod_nyhet.jpg" alt="pdf cover" />
+            <div class="info">
+              <h3>Deltidsutvärdering av projektet Distansstöd</h3>
+              <p>
+                <time>23 oktober 2020 </time>Under hösten genomförs flera
+                aktiviteter inom ramen för projektet ”Distansstöd". Den här
+                enkäten vill utvärdera om ni som utbildningsanordnare upplever
+                att projektet ger er stöd i frågor som rör distansundervisning.
+                Svaren kommer även att användas för fortsatta aktiviteter inom
+                projektet under 2020.
+              </p>
             </div>
+          </div>
 
-            <div class="card" id="card3">
-                <h2>Main panel</h2>
-                <div class="card-container">
-                    <h4>03</h4>
-                    <div class="info">
-                        <h3>november 2020
-                            Distansstöds webbcafé</h3>
-                        <p>En möjlighet för dig som anordnare att möta andra anordnare vid särskilda webbcaféer för
-                            frågor och samtal kring hur man kan lösa de utmaningar och dra nytta av de möjligheter som
-                            undervisning på distans innebär.</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <h4>05</h4>
-                    <div class="info">
-                        <h3>november 2020
-                            Distansstöds webbcafé</h3>
-                        <p>En möjlighet för dig som anordnare att möta andra anordnare vid särskilda webbcaféer för
-                            frågor och samtal kring hur man kan lösa de utmaningar och dra nytta av de möjligheter som
-                            undervisning på distans innebär.</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <h4>05</h4>
-                    <div class="info">
-                        <h3>november 2020
-                            Extra webbinarium: Samtal om oro inför omställning av utbildningar</h3>
-                        <p>Just nu ser vi allt fler tecken på att smittspridningen av covid-19 ökar i samhället, framför
-                            allt på regional nivå. Kommer vi behöva ställa om våra utbildningar igen, och vilka
-                            lösningar är möjliga? Projektet Distansstöd har satt in ett extra webbinarium den 5 november
-                            för samtal med myndigheten om den oro som många anordnare känner inför att ställa om sin
-                            undervisning.</p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <h4>18-19</h4>
-                    <div class="info">
-                        <h3>Kunskap & Framtid - digital mässa</h3>
-                        <p>Myndigheten deltar på årets digitala studentmässa med monter och föreläsning. Under mässan
-                            finns det även möjlighet att kontakta oss med frågor om utbildningsformerna yrkeshögskolan,
-                            konst- och kulturutbildningar och tolk inom folkbildningen. </p>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <h4>24-27</h4>
-                    <div class="info">
-                        <h3>Saco studentmässa</h3>
-                        <p>Myndigheten deltar på årets digitala studentmässa med monter och föreläsning. Under mässan
-                            finns det även möjlighet att chatta med oss om utbildningsformerna yrkeshögskolan, konst-
-                            och kulturutbildningar och tolk inom folkbildningen. </p>
-                    </div>
-                </div>
+          <div class="card-container">
+            <img
+              src="images/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf"
+              alt="pdf cover"
+            />
+            <div class="info">
+              <h3>Tre nya utbildningar till kontakttolk inom yrkeshögskolan</h3>
+              <p>
+                <time>22 oktober 2020 </time>I början av nästa år startar tre
+                nya utbildningar till kontakttolk inom yrkeshögskolan. Därmed
+                fortsätter den försöksverksamhet med kontakttolkutbildningar som
+                startade 2019 och som ska redovisas till regeringen 2024.
+              </p>
             </div>
-            <button>Visa mer</button>
-        </section>
+          </div>
 
-        <section class="side-menus parallax" data-speed="0.5">
-            <h2>Side panel</h2>
-            <nav class="link-menu">
-                <ul>
-                    <li><a href="#">Nyheter</a></li>
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">Kalender</a></li>
-                    <li><a href="#">Filmer</a></li>
-                    <li><a href="#">Nyhetsbrev</a></li>
+          <div class="card-container">
+            <img
+              src="images/Kvalitetskriterier_validering.pdf"
+              alt="pdf cover"
+            />
+            <div class="info">
+              <h3>
+                Nu kan du administrera korta yrkeshögskoleutbildningar i Mina
+                sidor
+              </h3>
+              <p>
+                <time>16 oktober 2020 </time>Från och med den 16 oktober är det
+                möjligt att sköta större delen av administrationen av
+                utbildningen och de studerande i Mina sidor.
+              </p>
+            </div>
+          </div>
 
-                </ul>
-            </nav>
+          <div class="card-container">
+            <img src="images/Analys_HalsoSjukvard2020.pdf" alt="pdf cover" />
+            <div class="info">
+              <h3>
+                Yrkeshögskola – det populäraste alternativet för tjänstemän vid
+                omställning
+              </h3>
+              <p>
+                <time>16 oktober 2020 </time> När förutsättningarna på
+                arbetsmarknaden förändras i pandemins spår blir omställning allt
+                viktigare. Omställningsaktören TRR är en av de aktörer som
+                stöttar tjänstemän i privat sektor när de förlorat jobbet. I
+                förra veckan släppte de nya siffror som visar att yrkeshögskolan
+                är den populäraste utbildningsformen för tjänstemän som ska
+                ställa om.
+              </p>
+            </div>
+          </div>
 
-            <aside class="aside-press-kontakt">
-                <h3>Press kontakt</h3>
-                <p>Johan Lindahl</p>
+          <div class="card-container">
+            <img
+              src="images/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf"
+              alt="pdf cover"
+            />
+            <div class="info">
+              <h3>
+                Ansök om statsbidrag för utbildning till teckenspråks- och
+                dövblindtolk samt skrivtolk
+              </h3>
+              <p>
+                <time>15 oktober 2020 </time>Nu kan folkhögskolor ansöka om
+                statsbidrag för teckenspråks- och dövblindtolkutbildningen samt
+                skrivtolkutbildningen. Ansökan är öppen till och med den 19
+                november 2020.
+              </p>
+            </div>
+          </div>
 
-                <ul>
-                    <li class="tel"><a href="tel:+1-555-555-5555"><svg xmlns="http://www.w3.org/2000/svg" width="18"
-                                height="18">
-                                <path id="ic_local_phone_24px"
-                                    d="M6.62,10.79a15.149,15.149,0,0,0,6.59,6.59l2.2-2.2a.994.994,0,0,1,1.02-.24,11.407,11.407,0,0,0,3.57.57,1,1,0,0,1,1,1V20a1,1,0,0,1-1,1A17,17,0,0,1,3,4,1,1,0,0,1,4,3H7.5a1,1,0,0,1,1,1,11.36,11.36,0,0,0,.57,3.57,1,1,0,0,1-.25,1.02Z"
-                                    transform="translate(-3 -3)" fill="#fff" />
-                            </svg>
-                        </a></li>
-                    <li class="e-post"><a href="mailto:Johan@example.com">E-post</a></li>
-                    <li class="my-news-desk"><a
-                            href="https://www.mynewsdesk.com/se/myndigheten-foer-yrkeshoegskolan"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="27.324" height="27.324">
-                                <path id="ic_public_24px"
-                                    d="M15.662,2A13.662,13.662,0,1,0,29.324,15.662,13.667,13.667,0,0,0,15.662,2ZM14.3,26.5A10.914,10.914,0,0,1,4.732,15.662a11.091,11.091,0,0,1,.287-2.446l6.544,6.544v1.366A2.74,2.74,0,0,0,14.3,23.859Zm9.427-3.47a2.711,2.711,0,0,0-2.6-1.9H19.761v-4.1a1.37,1.37,0,0,0-1.366-1.366H10.2V12.93H12.93A1.37,1.37,0,0,0,14.3,11.563V8.831h2.732A2.74,2.74,0,0,0,19.761,6.1v-.56a10.905,10.905,0,0,1,3.962,17.488Z"
-                                    transform="translate(-2 -2)" fill="#fff" />
-                            </svg>
-                        </a></li>
-                </ul>
-            </aside>
+          <div class="card-container">
+            <img
+              src="images/Kvalitetskriterier_validering.pdf"
+              alt="pdf cover"
+            />
+            <div class="info">
+              <h3>Ny rapport synliggör social snedrekrytering</h3>
+              <p>
+                <time>14 oktober 2020 </time>Andelen antagna med högutbildade
+                föräldrar på konst- och kulturutbildningar är högre än hos
+                befolkningen som helhet vilket tyder på snedrekrytering.
+              </p>
+            </div>
+          </div>
+        </div>
 
-            <aside class="aside-menu">
-                <h3>Prenumerera</h3>
-                <div>
-                    <ul class="aside-menu-icons">
-                        <li><a href="#"><svg id="ic_rss_feed_24px" xmlns="http://www.w3.org/2000/svg" width="19.148"
-                                    height="19.148" viewbox="0 0 19.148 19.148">
-                                    <circle id="Ellipse_9" data-name="Ellipse 9" cx="2.683" cy="2.683" r="2.683"
-                                        transform="translate(0 13.783)" fill="#656565" />
-                                    <path id="Path_6" data-name="Path 6"
-                                        d="M4,4.44V7.923A15.667,15.667,0,0,1,19.666,23.588h3.483A19.154,19.154,0,0,0,4,4.44Zm0,6.965v3.483a8.708,8.708,0,0,1,8.7,8.7h3.483A12.179,12.179,0,0,0,4,11.405Z"
-                                        transform="translate(-4 -4.44)" fill="#656565" />
-                                </svg>
+        <div class="card" id="card2">
+          <h2>Main panel</h2>
+          <div class="card-container">
+            <img src="images/Analys_HalsoSjukvard2020.pdf" alt="pdf cover" />
+            <div class="info">
+              <h3>Storsatsning på data/IT när yrkeshögskolan växer</h3>
+              <p>
+                <time>29 januari 2019 </time>Idag presenterar Myndigheten för
+                yrkeshögskolan de nya utbildningar som beviljats att starta från
+                och med hösten 2019. Av de närmare 500 nya YH-utbildningarna som
+                beviljats är var femte inom data/IT.
+              </p>
+            </div>
+          </div>
 
+          <div class="card-container">
+            <img src="images/distansstod_nyhet.jpg" alt="pdf cover" />
+            <div class="info">
+              <h3>Lokförare – populäraste YH-utbildningen</h3>
+              <p>
+                <time>20 augusti 2018 </time>Söktrycket till yrkeshögskolan (YH)
+                har de senaste åren ökat stadigt. Utbildningen med allra flest
+                antal behöriga sökande per plats är lokförarutbildningen.
+              </p>
+            </div>
+          </div>
 
-                            </a>
-                        </li>
-                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22.514" height="18.011"
-                                    viewbox="0 0 22.514 18.011">
-                                    <path id="ic_markunread_24px"
-                                        d="M22.262,4H4.251a2.248,2.248,0,0,0-2.24,2.251L2,19.76a2.258,2.258,0,0,0,2.251,2.251H22.262a2.258,2.258,0,0,0,2.251-2.251V6.251A2.258,2.258,0,0,0,22.262,4Zm0,4.5-9.005,5.628L4.251,8.5V6.251l9.005,5.628,9.005-5.628Z"
-                                        transform="translate(-2 -4)" fill="#656565" />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+          <div class="card-container">
+            <img
+              src="images/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf"
+              alt="pdf cover"
+            />
+            <div class="info">
+              <h3>Platser kvar på många YH-utbildningar</h3>
+              <p>
+                <time>15 augusti 2018 </time>I höst startar historiskt många
+                yrkeshögskoleutbildningar. Antagningen till de flesta har redan
+                stängt, men på vissa utbildningar finns det fortfarande platser
+                kvar. Soleltekniker, redovisningskonsult och stödpedagog är
+                några av de utbildningar som fortfarande tar emot ansökningar.
+              </p>
+            </div>
+          </div>
 
-                    <ul class="aside-menu-list">
-                        <li><a href="#">Via RSS</a></li>
-                        <li><a href="#">Via e-post</a></li>
-                    </ul>
-                </div>
+          <div class="card-container">
+            <img
+              src="images/ContentSliderFlerijobbefterYH.png"
+              alt="pdf cover"
+            />
+            <div class="info">
+              <h3>
+                Kvalitetskriterier för validering - yrkeshögskoleutbildning,
+                konst- och kulturutbildningar och tolkutbildning inom
+                folkbildningen
+              </h3>
+              <p>
+                <time>Utgiven: 2020-06-09 </time>Myndigheten har tagit fram
+                kvalitetskriterier för arbetet med validering inom de
+                utbildningsformer som...
+              </p>
+            </div>
+          </div>
 
-            </aside>
-        </section>
+          <div class="card-container">
+            <img
+              src="images/Kvalitetskriterier_validering.pdf"
+              alt="pdf cover"
+            />
+            <div class="info">
+              <h3>Nu ska även yrkeshögskolan utbilda tolkar</h3>
+              <p>
+                <time>20 juni 2018 </time>Arabiska, dari, tigrinja och
+                somaliska. Den som behärskar både svenska och någon av de
+                språken kommer till hösten att kunna söka någon av de allra
+                första YH-utbildningarna till kontakttolk som startar i januari
+                2019
+              </p>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <img src="images/Analys_HalsoSjukvard2020.pdf" alt="pdf cover" />
+            <div class="info">
+              <h3>Söktrycket till yrkeshögskolan ökar</h3>
+              <p>
+                <time>11 juni 2018 </time>Under 2017 var det 3% fler som sökte
+                till yrkeshögskolan än föregående år. Mer än var femte person
+                som sökte valde en utbildning inom hälso- och sjukvård.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <img
+              src="images/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf"
+              alt="pdf cover"
+            />
+            <div class="info">
+              <h3>Platser kvar på höstens YH-utbildningar</h3>
+              <p>
+                <time>4 juni 2018 </time>Efter sommaren startar historiskt många
+                yrkeshögskoleutbildningar. Antagningen till de flesta har redan
+                stängt, men till en del utbildningar finns det fortfarande
+                platser kvar. Elkraftsingenjör, redovisningsekonom, CNC-tekniker
+                och trädgårdsmästare är några av de utbildningar som fortfarande
+                tar emot ansökningar.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <img
+              src="images/Kvalitetskriterier_validering.pdf"
+              alt="pdf cover"
+            />
+            <div class="info">
+              <h3>Allt högre utbildningsnivå bland YH-studerande</h3>
+              <p>
+                <time>28 maj 2018 </time>Utbildningsnivån bland de som påbörjar
+                yrkeshögskolestudier har höjts enligt ny statistik från
+                Myndigheten för yrkeshögskolan. Var tredje studerande som
+                påbörjar en YH-utbildning har tidigare erfarenheter av
+                eftergymnasiala studier. När det kommer till utrikes födda är
+                utbildningsnivån ännu högre.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="card3">
+          <h2>Main panel</h2>
+          <div class="card-container">
+            <h4>03</h4>
+            <div class="info">
+              <h3>november 2020 Distansstöds webbcafé</h3>
+              <p>
+                En möjlighet för dig som anordnare att möta andra anordnare vid
+                särskilda webbcaféer för frågor och samtal kring hur man kan
+                lösa de utmaningar och dra nytta av de möjligheter som
+                undervisning på distans innebär.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <h4>05</h4>
+            <div class="info">
+              <h3>november 2020 Distansstöds webbcafé</h3>
+              <p>
+                En möjlighet för dig som anordnare att möta andra anordnare vid
+                särskilda webbcaféer för frågor och samtal kring hur man kan
+                lösa de utmaningar och dra nytta av de möjligheter som
+                undervisning på distans innebär.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <h4>05</h4>
+            <div class="info">
+              <h3>
+                november 2020 Extra webbinarium: Samtal om oro inför omställning
+                av utbildningar
+              </h3>
+              <p>
+                Just nu ser vi allt fler tecken på att smittspridningen av
+                covid-19 ökar i samhället, framför allt på regional nivå. Kommer
+                vi behöva ställa om våra utbildningar igen, och vilka lösningar
+                är möjliga? Projektet Distansstöd har satt in ett extra
+                webbinarium den 5 november för samtal med myndigheten om den oro
+                som många anordnare känner inför att ställa om sin undervisning.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <h4>18-19</h4>
+            <div class="info">
+              <h3>Kunskap & Framtid - digital mässa</h3>
+              <p>
+                Myndigheten deltar på årets digitala studentmässa med monter och
+                föreläsning. Under mässan finns det även möjlighet att kontakta
+                oss med frågor om utbildningsformerna yrkeshögskolan, konst- och
+                kulturutbildningar och tolk inom folkbildningen.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <h4>24-27</h4>
+            <div class="info">
+              <h3>Saco studentmässa</h3>
+              <p>
+                Myndigheten deltar på årets digitala studentmässa med monter och
+                föreläsning. Under mässan finns det även möjlighet att chatta
+                med oss om utbildningsformerna yrkeshögskolan, konst- och
+                kulturutbildningar och tolk inom folkbildningen.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button>Visa mer</button>
+      </section>
+
+      <section class="side-menus parallax" data-speed="0.5">
+        <h2>Side panel</h2>
+        <nav class="link-menu">
+          <ul>
+            <li><a href="#">Nyheter</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Kalender</a></li>
+            <li><a href="#">Filmer</a></li>
+            <li><a href="#">Nyhetsbrev</a></li>
+          </ul>
+        </nav>
+
+        <aside class="aside-press-kontakt">
+          <h3>Press kontakt</h3>
+          <p>Johan Lindahl</p>
+
+          <ul>
+            <li class="tel">
+              <a href="tel:+1-555-555-5555"
+                ><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                  <path
+                    id="ic_local_phone_24px"
+                    d="M6.62,10.79a15.149,15.149,0,0,0,6.59,6.59l2.2-2.2a.994.994,0,0,1,1.02-.24,11.407,11.407,0,0,0,3.57.57,1,1,0,0,1,1,1V20a1,1,0,0,1-1,1A17,17,0,0,1,3,4,1,1,0,0,1,4,3H7.5a1,1,0,0,1,1,1,11.36,11.36,0,0,0,.57,3.57,1,1,0,0,1-.25,1.02Z"
+                    transform="translate(-3 -3)"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="e-post">
+              <a href="mailto:Johan@example.com">E-post</a>
+            </li>
+            <li class="my-news-desk">
+              <a
+                href="https://www.mynewsdesk.com/se/myndigheten-foer-yrkeshoegskolan"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27.324"
+                  height="27.324"
+                >
+                  <path
+                    id="ic_public_24px"
+                    d="M15.662,2A13.662,13.662,0,1,0,29.324,15.662,13.667,13.667,0,0,0,15.662,2ZM14.3,26.5A10.914,10.914,0,0,1,4.732,15.662a11.091,11.091,0,0,1,.287-2.446l6.544,6.544v1.366A2.74,2.74,0,0,0,14.3,23.859Zm9.427-3.47a2.711,2.711,0,0,0-2.6-1.9H19.761v-4.1a1.37,1.37,0,0,0-1.366-1.366H10.2V12.93H12.93A1.37,1.37,0,0,0,14.3,11.563V8.831h2.732A2.74,2.74,0,0,0,19.761,6.1v-.56a10.905,10.905,0,0,1,3.962,17.488Z"
+                    transform="translate(-2 -2)"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </aside>
+
+        <aside class="aside-menu">
+          <h3>Prenumerera</h3>
+          <div>
+            <ul class="aside-menu-icons">
+              <li>
+                <a href="#"
+                  ><svg
+                    id="ic_rss_feed_24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19.148"
+                    height="19.148"
+                    viewbox="0 0 19.148 19.148"
+                  >
+                    <circle
+                      id="Ellipse_9"
+                      data-name="Ellipse 9"
+                      cx="2.683"
+                      cy="2.683"
+                      r="2.683"
+                      transform="translate(0 13.783)"
+                      fill="#656565"
+                    />
+                    <path
+                      id="Path_6"
+                      data-name="Path 6"
+                      d="M4,4.44V7.923A15.667,15.667,0,0,1,19.666,23.588h3.483A19.154,19.154,0,0,0,4,4.44Zm0,6.965v3.483a8.708,8.708,0,0,1,8.7,8.7h3.483A12.179,12.179,0,0,0,4,11.405Z"
+                      transform="translate(-4 -4.44)"
+                      fill="#656565"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22.514"
+                    height="18.011"
+                    viewbox="0 0 22.514 18.011"
+                  >
+                    <path
+                      id="ic_markunread_24px"
+                      d="M22.262,4H4.251a2.248,2.248,0,0,0-2.24,2.251L2,19.76a2.258,2.258,0,0,0,2.251,2.251H22.262a2.258,2.258,0,0,0,2.251-2.251V6.251A2.258,2.258,0,0,0,22.262,4Zm0,4.5-9.005,5.628L4.251,8.5V6.251l9.005,5.628,9.005-5.628Z"
+                      transform="translate(-2 -4)"
+                      fill="#656565"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="aside-menu-list">
+              <li><a href="#">Via RSS</a></li>
+              <li><a href="#">Via e-post</a></li>
+            </ul>
+          </div>
+        </aside>
+      </section>
     </main>
 
     <footer class="footer">
-        <div id="footer-grid-s" class="grid-s">
-            <div class="grid-s__top">
-                <div class="footer-s__links">
-                    <a href="#" class="footer-s__link"><i class="fas fa-phone-alt"></i></a>
-                    <a href="#" class="footer-s__link">E-post</a>
-                    <a href="#" class="footer-s__link">Kundforum</a>
-                </div>
+      <div id="footer-grid-s" class="grid-s">
+        <div class="grid-s__top">
+          <div class="footer-s__links">
+            <a href="#" class="footer-s__link" id="phone-s-link"
+              ><i class="fas fa-phone-alt"></i
+            ></a>
+            <a href="#" id="email-s-link" class="footer-s__link">E-post</a>
+            <a href="#" id="forum-s-link" class="footer-s__link">Kundforum</a>
+          </div>
+        </div>
+        <div class="grid-s__center">
+          <div class="footer-s__card">
+            <span class="footer-s__icon-2x"
+              ><i class="fas fa-map-marker-alt"></i
+            ></span>
+            <div class="footer-s__card-text">
+              <p>
+                Myndigheten för yrkeshögskolan
+                <br />
+                Box 145
+                <br />
+                721 05 Västerås
+              </p>
             </div>
-            <div class="grid-s__center">
-                <div class="footer-s__card">
-                    <span class="icon-2x"><i class="fas fa-map-marker-alt"></i></span>
-                    <div class="card-text">
-                        <p>
-                            Myndigheten för yrkeshögskolan
-                            <br />
-                            Box 145
-                            <br />
-                            721 05 Västerås
-                        </p>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="grid-s__bottom-left">
+          <div>
+            <h4>Ansvarig utgivare</h4>
+            <p>Thomas Persson, generaldirektör</p>
+          </div>
+        </div>
+        <div class="grid-s__bottom-right">
+          <div class="footer-s__links">
+            <a href="#" class="footer-s__link" id="websites-s-link"
+              ><span class="footer-s__icon-2x"
+                ><i class="fas fa-globe"></i></span
+            ></a>
+            <a href="#" class="footer-s__link" id="youtube-s-link"
+              ><span class="footer-s__icon-2x"
+                ><i class="fab fa-youtube"></i></span
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer-grid">
+        <div class="footer__grid">
+          <div class="footer__item">
+            <div class="footer__links">
+              <a href="#" id="phone-link" class="footer__link">Telefon</a>
+              <a href="#" id="email-link" class="footer__link">E-post</a>
+              <a href="#" id="forum-link" class="footer__link">Kundforum</a>
+              <a href="#" id="press-link" class="footer__link">Press</a>
             </div>
-            <div class="grid-s__bottom-left">
-                <div>
-                    <h4>Ansvarig utgivare</h4>
-                    <p>Thomas Persson, generaldirektör</p>
-                </div>
+            <div class="footer__card">
+              <div
+                id="phone-info"
+                class="footer__card-info footer__card-info--active"
+              >
+                <h4>Telefon</h4>
+                <p>Ring vår växel 010-209 01 00</p>
+                <p>Växeln är öppen vardagar 9.00 - 11.30, 13.00 - 15.00</p>
+              </div>
+              <div id="email-info" class="footer__card-info">
+                <h4>E-post</h4>
+                <p>
+                  Allmänna frågor/synpunkter:
+                  <a href="mailto:info@myh.se">info@myh.se</a>
+                </p>
+                <p>
+                  Registrator:
+                  <a href="mailto:registrator@myh.se">registrator@myh.se</a>
+                </p>
+              </div>
+              <div id="forum-info" class="footer__card-info">
+                <h4>Digitalt kundforum</h4>
+                <p>
+                  Har du en fråga? Besök vårt kundforum,
+                  <a href="https://forum.myh.se">forum.myh.se</a>
+                </p>
+              </div>
+              <div id="press-info" class="footer__card-info">
+                <h4>Press</h4>
+                <p>
+                  Presskontakter och pressmeddelande finns i vårt
+                  <a
+                    href="https://www.mynewsdesk.com/se/myndigheten-foer-yrkeshoegskolan"
+                    >nyhetsrum</a
+                  >
+                </p>
+              </div>
             </div>
-            <div class="grid-s__bottom-right">
-                <div class="footer-s__links">
-                    <a href="#" class="footer-s__link"><span class="icon-2x"><i class="fas fa-globe"></i></span></a>
-                    <a href="#" class="footer-s__link"><span class="icon-2x"><i class="fab fa-youtube"></i></span></a>
-                </div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__links">
+              <a href="#" id="share-link" class="footer__link">Dela</a>
+              <a href="#" id="websites-link" class="footer__link"
+                >Webbplatser</a
+              >
+              <a href="#" id="about-link" class="footer__link"
+                >Om webbplatsen</a
+              >
             </div>
+            <div class="footer__card">
+              <div
+                id="share-info"
+                class="footer__card-info footer__card-info--active"
+              >
+                <h4>Dela</h4>
+                <div class="footer__social-icons">
+                  <a href="#"
+                    ><span class="footer__social-icon"
+                      ><i class="fab fa-twitter"></i></span
+                  ></a>
+                  <a href="#"
+                    ><span class="footer__social-icon"
+                      ><i class="fab fa-facebook-f"></i></span
+                  ></a>
+                </div>
+              </div>
+              <div id="websites-info" class="footer__card-info">
+                <h4>Webbplatser</h4>
+                <ul>
+                  <li>
+                    <a href="https://www.yrkeshogskolan.se"
+                      >www.yrkeshogskolan.se</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.konstkulturutbildning.se">
+                      www.konstkulturutbildning.se
+                    </a>
+                  </li>
+                  <li><a href="https://www.blitolk.nu">www.blitolk.nu</a></li>
+                  <li><a href="https://www.seqf.se">www.seqf.se</a></li>
+                </ul>
+              </div>
+              <div id="about-info" class="footer__card-info">
+                <h4>Om webbplatsen</h4>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen"
+                      >Använda webbplatsen</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen"
+                      >Om webbkakor (cookies)</a
+                    >
+                  </li>
+                  <li><a href="https://www.myh.se/Webbkarta">Webbkarta</a></li>
+                  <li>
+                    <a
+                      href="https://www.myh.se/Om-webbplatsen/Tillganglighetsredogorelse-"
+                      >Tillgänglighetsredogörelse</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__links">
+              <a href="#" id="address-link" class="footer__link"
+                >Myndigheten för yrkeshögskolan</a
+              >
+              <a href="#" id="youtube-link" class="footer__link">Youtube</a>
+            </div>
+            <div class="footer__card">
+              <div
+                id="address-info"
+                class="footer__card-info footer__card-info--active"
+              >
+                <h4>Adress</h4>
+                <p>
+                  Myndigheten för yrkeshögskolan
+                  <br />
+                  Box 145
+                  <br />
+                  721 05 Västerås
+                </p>
+              </div>
+              <div id="youtube-info" class="footer__card-info">
+                <h4>Youtube</h4>
+                <a
+                  href="https://www.youtube.com/channel/UC8iPn0eKy-5vQ6Mx_-ep-KA"
+                >
+                  MYH Youtube-kanal
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div id="footer-grid">
-            <div class="footer__grid" id="grid">
-                <div class="footer__item">
-                    <div class="footer__links">
-                        <a href="#" id="phone-link" class="footer__link">Telefon</a>
-                        <a href="#" id="email-link" class="footer__link">E-post</a>
-                        <a href="#" id="forum-link" class="footer__link">Kundforum</a>
-                        <a href="#" id="press-link" class="footer__link">Press</a>
-                    </div>
-                    <div class="footer__card">
-                        <div id="phone-info" class="footer__card-info footer__card-info--active">
-                            <h4>Telefon</h4>
-                            <p>Ring vår växel 010-209 01 00</p>
-                            <p>Växeln är öppen vardagar 9.00 - 11.30, 13.00 - 15.00</p>
-                        </div>
-                        <div id="email-info" class="footer__card-info">
-                            <h4>E-post</h4>
-                            <p>
-                                Allmänna frågor/synpunkter:
-                                <a href="mailto:info@myh.se">info@myh.se</a>
-                            </p>
-                            <p>
-                                Registrator:
-                                <a href="mailto:registrator@myh.se">registrator@myh.se</a>
-                            </p>
-                        </div>
-                        <div id="forum-info" class="footer__card-info">
-                            <h4>Digitalt kundforum</h4>
-                            <p>
-                                Har du en fråga? Besök vårt kundforum,
-                                <a href="https://forum.myh.se">forum.myh.se</a>
-                            </p>
-                        </div>
-                        <div id="press-info" class="footer__card-info">
-                            <h4>Press</h4>
-                            <p>
-                                Presskontakter och pressmeddelande finns i vårt
-                                <a href="https://www.mynewsdesk.com/se/myndigheten-foer-yrkeshoegskolan">nyhetsrum</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__item">
-                    <div class="footer__links">
-                        <a href="#" id="share-link" class="footer__link">Dela</a>
-                        <a href="#" id="websites-link" class="footer__link">Webbplatser</a>
-                        <a href="#" id="about-link" class="footer__link">Om webbplatsen</a>
-                    </div>
-                    <div class="footer__card">
-                        <div id="share-info" class="footer__card-info footer__card-info--active">
-                            <h4>Dela</h4>
-                            <div class="social-icons">
-                                <a href="#"><span class="social-icon"><i class="fab fa-twitter"></i></span></a>
-                                <a href="#"><span class="social-icon"><i class="fab fa-facebook-f"></i></span></a>
-                            </div>
-                        </div>
-                        <div id="websites-info" class="footer__card-info">
-                            <h4>Webbplatser</h4>
-                            <ul>
-                                <li>
-                                    <a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.konstkulturutbildning.se">
-                                        www.konstkulturutbildning.se
-                                    </a>
-                                </li>
-                                <li><a href="https://www.blitolk.nu">www.blitolk.nu</a></li>
-                                <li><a href="https://www.seqf.se">www.seqf.se</a></li>
-                            </ul>
-                        </div>
-                        <div id="about-info" class="footer__card-info">
-                            <h4>Om webbplatsen</h4>
-                            <ul>
-                                <li>
-                                    <a href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen">Använda
-                                        webbplatsen</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen">Om
-                                        webbkakor (cookies)</a>
-                                </li>
-                                <li><a href="https://www.myh.se/Webbkarta">Webbkarta</a></li>
-                                <li>
-                                    <a
-                                        href="https://www.myh.se/Om-webbplatsen/Tillganglighetsredogorelse-">Tillgänglighetsredogörelse</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__item">
-                    <div class="footer__links">
-                        <a href="#" id="address-link" class="footer__link">Myndigheten för yrkeshögskolan</a>
-                        <a href="#" id="youtube-link" class="footer__link">Youtube</a>
-                    </div>
-                    <div class="footer__card">
-                        <div id="address-info" class="footer__card-info footer__card-info--active">
-                            <h4>Adress</h4>
-                            <p>
-                                Myndigheten för yrkeshögskolan
-                                <br />
-                                Box 145
-                                <br />
-                                721 05 Västerås
-                            </p>
-                        </div>
-                        <div id="youtube-info" class="footer__card-info">
-                            <h4>Youtube</h4>
-                            <a href="https://www.youtube.com/channel/UC8iPn0eKy-5vQ6Mx_-ep-KA">
-                                MYH Youtube-kanal
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer__publisher">
-                <h4>Ansvarig utgivare</h4>
-                <p>Thomas Persson, generaldirektör MYH</p>
-            </div>
+        <div class="footer__publisher">
+          <h4>Ansvarig utgivare</h4>
+          <p>Thomas Persson, generaldirektör MYH</p>
         </div>
+      </div>
     </footer>
 
     <script src="/assets/javascript/parallax.js"></script>
     <script src="/assets/javascript/nyhetsrum-card.js"></script>
     <script src="/assets/javascript/slider.js"></script>
     <script src="/assets/javascript/footer.js"></script>
-    <script src="https://kit.fontawesome.com/9e640bf9f4.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9e640bf9f4.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="/assets/javascript/nav.js"></script>
-
-</body>
-
+  </body>
 </html>
