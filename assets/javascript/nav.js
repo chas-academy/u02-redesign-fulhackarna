@@ -1,25 +1,33 @@
-// Search Icon click
-document.querySelector(".searchIcon").addEventListener("click", function () {
-    document.querySelector("input").classList.toggle("searchActive");
-})
+const dropDownNav = document.getElementById("normal-nav");
+const navBar = document.querySelector(".nav");
 
-//Scroll
-const nav = document.querySelector(".normalNav");
-
-window.onscroll = function () {
+window.addEventListener('scroll', function () { // Check for scroll
     let top = window.scrollY;
+
     if (top >= 10) {
-        nav.classList.add("onScroll")
+        navBar.classList.add("nav-scrolled")
+        document.getElementById("hamburger").style.color = "white";
+
     } else {
-        nav.classList.remove("onScroll");
+        navBar.classList.remove("nav-scrolled");
+        document.getElementById("hamburger").style.color = "black";
+    }
+});
+
+function dropDown() {
+    let top = window.scrollY;
+
+    if (dropDownNav.id == "drop") {
+        dropDownNav.id = "normal-nav";
+        if (top >= 10) {
+            document.getElementById("hamburger").style.color = "white";
+
+        } else {
+            document.getElementById("hamburger").style.color = "black";
+
+        }
+    } else if (dropDownNav.id == "normal-nav") {
+        dropDownNav.id = "drop";
+        document.getElementById("hamburger").style.color = "white";
     }
 }
-
-//Responsive
-
-const hamburger = document.getElementById("hamburger");
-const nav2 = document.getElementById("nav_options");
-
-hamburger.addEventListener("click", () => {
-    nav2.classList.toggle("responsiveShow");
-});

@@ -97,6 +97,8 @@ main {
                 position: absolute;
                 width: 100px;
                 object-fit: contain;
+                border-radius: 5px;
+                box-shadow: -4px 4px 20px -10px rgba(0, 0, 0, 0.6);
             }
 
             h3 {
@@ -124,10 +126,15 @@ main {
 
             .pdf-title {
                 padding-top: 30px;
+                font-weight: 800;
+                color: rgb(99, 135, 243);
+                transition: filter 0.3s;
                 cursor: pointer;
 
-                svg {
-                    margin-right: 10px;
+
+                &:hover {
+                    filter: opacity(0.5);
+                    transition: filter 0.3s;
                 }
             }
 
@@ -190,7 +197,7 @@ main {
     display: none;
 }
 
-.aside-menu {
+.filter-btn {
     width: 300px;
     height: 100px;
     margin-bottom: 30px;
@@ -201,15 +208,12 @@ main {
     cursor: pointer;
 
     @include flexbox(row, center, center);
-
-    p {
-        text-decoration: none;
-        font-family: 'Roboto',
-            sans-serif;
-        font-size: $largeText;
-        font-weight: 600;
-        color: $darkGray;
-    }
+    text-decoration: none;
+    font-family: 'Roboto',
+        sans-serif;
+    font-size: $largeText;
+    font-weight: 600;
+    color: $darkGray;
 }
 
 .aside-drop-menu {
@@ -239,7 +243,6 @@ main {
         font-size: 15px;
         font-weight: 600;
         color: $darkGray;
-
     }
 
     ul {
@@ -253,6 +256,13 @@ main {
 
         li {
             padding-top: 5px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+
+            &:hover {
+                filter: opacity(0.5);
+                transition: opacity 0.3s;
+            }
         }
 
     }
@@ -311,7 +321,7 @@ main {
     }
 
     .aside-drop-menu {
-        width: 930px;
+        width: 90%;
         margin-bottom: 0;
         flex-direction: row;
 
@@ -320,7 +330,7 @@ main {
         }
 
         p {
-            padding: 25px 0 20px 75px;
+            padding: 25px 0 20px 90px;
             text-decoration: none;
             font-family: 'Roboto',
                 sans-serif;

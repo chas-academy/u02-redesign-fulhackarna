@@ -33,7 +33,6 @@ body {
   @include flexbox(column, center, center);
 
   margin: 0;
-  height: 100%;
   background-color: $backgroundColor;
 
   h1 {
@@ -198,8 +197,6 @@ main {
   }
 }
 
-
-
 .side-menus {
   @include flexbox(column, flex-start, center);
   width: 450px;
@@ -217,7 +214,7 @@ main {
   display: none;
 }
 
-.aside-menu {
+.filter-btn {
   width: 300px;
   height: 100px;
   margin-bottom: 30px;
@@ -227,18 +224,13 @@ main {
   box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 
-
   @include flexbox(row, center, center);
-
-
-  p {
-    text-decoration: none;
-    font-family: 'Roboto',
-      sans-serif;
-    font-size: $largeText;
-    font-weight: 600;
-    color: $darkGray;
-  }
+  text-decoration: none;
+  font-family: 'Roboto',
+    sans-serif;
+  font-size: $largeText;
+  font-weight: 600;
+  color: $darkGray;
 }
 
 .aside-drop-menu {
@@ -249,17 +241,12 @@ main {
   background-color: $white;
   border-radius: 20px;
   box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
-
   overflow: hidden;
   visibility: hidden;
   opacity: 0;
+  transition: height 0.3s;
 
-  transition: all 0.3s;
-
-
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+  @include flexbox(column, space-around, flex-start);
 
   div {
     overflow: hidden;
@@ -273,7 +260,6 @@ main {
     font-size: 15px;
     font-weight: 600;
     color: $darkGray;
-
   }
 
   ul {
@@ -287,6 +273,13 @@ main {
 
     li {
       padding-top: 5px;
+      cursor: pointer;
+      transition: opacity 0.3s;
+
+      &:hover {
+        filter: opacity(0.5);
+        transition: opacity 0.3s;
+      }
     }
 
   }
@@ -297,15 +290,11 @@ main {
   transition: height 0.3s;
   visibility: visible;
   opacity: 1;
-
-
 }
 
-
 @media screen and (max-width: 1500px) {
-
-
   body {
+
     h1 {
       width: 100%;
       padding-left: 10%;
@@ -330,6 +319,7 @@ main {
   main {
     @include flexbox(column-reverse, space-around, center);
     width: 100vw;
+    padding-bottom: 30vh;
   }
 
   .main-panel {
@@ -352,7 +342,7 @@ main {
   }
 
   .aside-drop-menu {
-    width: 930px;
+    width: 90%;
     margin-bottom: 0;
     flex-direction: row;
 
@@ -361,7 +351,7 @@ main {
     }
 
     p {
-      padding: 25px 0 20px 75px;
+      padding: 25px 0 20px 90px;
       text-decoration: none;
       font-family: 'Roboto',
         sans-serif;
@@ -395,6 +385,7 @@ main {
 @media screen and (max-width: 1050px) {
 
   body {
+
     h1 {
       width: 100%;
       padding-left: 10%;
@@ -412,6 +403,8 @@ main {
 
   .main-panel {
     @include flexbox(column, none, center);
+    padding-bottom: 20vh;
+
 
     .card {
       width: 90%;

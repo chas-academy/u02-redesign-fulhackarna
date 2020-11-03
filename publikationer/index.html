@@ -17,70 +17,23 @@
 
 <body>
     <header>
-        <nav class="normalNav" id="normalNav">
-            <img class="myhLogo" src="/navIMG/Logo.svg" alt="logo">
-            <button class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav_options" id="nav_options">
-                <li class="link">
-                    <a href="/start/index.html">Start</a>
-                </li>
-                <li class="link">
-                    <a href="/om-oss/index.html">Om oss</a>
-                </li>
-                <li class="link">
-                    <a href="/verksamhet/index.html">Verksamhet</a>
-                </li>
-                <li class="link">
-                    <a href="/regelverk/index.html">Regelverk</a>
-                </li>
-                <li class="link">
-                    <a href="/statistik/index.html">Statistik</a>
-                </li>
-                <li class="link">
-                    <a href="/publikationer/index.html">Publikationer</a>
-                </li>
-                <li class="link">
-                    <a href="/nyhetsrum/index.html">Nyhetsrum</a>
-                </li>
-                <li class="link">
-                    <a href="/kontakt/index.html">Kontakt</a>
-                </li>
-                <li class="link">
-                    <a href="#minaSidor"><span id="mina_sidor">Mina sidor</span></a>
-                </li>
-                <li class="nav_icon">
-                    <img src="/navIMG/ic_insert_comment_24px.svg">
-                </li>
-                <li class="nav_icon">
-                    <img src="/navIMG/ic_brightness_6_24px.svg">
-                </li>
-                <li class="nav_icon">
-                    <img src="/navIMG/ic_format_size_24px.svg">
-                </li>
-                <div class="responsiveIcons">
-                    <li class="responsiveIc">
-                        <img src="/navIMG/ic_insert_comment_24px.svg">
-                    </li>
-                    <li class="responsiveIc">
-                        <img src="/navIMG/ic_brightness_6_24px.svg">
-                    </li>
-                    <li class="responsiveIc">
-                        <img src="/navIMG/ic_format_size_24px.svg">
-                    </li>
-                </div>
+        <nav class="nav">
+            <div class="logo"><a href="#"><img src="/navIMG/Logo.svg" alt="Logo"></a></div>
+            <ul id="normal-nav">
+                <li><a href="#">Start</a></li>
+                <li><a href="/om-oss/index.html">Om oss</a></li>
+                <li><a href="#">Verksamhet</a></li>
+                <li><a href="/regelverk/index.html">Regelverk</a></li>
+                <li><a href="/statistik/index.html">Statisitk</a></li>
+                <li><a href="/publikationer/index.html">Publikationer</a></li>
+                <li><a href="/nyhetsrum/index.html">Nyhetsrum</a></li>
+                <li><a href="/kontakt/index.html">Kontakt</a></li>
+                <li><a id="mina-sidor" href="#">Mina sidor</a></li>
+                <li class="anpassing"><img src="/navIMG/ic_insert_comment_24px.svg" alt="chat"><img
+                        src="/navIMG/ic_brightness_6_24px.svg" alt="brightness"><img
+                        src="/navIMG/ic_format_size_24px.svg" alt="size"></li>
             </ul>
-
-
-            <div class="search">
-                <form action="sok.html" method="GET">
-                    <input name="q" type="search" placeholder="Sökord" />
-                </form>
-                <div class="searchIcon">
-                    <img src="/navIMG/ic_search_24px.svg">
-                </div>
-            </div>
+            <button class="fas fa-bars" id="hamburger" onclick="dropDown()"></button>
         </nav>
     </header>
 
@@ -97,20 +50,14 @@
         <section class="main-panel">
             <div class="card">
                 <h2>Main panel</h2>
-                <!-- placeholder -->
 
                 <div class="card-container">
                     <img src="images/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf" alt="pdf cover">
                     <div class="info">
                         <h3>Handbok för tillträde till yrkeshögskolan - 2020</h3>
-                        <p><time>Utgiven: 2020-07-10 </time>Denna handbok vänder sig i första hand till de som bedriver
+                        <p><time>2020-07-10 </time>Denna handbok vänder sig i första hand till de som bedriver
                             yrkeshögskoleutbildning och behöver stöd... </p>
-                        <p class="pdf-title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewbox="0 0 20 20">
-                                <path
-                                    d="M20,2H8A2.006,2.006,0,0,0,6,4V16a2.006,2.006,0,0,0,2,2H20a2.006,2.006,0,0,0,2-2V4A2.006,2.006,0,0,0,20,2ZM11.5,9.5A1.5,1.5,0,0,1,10,11H9v2H7.5V7H10a1.5,1.5,0,0,1,1.5,1.5Zm5,2A1.5,1.5,0,0,1,15,13H12.5V7H15a1.5,1.5,0,0,1,1.5,1.5Zm4-3H19v1h1.5V11H19v2H17.5V7h3ZM9,9.5h1v-1H9ZM4,6H2V20a2.006,2.006,0,0,0,2,2H18V20H4Zm10,5.5h1v-3H14Z"
-                                    transform="translate(-2 -2)" fill="#656565" />
-                            </svg>
+                        <p class="pdf-title">
                             Handbok för
                             tillträde
                             till yrkeshögskolan - 2020</p>
@@ -122,15 +69,10 @@
                     <div class="info">
                         <h3>Kvalitetskriterier för validering - yrkeshögskoleutbildning, konst- och kulturutbildningar
                             och tolkutbildning inom folkbildningen</h3>
-                        <p><time>Utgiven: 2020-06-09
+                        <p><time>2020-06-09
                             </time>Myndigheten har tagit fram kvalitetskriterier för arbetet med validering inom de
                             utbildningsformer som... </p>
-                        <p class="pdf-title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewbox="0 0 20 20">
-                                <path
-                                    d="M20,2H8A2.006,2.006,0,0,0,6,4V16a2.006,2.006,0,0,0,2,2H20a2.006,2.006,0,0,0,2-2V4A2.006,2.006,0,0,0,20,2ZM11.5,9.5A1.5,1.5,0,0,1,10,11H9v2H7.5V7H10a1.5,1.5,0,0,1,1.5,1.5Zm5,2A1.5,1.5,0,0,1,15,13H12.5V7H15a1.5,1.5,0,0,1,1.5,1.5Zm4-3H19v1h1.5V11H19v2H17.5V7h3ZM9,9.5h1v-1H9ZM4,6H2V20a2.006,2.006,0,0,0,2,2H18V20H4Zm10,5.5h1v-3H14Z"
-                                    transform="translate(-2 -2)" fill="#656565" />
-                            </svg>
+                        <p class="pdf-title">
                             Kvalitetskriterier
                             för validering</p>
                     </div>
@@ -140,15 +82,10 @@
                     <img src="images/Analys_HalsoSjukvard2020.pdf" alt="pdf cover">
                     <div class="info">
                         <h3>Områdesanalys hälso- och sjukvård samt socialt arbete</h3>
-                        <p><time>Utgiven: 2020-05-19
+                        <p><time>2020-05-19
                             </time>Områdesanalysen är framtagen av Myndigheten för yrkeshögskolan som ett underlag för
                             de handläggare som... </p>
-                        <p class="pdf-title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewbox="0 0 20 20">
-                                <path
-                                    d="M20,2H8A2.006,2.006,0,0,0,6,4V16a2.006,2.006,0,0,0,2,2H20a2.006,2.006,0,0,0,2-2V4A2.006,2.006,0,0,0,20,2ZM11.5,9.5A1.5,1.5,0,0,1,10,11H9v2H7.5V7H10a1.5,1.5,0,0,1,1.5,1.5Zm5,2A1.5,1.5,0,0,1,15,13H12.5V7H15a1.5,1.5,0,0,1,1.5,1.5Zm4-3H19v1h1.5V11H19v2H17.5V7h3ZM9,9.5h1v-1H9ZM4,6H2V20a2.006,2.006,0,0,0,2,2H18V20H4Zm10,5.5h1v-3H14Z"
-                                    transform="translate(-2 -2)" fill="#656565" />
-                            </svg> Ladda ner
+                        <p class="pdf-title"> Ladda ner
                             områdesanalysen här</p>
                     </div>
                 </div>
@@ -157,15 +94,10 @@
                     <img src="images/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf" alt="pdf cover">
                     <div class="info">
                         <h3>Handbok för tillträde till yrkeshögskolan - 2020</h3>
-                        <p><time>Utgiven: 2020-07-10 </time>Denna handbok vänder sig i första hand till de som
+                        <p><time>2020-07-10 </time>Denna handbok vänder sig i första hand till de som
                             bedriver
                             yrkeshögskoleutbildning och behöver stöd... </p>
-                        <p class="pdf-title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewbox="0 0 20 20">
-                                <path
-                                    d="M20,2H8A2.006,2.006,0,0,0,6,4V16a2.006,2.006,0,0,0,2,2H20a2.006,2.006,0,0,0,2-2V4A2.006,2.006,0,0,0,20,2ZM11.5,9.5A1.5,1.5,0,0,1,10,11H9v2H7.5V7H10a1.5,1.5,0,0,1,1.5,1.5Zm5,2A1.5,1.5,0,0,1,15,13H12.5V7H15a1.5,1.5,0,0,1,1.5,1.5Zm4-3H19v1h1.5V11H19v2H17.5V7h3ZM9,9.5h1v-1H9ZM4,6H2V20a2.006,2.006,0,0,0,2,2H18V20H4Zm10,5.5h1v-3H14Z"
-                                    transform="translate(-2 -2)" fill="#656565" />
-                            </svg>
+                        <p class="pdf-title">
                             Handbok för
                             tillträde
                             till yrkeshögskolan - 2020</p>
@@ -178,16 +110,11 @@
                         <h3>Kvalitetskriterier för validering - yrkeshögskoleutbildning, konst- och
                             kulturutbildningar
                             och tolkutbildning inom folkbildningen</h3>
-                        <p><time>Utgiven: 2020-06-09
+                        <p><time>2020-06-09
                             </time>Myndigheten har tagit fram kvalitetskriterier för arbetet med validering inom
                             de
                             utbildningsformer som... </p>
-                        <p class="pdf-title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewbox="0 0 20 20">
-                                <path
-                                    d="M20,2H8A2.006,2.006,0,0,0,6,4V16a2.006,2.006,0,0,0,2,2H20a2.006,2.006,0,0,0,2-2V4A2.006,2.006,0,0,0,20,2ZM11.5,9.5A1.5,1.5,0,0,1,10,11H9v2H7.5V7H10a1.5,1.5,0,0,1,1.5,1.5Zm5,2A1.5,1.5,0,0,1,15,13H12.5V7H15a1.5,1.5,0,0,1,1.5,1.5Zm4-3H19v1h1.5V11H19v2H17.5V7h3ZM9,9.5h1v-1H9ZM4,6H2V20a2.006,2.006,0,0,0,2,2H18V20H4Zm10,5.5h1v-3H14Z"
-                                    transform="translate(-2 -2)" fill="#656565" />
-                            </svg>
+                        <p class="pdf-title">
                             Kvalitetskriterier
                             för validering</p>
                     </div>
@@ -197,16 +124,11 @@
                     <img src="images/Analys_HalsoSjukvard2020.pdf" alt="pdf cover">
                     <div class="info">
                         <h3>Områdesanalys hälso- och sjukvård samt socialt arbete</h3>
-                        <p><time>Utgiven: 2020-05-19
+                        <p><time>2020-05-19
                             </time>Områdesanalysen är framtagen av Myndigheten för yrkeshögskolan som ett
                             underlag för
                             de handläggare som... </p>
-                        <p class="pdf-title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewbox="0 0 20 20">
-                                <path
-                                    d="M20,2H8A2.006,2.006,0,0,0,6,4V16a2.006,2.006,0,0,0,2,2H20a2.006,2.006,0,0,0,2-2V4A2.006,2.006,0,0,0,20,2ZM11.5,9.5A1.5,1.5,0,0,1,10,11H9v2H7.5V7H10a1.5,1.5,0,0,1,1.5,1.5Zm5,2A1.5,1.5,0,0,1,15,13H12.5V7H15a1.5,1.5,0,0,1,1.5,1.5Zm4-3H19v1h1.5V11H19v2H17.5V7h3ZM9,9.5h1v-1H9ZM4,6H2V20a2.006,2.006,0,0,0,2,2H18V20H4Zm10,5.5h1v-3H14Z"
-                                    transform="translate(-2 -2)" fill="#656565" />
-                            </svg> Ladda ner
+                        <p class="pdf-title"> Ladda ner
                             områdesanalysen här</p>
                     </div>
                 </div>
@@ -215,15 +137,10 @@
                     <img src="images/HandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf" alt="pdf cover">
                     <div class="info">
                         <h3>Handbok för tillträde till yrkeshögskolan - 2020</h3>
-                        <p><time>Utgiven: 2020-07-10 </time>Denna handbok vänder sig i första hand till de som
+                        <p><time>2020-07-10 </time>Denna handbok vänder sig i första hand till de som
                             bedriver
                             yrkeshögskoleutbildning och behöver stöd... </p>
-                        <p class="pdf-title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewbox="0 0 20 20">
-                                <path
-                                    d="M20,2H8A2.006,2.006,0,0,0,6,4V16a2.006,2.006,0,0,0,2,2H20a2.006,2.006,0,0,0,2-2V4A2.006,2.006,0,0,0,20,2ZM11.5,9.5A1.5,1.5,0,0,1,10,11H9v2H7.5V7H10a1.5,1.5,0,0,1,1.5,1.5Zm5,2A1.5,1.5,0,0,1,15,13H12.5V7H15a1.5,1.5,0,0,1,1.5,1.5Zm4-3H19v1h1.5V11H19v2H17.5V7h3ZM9,9.5h1v-1H9ZM4,6H2V20a2.006,2.006,0,0,0,2,2H18V20H4Zm10,5.5h1v-3H14Z"
-                                    transform="translate(-2 -2)" fill="#656565" />
-                            </svg>
+                        <p class="pdf-title">
                             Handbok för
                             tillträde
                             till yrkeshögskolan - 2020</p>
@@ -236,16 +153,11 @@
                         <h3>Kvalitetskriterier för validering - yrkeshögskoleutbildning, konst- och
                             kulturutbildningar
                             och tolkutbildning inom folkbildningen</h3>
-                        <p><time>Utgiven: 2020-06-09
+                        <p><time>2020-06-09
                             </time>Myndigheten har tagit fram kvalitetskriterier för arbetet med validering inom
                             de
                             utbildningsformer som... </p>
-                        <p class="pdf-title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewbox="0 0 20 20">
-                                <path
-                                    d="M20,2H8A2.006,2.006,0,0,0,6,4V16a2.006,2.006,0,0,0,2,2H20a2.006,2.006,0,0,0,2-2V4A2.006,2.006,0,0,0,20,2ZM11.5,9.5A1.5,1.5,0,0,1,10,11H9v2H7.5V7H10a1.5,1.5,0,0,1,1.5,1.5Zm5,2A1.5,1.5,0,0,1,15,13H12.5V7H15a1.5,1.5,0,0,1,1.5,1.5Zm4-3H19v1h1.5V11H19v2H17.5V7h3ZM9,9.5h1v-1H9ZM4,6H2V20a2.006,2.006,0,0,0,2,2H18V20H4Zm10,5.5h1v-3H14Z"
-                                    transform="translate(-2 -2)" fill="#656565" />
-                            </svg>
+                        <p class="pdf-title">
                             Kvalitetskriterier
                             för validering</p>
                     </div>
@@ -287,24 +199,22 @@
             <input class="filter-checkbox" type="checkbox" id="check" />
 
             <label for="check" class="filter-btn">
-                <aside class="aside-menu">
-                    <p>Filter</p>
-                </aside>
+                Filter
             </label>
 
             <aside class="aside-drop-menu">
                 <div>
-                    <p>Visa träffar av publikationer</p>
+                    <p>Publikationer</p>
                     <ul>
                         <li>Alla publikationstyper</li>
                         <li>Rapporter</li>
-                        <li>Återrapportering av regeringsuppdrag</li>
+                        <li>Regeringsuppdrag</li>
                         <li>Informationsmaterial</li>
                         <li>Årsredovisingar</li>
                     </ul>
                 </div>
                 <div>
-                    <p>Visa träffar från verksamhetsområde</p>
+                    <p>Verksamhetsområde</p>
                     <ul>
                         <li>Alla områden</li>
                         <li>Yrkeshögskolan</li>
@@ -316,7 +226,7 @@
                     </ul>
                 </div>
                 <div>
-                    <p>Visa träffar från år</p>
+                    <p>Årtal</p>
                     <ul>
                         <li>Alla år</li>
                         <li>2020</li>
@@ -330,7 +240,6 @@
                     </ul>
                 </div>
             </aside>
-
         </section>
     </main>
 
