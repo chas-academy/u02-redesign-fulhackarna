@@ -1,10 +1,10 @@
-@import "../assets/styles/footer";
-@import "../assets/styles/header";
+@import '../assets/styles/footer';
+@import '../assets/styles/header';
 
 $white: white;
-$darkGray: #2F2D36;
+$darkGray: #2f2d36;
 $gray: #656565;
-$backgroundColor: #F1F5F7;
+$backgroundColor: #f1f5f7;
 $cardtopcolor: rgba(255, 250, 194, 1);
 
 $hugeText: 40px;
@@ -13,346 +13,332 @@ $normalText: 15px;
 $smallText: 13px;
 
 @mixin flexbox($direction, $justify, $align) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    border-color: transparent;
-    letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  border-color: transparent;
+  letter-spacing: 0.5px;
 }
 
 body {
-    @include flexbox(column, center, center);
+  @include flexbox(column, center, center);
 
-    margin: 0;
-    height: 100%;
-    background-color: $backgroundColor;
+  margin: 0;
+  height: 100%;
+  background-color: $backgroundColor;
 
-    h1 {
-        // Titel
-        width: 1700px;
-        padding-top: 100px;
-        padding-left: 200px;
-        color: $darkGray;
-        font-family: 'Roboto',
-            sans-serif;
-        font-size: $hugeText;
-        font-weight: bold;
-    }
+  h1 {
+    // Titel
+    width: 1700px;
+    padding-top: 100px;
+    padding-left: 200px;
+    color: $darkGray;
+    font-family: 'Roboto', sans-serif;
+    font-size: $hugeText;
+    font-weight: bold;
+  }
 }
 
 main {
-    height: 100%;
-    margin-top: 60px;
-    padding-bottom: 100px;
-    display: flex;
-    justify-content: space-around;
+  height: 100%;
+  margin-top: 60px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .main-panel {
-    @include flexbox(column, center, space-between);
-    width: 100%;
-    padding-left: 2.5%;
+  @include flexbox(column, center, space-between);
+  width: 100%;
+  padding-left: 2.5%;
 
-    .card {
-        width: 1050px;
-        height: 800px;
-        background-color: $white;
-        border-radius: 20px;
-        box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
-        overflow: hidden;
+  .card {
+    width: 1050px;
+    height: 800px;
+    background-color: $white;
+    border-radius: 20px;
+    box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
 
-        h2 {
-            display: none;
-        }
-
-        .images {
-            background-color: $cardtopcolor;
-            overflow: visible;
-            width: 1050px;
-            border-radius: 20px 20px 0 0;
-            padding: 0;
-            margin: 0;
-
-            display: flex;
-            justify-content: flex-end;
-
-            #image1 {
-                width: 260px;
-                margin-right: 50px;
-            }
-        }
-
-        .card-content {
-            width: 90%;
-            height: 70%;
-            margin-left: 30px;
-            margin-top: 40px;
-            overflow: hidden;
-
-            h3 {
-                color: $darkGray;
-                text-decoration: none;
-                font-family: 'Roboto',
-                    sans-serif;
-                font-weight: 600;
-                font-size: $largeText;
-            }
-
-            p {
-                color: $gray;
-                text-decoration: none;
-                font-family: 'Roboto',
-                    sans-serif;
-                font-weight: 500;
-                font-size: $normalText;
-                margin-top: 40px;
-                width: 70%;
-            }
-
-            h4 {
-                color: $darkGray;
-                text-decoration: none;
-                font-family: 'Roboto',
-                    sans-serif;
-                font-weight: 500;
-                font-size: $normalText;
-                margin-top: 100px;
-                width: 70%;
-            }
-
-            ul {
-                margin-top: 40px;
-
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding-bottom: 50px;
-                padding-left: 30px;
-
-                li {
-                    background-color: $darkGray;
-                    height: 90px;
-                    border-radius: 20px;
-                    cursor: pointer;
-
-
-                    a {
-                        color: $white;
-                        text-decoration: none;
-                        font-family: 'Roboto',
-                            sans-serif;
-                        font-weight: 500;
-                        font-size: $smallText;
-                        padding: 0 20px;
-
-                        img {
-                            margin-top: 30px;
-                            padding-right: 10px;
-                        }
-                    }
-                }
-            }
-        }
+    h2 {
+      display: none;
     }
+
+    .images {
+      background-color: $cardtopcolor;
+      overflow: visible;
+      width: 1050px;
+      border-radius: 20px 20px 0 0;
+      padding: 0;
+      margin: 0;
+
+      display: flex;
+      justify-content: flex-end;
+
+      #image1 {
+        width: 260px;
+        margin-right: 50px;
+      }
+    }
+
+    .card-content {
+      width: 90%;
+      height: 70%;
+      margin-left: 30px;
+      margin-top: 40px;
+      overflow: hidden;
+
+      h3 {
+        color: $darkGray;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: $largeText;
+      }
+
+      p {
+        color: $gray;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: $normalText;
+        margin-top: 40px;
+        width: 70%;
+      }
+
+      h4 {
+        color: $darkGray;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: $normalText;
+        margin-top: 100px;
+        width: 70%;
+      }
+
+      ul {
+        margin-top: 40px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 50px;
+        padding-left: 30px;
+
+        li {
+          background-color: $darkGray;
+          height: 90px;
+          border-radius: 20px;
+          cursor: pointer;
+
+          a {
+            color: $white;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: $smallText;
+            padding: 0 20px;
+
+            img {
+              margin-top: 30px;
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 button {
-    margin: 40px 0 40px 0;
-    width: 300px;
-    height: 80px;
-    border-radius: 30px;
-    background-color: $white;
-    color: $gray;
-    font-family: 'Roboto',
-        sans-serif;
-    font-size: $normalText;
-    font-weight: 800;
-    letter-spacing: 0.7px;
-    cursor: pointer;
-    box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
+  margin: 40px 0 40px 0;
+  width: 300px;
+  height: 80px;
+  border-radius: 30px;
+  background-color: $white;
+  color: $gray;
+  font-family: 'Roboto', sans-serif;
+  font-size: $normalText;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+  cursor: pointer;
+  box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
 }
 
-
 .side-menus {
-    @include flexbox(column, space-between, center);
+  @include flexbox(column, space-between, center);
 
-    width: 450px;
-    height: 460px;
-    padding-left: 5%;
-    padding-right: 5%;
+  width: 450px;
+  height: 460px;
+  padding-left: 5%;
+  padding-right: 5%;
 
-    h2 {
-        display: none;
-    }
+  h2 {
+    display: none;
+  }
 }
 
 .link-menu {
-    @include flexbox(column, center, center);
+  @include flexbox(column, center, center);
 
-    width: 300px;
-    height: 230px;
-    border-radius: 20px;
+  width: 300px;
+  height: 230px;
+  border-radius: 20px;
 
-    background-color: $darkGray;
-    box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
+  background-color: $darkGray;
+  box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
 
-    ul {
-        list-style: none;
-        line-height: 40px;
-    }
+  ul {
+    list-style: none;
+    line-height: 40px;
+  }
 
-    a {
-        color: $white;
-        text-decoration: none;
-        font-family: 'Roboto',
-            sans-serif;
-    }
+  a {
+    color: $white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+  }
 }
 
 .aside-menu {
-    @include flexbox(row, space-around, center);
+  @include flexbox(row, space-around, center);
 
-    width: 280px;
-    height: 150px;
-    margin-bottom: 30px;
+  width: 280px;
+  height: 150px;
+  margin-bottom: 30px;
 
-    border-radius: 20px;
-    background-color: $white;
-    box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  background-color: $white;
+  box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
 }
 
 .aside-menu-icons {
-    list-style: none;
-    margin-left: 30px;
+  list-style: none;
+  margin-left: 30px;
 
-    li {
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
+  li {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 .aside-menu-list {
-    width: 50%;
-    margin-right: 30px;
-    list-style: none;
+  width: 50%;
+  margin-right: 30px;
+  list-style: none;
 
-    li {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+  li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
-    a {
-        color: $gray;
-        text-decoration: none;
-        font-family: 'Roboto',
-            sans-serif;
-        font-weight: 600;
-        font-size: 15px;
-    }
+  a {
+    color: $gray;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+  }
 }
 
-
 @media screen and (max-width: 1500px) {
+  body {
+    h1 {
+      width: 100%;
+      padding-left: 10%;
+    }
+  }
 
-    body {
-        h1 {
-            width: 100%;
-            padding-left: 10%;
+  main {
+    @include flexbox(column, space-around, center);
+    width: 100vw;
+  }
+
+  .main-panel {
+    @include flexbox(column, center, center);
+    padding: 0;
+
+    .card {
+      width: 80%;
+      height: 1000px;
+
+      .images {
+        width: 100%;
+      }
+
+      .card-content {
+        h4 {
+          margin-top: 40px;
         }
-    }
 
-    main {
-        @include flexbox(column, space-around, center);
-        width: 100vw;
-    }
+        ul {
+          flex-direction: column;
+          align-items: flex-start;
 
-    .main-panel {
-        @include flexbox(column, center, center);
-        padding: 0;
-
-        .card {
-            width: 80%;
-            height: 1000px;
-
-            .images {
-                width: 100%;
-            }
-
-            .card-content {
-
-                h4 {
-                    margin-top: 40px;
-                }
-
-                ul {
-                    flex-direction: column;
-                    align-items: flex-start;
-
-                    li {
-                        margin-top: 35px;
-                    }
-                }
-            }
+          li {
+            margin-top: 35px;
+          }
         }
+      }
     }
+  }
 
-    .side-menus {
-        @include flexbox(row, space-between, flex-start);
-        width: 600px;
-        height: 380px;
+  .side-menus {
+    @include flexbox(row, space-between, flex-start);
+    width: 600px;
+    height: 380px;
 
-        padding: 0;
-    }
+    padding: 0;
+  }
 
-    .aside-menu {
-        margin-bottom: 120px;
-    }
+  .aside-menu {
+    margin-bottom: 120px;
+  }
 }
 
 @media screen and (max-width: 750px) {
+  .main-panel {
+    @include flexbox(column, none, center);
 
-    .main-panel {
-        @include flexbox(column, none, center);
+    .card {
+      width: 90%;
+      height: 1030px;
 
-        .card {
-            width: 90%;
-            height: 1030px;
+      .card-content {
+        margin: 40px 0 0 20px;
+        height: 90%;
 
-            .card-content {
-                margin: 40px 0 0 20px;
-                height: 90%;
-
-                h4 {
-                    margin-top: 40px;
-                }
-
-                ul {
-                    padding-left: 0;
-
-                    li {
-                        margin-top: 35px;
-                    }
-                }
-            }
+        h4 {
+          margin-top: 40px;
         }
-    }
 
-    .side-menus {
-        @include flexbox(column, space-between, center);
+        ul {
+          padding-left: 0;
 
-        width: 500px;
-        height: 480px;
+          li {
+            margin-top: 35px;
+          }
+        }
+      }
     }
+  }
 
-    .aside-menu {
-        margin-bottom: 50px;
-    }
+  .side-menus {
+    @include flexbox(column, space-between, center);
+
+    width: 500px;
+    height: 480px;
+  }
+
+  .aside-menu {
+    margin-bottom: 50px;
+  }
 }
