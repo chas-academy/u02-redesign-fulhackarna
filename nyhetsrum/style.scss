@@ -307,65 +307,101 @@ main {
     }
   }
 
-  .card {
-    padding: 30px;
-    width: 1050px;
-    background-color: $white;
-    border-radius: 20px;
-    box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
-    display: block;
+        .checkboxes {
+            height: inherit;
+            transition: width 0.3s;
+            padding: 0 0 20px 30px;
 
-    h2 {
-      display: none;
+            label {
+                width: 100%;
+                height: 100px;
+                background-color: $white;
+                border-radius: 20px;
+                box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                color: $darkGray;
+                text-decoration: none;
+                font-family: 'Roboto',
+                    sans-serif;
+                font-weight: 600;
+                font-size: $largeText;
+            }
+        }
     }
 
-    .card-container {
-      display: flex;
-      flex-direction: row-reverse;
-      padding: 50px 0;
-      cursor: pointer;
+    .card {
+        padding: 30px 30px 60px 30px;
+        width: 1050px;
+        background-color: $white;
+        border-radius: 20px;
+        box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
+        display: block;
+
 
       .info {
         width: 100%;
       }
 
-      img {
-        position: absolute;
-        width: 100px;
-        object-fit: contain;
-      }
+        .card-container {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 50px 0;
+            cursor: pointer;
 
-      h4 {
-        font-size: $hugeText;
-        width: 200px;
-      }
+            .info {
+                width: 100%;
+            }
 
-      h3 {
-        color: $darkGray;
-        text-decoration: none;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 600;
-        font-size: $largeText;
-        width: 70%;
-      }
+            img {
+                position: absolute;
+                width: 100px;
+                object-fit: contain;
+                border-radius: 5px;
+                box-shadow: -4px 4px 20px -10px rgba(0, 0, 0, 0.5);
+            }
 
-      p {
-        color: $gray;
-        text-decoration: none;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        font-size: $normalText;
-        width: 80%;
-        margin-top: 8px;
-      }
+            h4 {
+                font-size: $hugeText;
+                width: 200px;
+            }
 
-      time {
-        color: $gray;
-        text-decoration: none;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 600;
-        font-size: $normalText;
-      }
+            h3 {
+                color: $darkGray;
+                text-decoration: none;
+                font-family: 'Roboto',
+                    sans-serif;
+                font-weight: 600;
+                font-size: $largeText;
+                width: 70%;
+            }
+
+            p {
+                color: $gray;
+                text-decoration: none;
+                font-family: 'Roboto',
+                    sans-serif;
+                font-weight: 500;
+                font-size: $normalText;
+                width: 80%;
+                margin-top: 8px;
+            }
+
+            time {
+                color: $gray;
+                text-decoration: none;
+                font-family: 'Roboto',
+                    sans-serif;
+                font-weight: 600;
+                font-size: $normalText;
+            }
+        }
+
     }
   }
 }

@@ -15,70 +15,25 @@
 
   <body>
     <header>
-      <nav class="normalNav" id="normalNav">
-        <img class="myhLogo" src="/navIMG/Logo.svg" alt="logo" />
-        <button class="hamburger" id="hamburger">
-          <i class="fas fa-bars"></i>
-        </button>
-        <ul class="nav_options" id="nav_options">
-          <li class="link">
-            <a href="/start/index.html">Start</a>
-          </li>
-          <li class="link">
-            <a href="/om-oss/index.html">Om oss</a>
-          </li>
-          <li class="link">
-            <a href="/verksamhet/index.html">Verksamhet</a>
-          </li>
-          <li class="link">
-            <a href="/regelverk/index.html">Regelverk</a>
-          </li>
-          <li class="link">
-            <a href="/statistik/index.html">Statistik</a>
-          </li>
-          <li class="link">
-            <a href="/publikationer/index.html">Publikationer</a>
-          </li>
-          <li class="link">
-            <a href="/nyhetsrum/index.html">Nyhetsrum</a>
-          </li>
-          <li class="link">
-            <a href="/kontakt/index.html">Kontakt</a>
-          </li>
-          <li class="link">
-            <a href="#minaSidor"><span id="mina_sidor">Mina sidor</span></a>
-          </li>
-          <li class="nav_icon">
-            <img src="/navIMG/ic_insert_comment_24px.svg" />
-          </li>
-          <li class="nav_icon">
-            <img src="/navIMG/ic_brightness_6_24px.svg" />
-          </li>
-          <li class="nav_icon">
-            <img src="/navIMG/ic_format_size_24px.svg" />
-          </li>
-          <div class="responsiveIcons">
-            <li class="responsiveIc">
-              <img src="/navIMG/ic_insert_comment_24px.svg" />
-            </li>
-            <li class="responsiveIc">
-              <img src="/navIMG/ic_brightness_6_24px.svg" />
-            </li>
-            <li class="responsiveIc">
-              <img src="/navIMG/ic_format_size_24px.svg" />
-            </li>
-          </div>
-        </ul>
+        <nav class="nav">
+            <div class="logo"><a href="#"><img src="/navIMG/Logo.svg" alt="Logo"></a></div>
+            <ul id="normal-nav">
+                <li><a href="#">Start</a></li>
+                <li><a href="/om-oss/index.html">Om oss</a></li>
+                <li><a href="#">Verksamhet</a></li>
+                <li><a href="/regelverk/index.html">Regelverk</a></li>
+                <li><a href="/statistik/index.html">Statisitk</a></li>
+                <li><a href="/publikationer/index.html">Publikationer</a></li>
+                <li><a href="/nyhetsrum/index.html">Nyhetsrum</a></li>
+                <li><a href="/kontakt/index.html">Kontakt</a></li>
+                <li><a id="mina-sidor" href="#">Mina sidor</a></li>
+                <li class="anpassing"><img src="/navIMG/ic_insert_comment_24px.svg" alt="chat"><img
+                        src="/navIMG/ic_brightness_6_24px.svg" alt="brightness"><img
+                        src="/navIMG/ic_format_size_24px.svg" alt="size"></li>
+            </ul>
+            <button class="fas fa-bars" id="hamburger" onclick="dropDown()"></button>
+        </nav>
 
-        <div class="search">
-          <form action="sok.html" method="GET">
-            <input name="q" type="search" placeholder="Sökord" />
-          </form>
-          <div class="searchIcon">
-            <img src="/navIMG/ic_search_24px.svg" />
-          </div>
-        </div>
-      </nav>
     </header>
 
     <h1>Regelverk</h1>

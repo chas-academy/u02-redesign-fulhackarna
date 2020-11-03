@@ -22,7 +22,18 @@
       href="https://www.myh.se/assets/images/favicon.ico"
     />
 
-    <link rel="stylesheet" href="main.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sök - Myndigheten för yrkeshögskolan</title>
+  <meta name="title" content="Sök - Myndigheten för yrkeshögskolan" />
+  <meta name="description"
+    content="Myndigheten för yrkeshögskolan bidrar till att försörja arbetslivet med rätt kompetens i rätt tid. Vårt huvuduppdrag är att ansvara för frågor som rör yrkeshögskolan i Sverige. Utöver detta ansvarar vi för konst- och kulturutbildningar, tolkutbildningar inom folkbildningen och kompletterande utbildningar. Vi är också ansvariga för att samordna en nationell struktur för validering av utbildning och yrkeskompetens, och är nationell samlingspunkt för EQF (European Qualifications Framework)." />
+  <meta name="keywords" content="Myndigheten för yrkeshögskolan, utbildningar, yrkeshögskolan, sök" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="Swedish" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.myh.se/assets/images/favicon.ico" />
+
 
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap"
@@ -40,65 +51,49 @@
     />
   </head>
 
-  <body>
-    <header>
-      <nav class="normalNav" id="normalNav">
-        <img class="myhLogo" src="/navIMG/Logo.svg" alt="logo" />
-        <button class="hamburger" id="hamburger">
-          <i class="fas fa-bars"></i>
-        </button>
-        <ul class="nav_options" id="nav_options">
-          <li class="link">
-            <a href="/start/index.html">Start</a>
-          </li>
-          <li class="link">
-            <a href="/om-oss/index.html">Om oss</a>
-          </li>
-          <li class="link">
-            <a href="/verksamhet/index.html">Verksamhet</a>
-          </li>
-          <li class="link">
-            <a href="/regelverk/index.html">Regelverk</a>
-          </li>
-          <li class="link">
-            <a href="/statistik/index.html">Statistik</a>
-          </li>
-          <li class="link">
-            <a href="/publikationer/index.html">Publikationer</a>
-          </li>
-          <li class="link">
-            <a href="/nyhetsrum/index.html">Nyhetsrum</a>
-          </li>
-          <li class="link">
-            <a href="/kontakt/index.html">Kontakt</a>
-          </li>
-          <li class="link">
-            <a href="#minaSidor"><span id="mina_sidor">Mina sidor</span></a>
-          </li>
-          <li class="nav_icon">
-            <img src="/navIMG/ic_insert_comment_24px.svg" />
-          </li>
-          <li class="nav_icon">
-            <img src="/navIMG/ic_brightness_6_24px.svg" />
-          </li>
-          <li class="nav_icon">
-            <img src="/navIMG/ic_format_size_24px.svg" />
-          </li>
-          <div class="responsiveIcons">
-            <li class="responsiveIc">
-              <img src="/navIMG/ic_insert_comment_24px.svg" />
-            </li>
-            <li class="responsiveIc">
-              <img src="/navIMG/ic_brightness_6_24px.svg" />
-            </li>
-            <li class="responsiveIc">
-              <img src="/navIMG/ic_format_size_24px.svg" />
-            </li>
-          </div>
-        </ul>
-        <div class="searchIcon"></div>
-      </nav>
-    </header>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <div class="logo"><a href="#"><img src="/navIMG/Logo.svg" alt="Logo"></a></div>
+      <ul id="normal-nav">
+        <li><a href="#">Start</a></li>
+        <li><a href="/om-oss/index.html">Om oss</a></li>
+        <li><a href="#">Verksamhet</a></li>
+        <li><a href="/regelverk/index.html">Regelverk</a></li>
+        <li><a href="/statistik/index.html">Statisitk</a></li>
+        <li><a href="/publikationer/index.html">Publikationer</a></li>
+        <li><a href="/nyhetsrum/index.html">Nyhetsrum</a></li>
+        <li><a href="/kontakt/index.html">Kontakt</a></li>
+        <li><a id="mina-sidor" href="#">Mina sidor</a></li>
+        <li class="anpassing"><img src="/navIMG/ic_insert_comment_24px.svg" alt="chat"><img
+            src="/navIMG/ic_brightness_6_24px.svg" alt="brightness"><img src="/navIMG/ic_format_size_24px.svg"
+            alt="size"></li>
+      </ul>
+      <button class="fas fa-bars" id="hamburger" onclick="dropDown()"></button>
+    </nav>
+  </header>
+
+  <h1>Sök på myh.se</h1>
+  <div class="text-block">
+    <h2>Skriv in din sökning
+    </h2>
+  </div>
+
+  <form action="sok.html" method="GET">
+    <input name="q" type="search" placeholder="Sökord" />
+  </form>
+
+  <main>
+    <section class="main-panel">
+      <div class="card">
+        <h3>Sökresultat</h3>
+
 
     <h1>Sök på myh.se</h1>
     <div class="text-block">
@@ -117,15 +112,48 @@
           <div class="search-results"></div>
         </div>
 
-        <div class="page-selector">
-          <div class="pagination-results"></div>
+      <label for="check" class="filter-btn">
+        Filter
+      </label>
+      <aside class="aside-drop-menu">
+        <div>
+          <p>Publikationer</p>
+          <ul>
+            <li>Alla publikationstyper</li>
+            <li>Rapporter</li>
+            <li>Regeringsuppdrag</li>
+            <li>Informationsmaterial</li>
+            <li>Årsredovisingar</li>
+          </ul>
         </div>
-      </section>
+        <div>
+          <p>Verksamhetsområde</p>
+          <ul>
+            <li>Alla områden</li>
+            <li>Yrkeshögskolan</li>
+            <li>Konst- och kulturutbildningar</li>
+            <li>Tolkutbildningar</li>
+            <li>Utbildningar med endast tillsyn</li>
+            <li>validering</li>
+            <li>SeQF</li>
+          </ul>
+        </div>
+        <div>
+          <p>Årtal</p>
+          <ul>
+            <li>Alla år</li>
+            <li>2020</li>
+            <li>2019</li>
+            <li>2018</li>
+            <li>2017</li>
+            <li>2016</li>
+            <li>2015</li>
+            <li>2014</li>
+            <li>2013</li>
+          </ul>
+        </div>
+      </aside>
 
-      <section class="side-menus parallax" data-speed="0.5">
-        <h2>Side panel</h2>
-
-        <input class="filter-checkbox" type="checkbox" id="check" />
 
         <label for="check" class="filter-btn">
           <aside class="aside-menu">
