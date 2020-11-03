@@ -1,5 +1,5 @@
-@import '../assets/styles/footer';
-@import '../assets/styles/header';
+@import "../assets/styles/footer";
+@import "../assets/styles/header";
 
 $white: white;
 $darkGray: #2f2d36;
@@ -41,7 +41,7 @@ body {
     padding-top: 100px;
     padding-left: 200px;
     color: $darkGray;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: $hugeText;
     font-weight: bold;
   }
@@ -52,7 +52,7 @@ body {
     padding-left: 200px;
     color: $gray;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: $largeText;
     font-weight: 600;
     letter-spacing: 0.7px;
@@ -131,7 +131,7 @@ main {
     margin-bottom: 30px;
     overflow: visible;
     text-align: left;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: bold;
     font-size: $largeText;
     color: rgba(47, 45, 54, 1);
@@ -141,7 +141,7 @@ main {
     margin-bottom: 10px;
     overflow: visible;
     text-align: left;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: $normalText;
@@ -152,7 +152,7 @@ main {
     margin-bottom: 10px;
     overflow: visible;
     text-align: left;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: $normalText;
@@ -163,7 +163,7 @@ main {
     margin-bottom: 40px;
     overflow: visible;
     text-align: left;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: $normalText;
@@ -174,7 +174,7 @@ main {
     margin-bottom: 20px;
     overflow: visible;
     text-align: left;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: $normalText;
@@ -189,7 +189,7 @@ main {
     margin-bottom: 20px;
     overflow: visible;
     text-align: left;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: $normalText;
@@ -208,7 +208,7 @@ main {
     margin-bottom: 20px;
     overflow: visible;
     text-align: left;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: $normalText;
@@ -264,7 +264,7 @@ main {
   a {
     color: $white;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 }
 
@@ -302,7 +302,7 @@ main {
   a {
     color: $gray;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-size: 15px;
   }
