@@ -1,5 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sök - Myndigheten för yrkeshögskolan</title>
+    <meta name="title" content="Sök - Myndigheten för yrkeshögskolan" />
+    <meta
+      name="description"
+      content="Myndigheten för yrkeshögskolan bidrar till att försörja arbetslivet med rätt kompetens i rätt tid. Vårt huvuduppdrag är att ansvara för frågor som rör yrkeshögskolan i Sverige. Utöver detta ansvarar vi för konst- och kulturutbildningar, tolkutbildningar inom folkbildningen och kompletterande utbildningar. Vi är också ansvariga för att samordna en nationell struktur för validering av utbildning och yrkeskompetens, och är nationell samlingspunkt för EQF (European Qualifications Framework)."
+    />
+    <meta
+      name="keywords"
+      content="Myndigheten för yrkeshögskolan, utbildningar, yrkeshögskolan, sök"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="Swedish" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://www.myh.se/assets/images/favicon.ico"
+    />
 
 <head>
   <meta charset="UTF-8" />
@@ -14,10 +35,21 @@
   <link rel="shortcut icon" type="image/x-icon" href="https://www.myh.se/assets/images/favicon.ico" />
 
 
-  <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap"
-    rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap"
     rel="stylesheet">
@@ -62,18 +94,23 @@
       <div class="card">
         <h3>Sökresultat</h3>
 
-        <div class="search-results"></div>
-      </div>
 
-      <div class="page-selector">
-        <div class="pagination-results"></div>
-      </div>
-    </section>
+    <h1>Sök på myh.se</h1>
+    <div class="text-block">
+      <h2>Skriv in din sökning</h2>
+    </div>
 
-    <section class="side-menus parallax" data-speed="0.5">
-      <h2>Side panel</h2>
+    <form action="sok.html" method="GET">
+      <input name="q" type="search" placeholder="Sökord" />
+    </form>
 
-      <input class="filter-checkbox" type="checkbox" id="check" />
+    <main>
+      <section class="main-panel">
+        <div class="card">
+          <h3>Sökresultat</h3>
+
+          <div class="search-results"></div>
+        </div>
 
       <label for="check" class="filter-btn">
         Filter
@@ -117,144 +154,71 @@
         </div>
       </aside>
 
-    </section>
-  </main>
 
-  <footer class="footer">
-    <div id="footer-grid-s" class="grid-s">
-      <div class="grid-s__top">
-        <div class="footer-s__links">
-          <a href="#" class="footer-s__link"><i class="fas fa-phone-alt"></i></a>
-          <a href="#" class="footer-s__link">E-post</a>
-          <a href="#" class="footer-s__link">Kundforum</a>
-        </div>
-      </div>
-      <div class="grid-s__center">
-        <div class="footer-s__card">
-          <span class="icon-2x"><i class="fas fa-map-marker-alt"></i></span>
-          <div class="card-text">
-            <p>
-              Myndigheten för yrkeshögskolan
-              <br />
-              Box 145
-              <br />
-              721 05 Västerås
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="grid-s__bottom-left">
-        <div>
-          <h4>Ansvarig utgivare</h4>
-          <p>Thomas Persson, generaldirektör</p>
-        </div>
-      </div>
-      <div class="grid-s__bottom-right">
-        <div class="footer-s__links">
-          <a href="#" class="footer-s__link"><span class="icon-2x"><i class="fas fa-globe"></i></span></a>
-          <a href="#" class="footer-s__link"><span class="icon-2x"><i class="fab fa-youtube"></i></span></a>
-        </div>
-      </div>
-    </div>
+        <label for="check" class="filter-btn">
+          <aside class="aside-menu">
+            <p>Filter</p>
+          </aside>
+        </label>
 
-    <div id="footer-grid">
-      <div class="footer__grid" id="grid">
-        <div class="footer__item">
-          <div class="footer__links">
-            <a href="#" id="phone-link" class="footer__link">Telefon</a>
-            <a href="#" id="email-link" class="footer__link">E-post</a>
-            <a href="#" id="forum-link" class="footer__link">Kundforum</a>
-            <a href="#" id="press-link" class="footer__link">Press</a>
+        <aside class="aside-drop-menu">
+          <div>
+            <p>Visa träffar av publikationer</p>
+            <ul>
+              <li>Alla publikationstyper</li>
+              <li>Rapporter</li>
+              <li>Återrapportering av regeringsuppdrag</li>
+              <li>Informationsmaterial</li>
+              <li>Årsredovisingar</li>
+            </ul>
           </div>
-          <div class="footer__card">
-            <div id="phone-info" class="footer__card-info footer__card-info--active">
-              <h4>Telefon</h4>
-              <p>Ring vår växel 010-209 01 00</p>
-              <p>Växeln är öppen vardagar 9.00 - 11.30, 13.00 - 15.00</p>
-            </div>
-            <div id="email-info" class="footer__card-info">
-              <h4>E-post</h4>
-              <p>
-                Allmänna frågor/synpunkter:
-                <a href="mailto:info@myh.se">info@myh.se</a>
-              </p>
-              <p>
-                Registrator:
-                <a href="mailto:registrator@myh.se">registrator@myh.se</a>
-              </p>
-            </div>
-            <div id="forum-info" class="footer__card-info">
-              <h4>Digitalt kundforum</h4>
-              <p>
-                Har du en fråga? Besök vårt kundforum,
-                <a href="https://forum.myh.se">forum.myh.se</a>
-              </p>
-            </div>
-            <div id="press-info" class="footer__card-info">
-              <h4>Press</h4>
-              <p>
-                Presskontakter och pressmeddelande finns i vårt
-                <a href="https://www.mynewsdesk.com/se/myndigheten-foer-yrkeshoegskolan">nyhetsrum</a>
-              </p>
-            </div>
+          <div>
+            <p>Visa träffar från verksamhetsområde</p>
+            <ul>
+              <li>Alla områden</li>
+              <li>Yrkeshögskolan</li>
+              <li>Konst- och kulturutbildningar</li>
+              <li>Tolkutbildningar</li>
+              <li>Utbildningar med endast tillsyn</li>
+              <li>validering</li>
+              <li>SeQF</li>
+            </ul>
           </div>
-        </div>
-        <div class="footer__item">
-          <div class="footer__links">
-            <a href="#" id="share-link" class="footer__link">Dela</a>
-            <a href="#" id="websites-link" class="footer__link">Webbplatser</a>
-            <a href="#" id="about-link" class="footer__link">Om webbplatsen</a>
+          <div>
+            <p>Visa träffar från år</p>
+            <ul>
+              <li>Alla år</li>
+              <li>2020</li>
+              <li>2019</li>
+              <li>2018</li>
+              <li>2017</li>
+              <li>2016</li>
+              <li>2015</li>
+              <li>2014</li>
+              <li>2013</li>
+            </ul>
           </div>
-          <div class="footer__card">
-            <div id="share-info" class="footer__card-info footer__card-info--active">
-              <h4>Dela</h4>
-              <div class="social-icons">
-                <a href="#"><span class="social-icon"><i class="fab fa-twitter"></i></span></a>
-                <a href="#"><span class="social-icon"><i class="fab fa-facebook-f"></i></span></a>
-              </div>
-            </div>
-            <div id="websites-info" class="footer__card-info">
-              <h4>Webbplatser</h4>
-              <ul>
-                <li>
-                  <a href="https://www.yrkeshogskolan.se">www.yrkeshogskolan.se</a>
-                </li>
-                <li>
-                  <a href="https://www.konstkulturutbildning.se">
-                    www.konstkulturutbildning.se
-                  </a>
-                </li>
-                <li><a href="https://www.blitolk.nu">www.blitolk.nu</a></li>
-                <li><a href="https://www.seqf.se">www.seqf.se</a></li>
-              </ul>
-            </div>
-            <div id="about-info" class="footer__card-info">
-              <h4>Om webbplatsen</h4>
-              <ul>
-                <li>
-                  <a href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen">Använda
-                    webbplatsen</a>
-                </li>
-                <li>
-                  <a href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen">Om
-                    webbkakor (cookies)</a>
-                </li>
-                <li><a href="https://www.myh.se/Webbkarta">Webbkarta</a></li>
-                <li>
-                  <a href="https://www.myh.se/Om-webbplatsen/Tillganglighetsredogorelse-">Tillgänglighetsredogörelse</a>
-                </li>
-              </ul>
-            </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div id="footer-grid-s" class="grid-s">
+        <div class="grid-s__top">
+          <div class="footer-s__links">
+            <a href="#" class="footer-s__link" id="phone-s-link"
+              ><i class="fas fa-phone-alt"></i
+            ></a>
+            <a href="#" id="email-s-link" class="footer-s__link">E-post</a>
+            <a href="#" id="forum-s-link" class="footer-s__link">Kundforum</a>
           </div>
         </div>
-        <div class="footer__item">
-          <div class="footer__links">
-            <a href="#" id="address-link" class="footer__link">Myndigheten för yrkeshögskolan</a>
-            <a href="#" id="youtube-link" class="footer__link">Youtube</a>
-          </div>
-          <div class="footer__card">
-            <div id="address-info" class="footer__card-info footer__card-info--active">
-              <h4>Adress</h4>
+        <div class="grid-s__center">
+          <div class="footer-s__card">
+            <span class="footer-s__icon-2x"
+              ><i class="fas fa-map-marker-alt"></i
+            ></span>
+            <div class="footer-s__card-text">
               <p>
                 Myndigheten för yrkeshögskolan
                 <br />
@@ -263,28 +227,193 @@
                 721 05 Västerås
               </p>
             </div>
-            <div id="youtube-info" class="footer__card-info">
-              <h4>Youtube</h4>
-              <a href="https://www.youtube.com/channel/UC8iPn0eKy-5vQ6Mx_-ep-KA">
-                MYH Youtube-kanal
-              </a>
-            </div>
+          </div>
+        </div>
+        <div class="grid-s__bottom-left">
+          <div>
+            <h4>Ansvarig utgivare</h4>
+            <p>Thomas Persson, generaldirektör</p>
+          </div>
+        </div>
+        <div class="grid-s__bottom-right">
+          <div class="footer-s__links">
+            <a href="#" class="footer-s__link" id="websites-s-link"
+              ><span class="footer-s__icon-2x"
+                ><i class="fas fa-globe"></i></span
+            ></a>
+            <a href="#" class="footer-s__link" id="youtube-s-link"
+              ><span class="footer-s__icon-2x"
+                ><i class="fab fa-youtube"></i></span
+            ></a>
           </div>
         </div>
       </div>
 
-      <div class="footer__publisher">
-        <h4>Ansvarig utgivare</h4>
-        <p>Thomas Persson, generaldirektör MYH</p>
+      <div id="footer-grid">
+        <div class="footer__grid">
+          <div class="footer__item">
+            <div class="footer__links">
+              <a href="#" id="phone-link" class="footer__link">Telefon</a>
+              <a href="#" id="email-link" class="footer__link">E-post</a>
+              <a href="#" id="forum-link" class="footer__link">Kundforum</a>
+              <a href="#" id="press-link" class="footer__link">Press</a>
+            </div>
+            <div class="footer__card">
+              <div
+                id="phone-info"
+                class="footer__card-info footer__card-info--active"
+              >
+                <h4>Telefon</h4>
+                <p>Ring vår växel 010-209 01 00</p>
+                <p>Växeln är öppen vardagar 9.00 - 11.30, 13.00 - 15.00</p>
+              </div>
+              <div id="email-info" class="footer__card-info">
+                <h4>E-post</h4>
+                <p>
+                  Allmänna frågor/synpunkter:
+                  <a href="mailto:info@myh.se">info@myh.se</a>
+                </p>
+                <p>
+                  Registrator:
+                  <a href="mailto:registrator@myh.se">registrator@myh.se</a>
+                </p>
+              </div>
+              <div id="forum-info" class="footer__card-info">
+                <h4>Digitalt kundforum</h4>
+                <p>
+                  Har du en fråga? Besök vårt kundforum,
+                  <a href="https://forum.myh.se">forum.myh.se</a>
+                </p>
+              </div>
+              <div id="press-info" class="footer__card-info">
+                <h4>Press</h4>
+                <p>
+                  Presskontakter och pressmeddelande finns i vårt
+                  <a
+                    href="https://www.mynewsdesk.com/se/myndigheten-foer-yrkeshoegskolan"
+                    >nyhetsrum</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__links">
+              <a href="#" id="share-link" class="footer__link">Dela</a>
+              <a href="#" id="websites-link" class="footer__link"
+                >Webbplatser</a
+              >
+              <a href="#" id="about-link" class="footer__link"
+                >Om webbplatsen</a
+              >
+            </div>
+            <div class="footer__card">
+              <div
+                id="share-info"
+                class="footer__card-info footer__card-info--active"
+              >
+                <h4>Dela</h4>
+                <div class="footer__social-icons">
+                  <a href="#"
+                    ><span class="footer__social-icon"
+                      ><i class="fab fa-twitter"></i></span
+                  ></a>
+                  <a href="#"
+                    ><span class="footer__social-icon"
+                      ><i class="fab fa-facebook-f"></i></span
+                  ></a>
+                </div>
+              </div>
+              <div id="websites-info" class="footer__card-info">
+                <h4>Webbplatser</h4>
+                <ul>
+                  <li>
+                    <a href="https://www.yrkeshogskolan.se"
+                      >www.yrkeshogskolan.se</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.konstkulturutbildning.se">
+                      www.konstkulturutbildning.se
+                    </a>
+                  </li>
+                  <li><a href="https://www.blitolk.nu">www.blitolk.nu</a></li>
+                  <li><a href="https://www.seqf.se">www.seqf.se</a></li>
+                </ul>
+              </div>
+              <div id="about-info" class="footer__card-info">
+                <h4>Om webbplatsen</h4>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen"
+                      >Använda webbplatsen</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen"
+                      >Om webbkakor (cookies)</a
+                    >
+                  </li>
+                  <li><a href="https://www.myh.se/Webbkarta">Webbkarta</a></li>
+                  <li>
+                    <a
+                      href="https://www.myh.se/Om-webbplatsen/Tillganglighetsredogorelse-"
+                      >Tillgänglighetsredogörelse</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__links">
+              <a href="#" id="address-link" class="footer__link"
+                >Myndigheten för yrkeshögskolan</a
+              >
+              <a href="#" id="youtube-link" class="footer__link">Youtube</a>
+            </div>
+            <div class="footer__card">
+              <div
+                id="address-info"
+                class="footer__card-info footer__card-info--active"
+              >
+                <h4>Adress</h4>
+                <p>
+                  Myndigheten för yrkeshögskolan
+                  <br />
+                  Box 145
+                  <br />
+                  721 05 Västerås
+                </p>
+              </div>
+              <div id="youtube-info" class="footer__card-info">
+                <h4>Youtube</h4>
+                <a
+                  href="https://www.youtube.com/channel/UC8iPn0eKy-5vQ6Mx_-ep-KA"
+                >
+                  MYH Youtube-kanal
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__publisher">
+          <h4>Ansvarig utgivare</h4>
+          <p>Thomas Persson, generaldirektör MYH</p>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="/assets/javascript/footer.js"></script>
-  <script src="https://kit.fontawesome.com/9e640bf9f4.js" crossorigin="anonymous"></script>
-  <script src="/assets/javascript/nav.js"></script>
-  <script src="/assets/javascript/parallax.js"></script>
-  <script src="/assets/javascript/search.js"></script>
-</body>
-
+    <script src="/assets/javascript/footer.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9e640bf9f4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/javascript/nav.js"></script>
+    <script src="/assets/javascript/parallax.js"></script>
+    <script src="/assets/javascript/search.js"></script>
+  </body>
 </html>

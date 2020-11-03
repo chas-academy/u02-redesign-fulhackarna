@@ -1,10 +1,10 @@
-@import "../assets/styles/footer";
-@import "../assets/styles/header";
+@import '../assets/styles/footer';
+@import '../assets/styles/header';
 
 $white: white;
-$darkGray: #2F2D36;
+$darkGray: #2f2d36;
 $gray: #656565;
-$backgroundColor: #F1F5F7;
+$backgroundColor: #f1f5f7;
 
 $hugeText: 40px;
 $largeText: 20px;
@@ -25,8 +25,7 @@ $smallText: 13px;
   overflow-x: hidden;
   border-color: transparent;
   letter-spacing: 0.5px;
-  font-family: 'Roboto',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -41,8 +40,7 @@ body {
     padding-top: 100px;
     padding-left: 200px;
     color: $darkGray;
-    font-family: 'Roboto',
-      sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: $hugeText;
     font-weight: bold;
   }
@@ -57,8 +55,7 @@ body {
       margin-right: 1000px;
       color: $gray;
       text-decoration: none;
-      font-family: 'Roboto',
-        sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: $largeText;
       font-weight: 600;
     }
@@ -70,7 +67,7 @@ form {
   margin-right: 400px;
   padding: 40px;
 
-  input[type="search"] {
+  input[type='search'] {
     width: 1000px;
     height: 70px;
     font-size: 1.3em;
@@ -82,21 +79,18 @@ form {
   }
 }
 
-
 main {
   height: 100%;
   padding-bottom: 100px;
   display: flex;
   justify-content: space-around;
   overflow: hidden;
-
 }
 
 .main-panel {
   @include flexbox(column, flex-start, space-between);
   width: 100%;
   padding-left: 2.5%;
-
 
   .card {
     padding: 30px;
@@ -131,11 +125,9 @@ main {
       h2 {
         margin: 5px 0px;
         color: rgb(99, 135, 243);
-        font-family: 'Roboto',
-          sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: $largeText;
         font-weight: bold;
-
 
         a {
           color: inherit;
@@ -155,7 +147,6 @@ main {
     p {
       color: $darkGray;
       margin-bottom: 5px;
-
     }
 
     time {
@@ -181,15 +172,13 @@ main {
       box-shadow: -8px 8px 30px -20px rgba(0, 0, 0, 0.5);
 
       li {
-
         border-radius: 20px;
         padding: 30px 15px 30px 15px;
         cursor: pointer;
 
         color: $darkGray;
         text-decoration: none;
-        font-family: 'Roboto',
-          sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: $normalText;
         font-weight: 600;
       }
@@ -231,6 +220,7 @@ main {
   font-size: $largeText;
   font-weight: 600;
   color: $darkGray;
+
 }
 
 .aside-drop-menu {
@@ -255,8 +245,7 @@ main {
   p {
     padding: 0 0 0 17px;
     text-decoration: none;
-    font-family: 'Roboto',
-      sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 600;
     color: $darkGray;
@@ -265,8 +254,7 @@ main {
   ul {
     padding: 0 0 0 17px;
     text-decoration: none;
-    font-family: 'Roboto',
-      sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
     color: $gray;
@@ -281,11 +269,10 @@ main {
         transition: opacity 0.3s;
       }
     }
-
   }
 }
 
-.filter-checkbox:checked~aside {
+.filter-checkbox:checked ~ aside {
   height: 690px;
   transition: height 0.3s;
   visibility: visible;
@@ -311,7 +298,7 @@ main {
     margin-right: 0;
     padding: 40px 0 40px 10%;
 
-    input[type="search"] {
+    input[type='search'] {
       width: 90%;
     }
   }
@@ -353,19 +340,16 @@ main {
     p {
       padding: 25px 0 20px 90px;
       text-decoration: none;
-      font-family: 'Roboto',
-        sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 15px;
       font-weight: 600;
       color: $darkGray;
-
     }
 
     ul {
       padding: 0 0 0 90px;
       text-decoration: none;
-      font-family: 'Roboto',
-        sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 16px;
       font-weight: 500;
       color: $gray;
@@ -376,14 +360,13 @@ main {
     }
   }
 
-  .filter-checkbox:checked~aside {
+  .filter-checkbox:checked ~ aside {
     height: 350px;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 1050px) {
-
   body {
 
     h1 {
@@ -433,8 +416,7 @@ main {
     p {
       padding: 0 0 0 17px;
       text-decoration: none;
-      font-family: 'Roboto',
-        sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 15px;
       font-weight: 600;
       color: $darkGray;
@@ -443,8 +425,7 @@ main {
     ul {
       padding: 0 0 0 17px;
       text-decoration: none;
-      font-family: 'Roboto',
-        sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 16px;
       font-weight: 500;
       color: $gray;
@@ -455,7 +436,7 @@ main {
     }
   }
 
-  .filter-checkbox:checked~aside {
+  .filter-checkbox:checked ~ aside {
     height: 690px;
     transition: height 0.3s;
     visibility: visible;
