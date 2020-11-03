@@ -594,7 +594,6 @@ main {
 }
 .main-panel .card {
   width: 1050px;
-  height: 1430px;
   background-color: white;
   border-radius: 20px;
   -webkit-box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
@@ -632,6 +631,18 @@ main {
   font-size: 25px;
   margin-bottom: 10px;
 }
+
+.main-panel .card .video {
+  padding: 20px;
+}
+
+.main-panel .card .video iframe {
+  border-radius: 10px;
+  -webkit-box-shadow: -8px 8px 20px -15px rgba(0, 0, 0, 0.7);
+          box-shadow: -8px 8px 20px -15px rgba(0, 0, 0, 0.7);
+}
+
+
 .main-panel .card h4 {
   color: #2f2d36;
   text-decoration: none;
@@ -652,22 +663,97 @@ main {
 .main-panel .card .last-p {
   margin-bottom: 30px;
 }
-.main-panel button {
-  margin: 40px 0 40px 0;
-  width: 300px;
-  height: 80px;
-  border-radius: 30px;
-  background-color: white;
-  color: #2f2d36;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  font-weight: 800;
-  letter-spacing: 0.7px;
-  cursor: pointer;
-  -webkit-box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
-          box-shadow: -8px 8px 40px -20px rgba(0, 0, 0, 0.5);
-  border: none;
+
+.main-panel .card form {
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.main-panel .card form p {
+  width: 100%;
+  color: #2F2D36;
+  text-decoration: none;
+  font-family: 'Roboto',
+ sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  margin-left: 5px;
+  margin-top: 30px;
+}
+
+.main-panel .card form .topper {
+  color: #2F2D36;
+  text-decoration: none;
+  font-family: 'Roboto',
+ sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.main-panel .card form input {
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-box-shadow: inset -8px 8px 60px -40px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -8px 8px 60px -40px rgba(0, 0, 0, 0.5);
   outline: none;
+}
+
+.main-panel .card form textarea {
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset -8px 8px 60px -40px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -8px 8px 60px -40px rgba(0, 0, 0, 0.5);
+  resize: none;
+  outline: none;
+}
+
+.main-panel .card form .submit {
+  -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+  -webkit-box-shadow: -8px 10px 30px -20px rgba(0, 0, 0, 0.7);
+          box-shadow: -8px 10px 30px -20px rgba(0, 0, 0, 0.7);
+  background-color: #fff695;
+  width: 40%;
+  height: 60px;
+  margin-left: 25%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #afa000;
+  text-decoration: none;
+  font-family: 'Roboto',
+ sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 1px;
+
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.main-panel .card form .submit:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .side-menus {
@@ -894,7 +980,6 @@ main {
   }
   .main-panel .card {
     width: 80%;
-    height: 1500px;
     margin-left: 0;
   }
   .main-panel .card .images {
@@ -953,7 +1038,6 @@ main {
             align-items: center;
   }
   .main-panel .card {
-    height: 1670px;
     width: 90%;
   }
   .main-panel .card h3 {
@@ -982,14 +1066,21 @@ main {
     margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 550px) {
-  .main-panel .card {
-    height: 1740px;
+
+@media screen and (max-width: 730px) {
+  .main-panel .card .video {
+    display: none;
   }
-}
-@media screen and (max-width: 430px) {
-  .main-panel .card {
-    height: 1900px;
+  .main-panel .card form {
+    margin: 0;
+    padding: 0;
+  }
+  .main-panel .card form p {
+    margin-left: 0px;
+  }
+  .main-panel .card form .topper {
+    margin-left: 0px;
+
   }
 }
 

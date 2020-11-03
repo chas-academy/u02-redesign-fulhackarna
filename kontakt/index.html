@@ -44,10 +44,10 @@
     </div>
 
     <main>
-      <section class="main-panel">
-        <div class="card">
-          <h2>Main panel</h2>
-          <!-- placeholder -->
+        <section class="main-panel">
+            <div class="card">
+                <h2>Main panel</h2>
+
 
           <div class="images">
             <img id="image1" src="images/card-art.svg" alt="icon" />
@@ -62,11 +62,16 @@
               diarium.
             </p>
 
-            <h4>Kundforum</h4>
-            <p class="last-p">
-              Se vanliga frågor och svar samt ställ dina frågor i vårt
-              <a href="#">digitala frågeforum.</a>
-            </p>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dnBTIf5fWpQ" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <h4>Kundforum</h4>
+                    <p class="last-p">Se vanliga frågor och svar samt ställ dina frågor i vårt <a href="#">digitala
+                            frågeforum.</a></p>
+
 
             <h4>Telefon</h4>
             <p class="last-p">
@@ -118,13 +123,27 @@
               >
             </p>
 
-            <h4>Pressjour</h4>
-            <p class="last-p">
-              Besök vårt <a href="#">nyhetsrum</a> eller ring 010-209 01 73.
-            </p>
-          </div>
-        </div>
-      </section>
+                    <h4>Pressjour</h4>
+                    <p class="last-p">Besök vårt <a href="#">nyhetsrum</a> eller ring 010-209 01 73. </p>
+
+                    <form>
+                        <p>kontakta kring allmänna frågor/synpunkter:</p>
+                        <label class="topper" for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+                        <label class="topper" for="email">E-post</label>
+                        <input type="email" id="email" name="email" placeholder="Your e-post...">
+
+                        <label class="topper" for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something..."
+                            style="height:200px"></textarea>
+
+                        <input class="submit" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+
 
       <section class="side-menus parallax" data-speed="0.5">
         <h2>Side panel</h2>
