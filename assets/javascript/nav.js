@@ -10,7 +10,11 @@ window.addEventListener('scroll', function () { // Check for scroll
 
     } else {
         navBar.classList.remove("nav-scrolled");
-        document.getElementById("hamburger").style.color = "black";
+        if (dropDownNav.id == "drop") {
+            document.getElementById("hamburger").style.color = "white";
+        } else {
+            document.getElementById("hamburger").style.color = "black";
+        }
     }
 });
 
@@ -24,7 +28,6 @@ function dropDown() {
 
         } else {
             document.getElementById("hamburger").style.color = "black";
-
         }
     } else if (dropDownNav.id == "normal-nav") {
         dropDownNav.id = "drop";
