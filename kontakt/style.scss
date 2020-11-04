@@ -1,12 +1,11 @@
-@import "../assets/styles/footer";
-@import "../assets/styles/header";
+@import '../assets/styles/footer';
+@import '../assets/styles/header';
 
 $white: white;
-$darkGray: #2F2D36;
+$darkGray: #2f2d36;
 $gray: #656565;
-$backgroundColor: #F1F5F7;
+$backgroundColor: #f1f5f7;
 $cardtopcolor: rgba(255, 250, 194, 1);
-
 
 $hugeText: 40px;
 $largeText: 20px;
@@ -42,8 +41,7 @@ body {
     padding-top: 100px;
     padding-left: 200px;
     color: $darkGray;
-    font-family: 'Roboto',
-      sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: $hugeText;
     font-weight: bold;
   }
@@ -58,8 +56,7 @@ body {
       margin-right: 1000px;
       color: $gray;
       text-decoration: none;
-      font-family: 'Roboto',
-        sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: $largeText;
       font-weight: 600;
     }
@@ -102,7 +99,6 @@ main {
       display: flex;
       justify-content: center;
 
-
       #image1 {
         width: 260px;
       }
@@ -115,8 +111,7 @@ main {
     h3 {
       color: $darkGray;
       text-decoration: none;
-      font-family: 'Roboto',
-        sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 600;
       font-size: 25px;
       margin-bottom: 10px;
@@ -134,19 +129,16 @@ main {
     h4 {
       color: $darkGray;
       text-decoration: none;
-      font-family: 'Roboto',
-        sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 600;
       font-size: $largeText;
       margin-bottom: 10px;
-
     }
 
     p {
       color: $gray;
       text-decoration: none;
-      font-family: 'Roboto',
-        sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 500;
       font-size: $normalText;
       margin-top: 2px;
@@ -157,7 +149,6 @@ main {
     .last-p {
       margin-bottom: 30px;
     }
-
 
     form {
       height: 700px;
@@ -172,20 +163,17 @@ main {
         width: 100%;
         color: $darkGray;
         text-decoration: none;
-        font-family: 'Roboto',
-          sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 600;
         font-size: 22px;
         margin-left: 5px;
         margin-top: 30px;
-
       }
 
       .topper {
         color: $darkGray;
         text-decoration: none;
-        font-family: 'Roboto',
-          sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 600;
         font-size: 18px;
         margin-left: 10px;
@@ -220,8 +208,7 @@ main {
         margin-bottom: 15px;
         color: darken(#fff695, 45%);
         text-decoration: none;
-        font-family: 'Roboto',
-          sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 600;
         font-size: 25px;
         letter-spacing: 1px;
@@ -232,11 +219,9 @@ main {
         &:hover {
           transform: scale(1.05);
           transition: all 0.3s;
-
         }
       }
     }
-
   }
 }
 
@@ -272,8 +257,7 @@ main {
   a {
     color: $white;
     text-decoration: none;
-    font-family: 'Roboto',
-      sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
 }
 
@@ -290,8 +274,7 @@ main {
     margin: 15px 0 0 30px;
     color: $darkGray;
     text-decoration: none;
-    font-family: 'Roboto',
-      sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: $normalText;
   }
 
@@ -299,8 +282,7 @@ main {
     margin: 15px 0 0 30px;
     color: $darkGray;
     text-decoration: none;
-    font-family: 'Roboto',
-      sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: $normalText;
   }
 
@@ -325,8 +307,7 @@ main {
       a {
         color: white;
         text-decoration: none;
-        font-family: 'Roboto',
-          sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 800;
         font-size: $normalText;
       }
@@ -377,15 +358,13 @@ main {
   a {
     color: $gray;
     text-decoration: none;
-    font-family: 'Roboto',
-      sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 15px;
   }
 }
 
 @media screen and (max-width: 1500px) {
-
   body {
     h1 {
       width: 100%;
@@ -397,7 +376,6 @@ main {
       padding-left: 10%;
     }
   }
-
 
   main {
     @include flexbox(column, space-around, center);
@@ -431,7 +409,6 @@ main {
 }
 
 @media screen and (max-width: 950px) {
-
   body {
     h1 {
       width: 100%;
@@ -473,7 +450,6 @@ main {
 }
 
 @media screen and (max-width: 730px) {
-
   .main-panel {
     .card {
       .video {
@@ -491,7 +467,6 @@ main {
         .topper {
           margin-left: 0px;
         }
-
       }
     }
   }
