@@ -1251,7 +1251,7 @@ button {
   }
   .main-panel .selector-card {
     width: 230%;
-    height: 280px;
+    height: 400px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
